@@ -1,0 +1,4250 @@
+[{
+    "id": "5e77a88f55063157c132bd6f",
+    "SravzId": "idx_us_gspc",
+    "Code": "AIZ",
+    "Exchange": "US",
+    "Name": "Assurant, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Specialty"
+}, {
+    "id": "5e77a88f55063157c132bd74",
+    "SravzId": "idx_us_gspc",
+    "Code": "MNST",
+    "Exchange": "US",
+    "Name": "Monster Beverage Corporation",
+    "Sector": "Consumer Defensive",
+    "Industry": "Beverages-Non-Alcoholic"
+}, {
+    "id": "5e77a88f55063157c132bd79",
+    "SravzId": "idx_us_gspc",
+    "Code": "GPS",
+    "Exchange": "US",
+    "Name": "The Gap, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Apparel Retail"
+}, {
+    "id": "5e77a88f55063157c132bd7e",
+    "SravzId": "idx_us_gspc",
+    "Code": "UNM",
+    "Exchange": "US",
+    "Name": "Unum Group",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Life"
+}, {
+    "id": "5e77a88f55063157c132bd83",
+    "SravzId": "idx_us_gspc",
+    "Code": "PGR",
+    "Exchange": "US",
+    "Name": "The Progressive Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Property \u0026 Casualty"
+}, {
+    "id": "5e77a88f55063157c132bd88",
+    "SravzId": "idx_us_gspc",
+    "Code": "FISV",
+    "Exchange": "US",
+    "Name": "Fiserv, Inc",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a88f55063157c132bd8b",
+    "SravzId": "idx_us_gspc",
+    "Code": "CSX",
+    "Exchange": "US",
+    "Name": "CSX Corporation",
+    "Sector": "Industrials",
+    "Industry": "Railroads"
+}, {
+    "id": "5e77a88f55063157c132bd91",
+    "SravzId": "idx_us_gspc",
+    "Code": "ADP",
+    "Exchange": "US",
+    "Name": "Automatic Data Processing, Inc",
+    "Sector": "Industrials",
+    "Industry": "Staffing \u0026 Employment Services"
+}, {
+    "id": "5e77a88f55063157c132bd97",
+    "SravzId": "idx_us_gspc",
+    "Code": "ANSS",
+    "Exchange": "US",
+    "Name": "ANSYS, Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Application"
+}, {
+    "id": "5e77a88f55063157c132bd9c",
+    "SravzId": "idx_us_gspc",
+    "Code": "AFL",
+    "Exchange": "US",
+    "Name": "Aflac Incorporated",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Life"
+}, {
+    "id": "5e77a88f55063157c132bda2",
+    "SravzId": "idx_us_gspc",
+    "Code": "SO",
+    "Exchange": "US",
+    "Name": "The Southern Company",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a88f55063157c132bda7",
+    "SravzId": "idx_us_gspc",
+    "Code": "REG",
+    "Exchange": "US",
+    "Name": "Regency Centers Corporation",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Retail"
+}, {
+    "id": "5e77a89055063157c132bdac",
+    "SravzId": "idx_us_gspc",
+    "Code": "LMT",
+    "Exchange": "US",
+    "Name": "Lockheed Martin Corporation",
+    "Sector": "Industrials",
+    "Industry": "Aerospace \u0026 Defense"
+}, {
+    "id": "5e77a89055063157c132bdb1",
+    "SravzId": "idx_us_gspc",
+    "Code": "BMY",
+    "Exchange": "US",
+    "Name": "Bristol-Myers Squibb Company",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-General"
+}, {
+    "id": "5e77a89055063157c132bdb6",
+    "SravzId": "idx_us_gspc",
+    "Code": "EIX",
+    "Exchange": "US",
+    "Name": "Edison International",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89055063157c132bdbb",
+    "SravzId": "idx_us_gspc",
+    "Code": "GWW",
+    "Exchange": "US",
+    "Name": "W.W. Grainger, Inc",
+    "Sector": "Industrials",
+    "Industry": "Industrial Distribution"
+}, {
+    "id": "5e77a89055063157c132bdc0",
+    "SravzId": "idx_us_gspc",
+    "Code": "VAR",
+    "Exchange": "US",
+    "Name": "Varian Medical Systems, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Instruments \u0026 Supplies"
+}, {
+    "id": "5e77a89055063157c132bdc5",
+    "SravzId": "idx_us_gspc",
+    "Code": "FAST",
+    "Exchange": "US",
+    "Name": "Fastenal Company",
+    "Sector": "Industrials",
+    "Industry": "Industrial Distribution"
+}, {
+    "id": "5e77a89055063157c132bdca",
+    "SravzId": "idx_us_gspc",
+    "Code": "PHM",
+    "Exchange": "US",
+    "Name": "PulteGroup, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Residential Construction"
+}, {
+    "id": "5e77a89055063157c132bdcf",
+    "SravzId": "idx_us_gspc",
+    "Code": "WHR",
+    "Exchange": "US",
+    "Name": "Whirlpool Corporation",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Furnishings, Fixtures \u0026 Appliances"
+}, {
+    "id": "5e77a89055063157c132bdd4",
+    "SravzId": "idx_us_gspc",
+    "Code": "INTC",
+    "Exchange": "US",
+    "Name": "Intel Corporation",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89055063157c132bdd9",
+    "SravzId": "idx_us_gspc",
+    "Code": "NEM",
+    "Exchange": "US",
+    "Name": "Newmont Corporation",
+    "Sector": "Basic Materials",
+    "Industry": "Gold"
+}, {
+    "id": "5e77a89055063157c132bdde",
+    "SravzId": "idx_us_gspc",
+    "Code": "CTAS",
+    "Exchange": "US",
+    "Name": "Cintas Corporation",
+    "Sector": "Industrials",
+    "Industry": "Specialty Business Services"
+}, {
+    "id": "5e77a89055063157c132bde3",
+    "SravzId": "idx_us_gspc",
+    "Code": "ALL",
+    "Exchange": "US",
+    "Name": "The Allstate Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Property \u0026 Casualty"
+}, {
+    "id": "5e77a89055063157c132bde8",
+    "SravzId": "idx_us_gspc",
+    "Code": "CBOE",
+    "Exchange": "US",
+    "Name": "Cboe Global Markets, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Financial Data \u0026 Stock Exchanges"
+}, {
+    "id": "5e77a89055063157c132bded",
+    "SravzId": "idx_us_gspc",
+    "Code": "NDAQ",
+    "Exchange": "US",
+    "Name": "Nasdaq, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Financial Data \u0026 Stock Exchanges"
+}, {
+    "id": "5e77a89055063157c132bdf2",
+    "SravzId": "idx_us_gspc",
+    "Code": "NRG",
+    "Exchange": "US",
+    "Name": "NRG Energy, Inc",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Independent Power Producers"
+}, {
+    "id": "5e77a89055063157c132bdf7",
+    "SravzId": "idx_us_gspc",
+    "Code": "GIS",
+    "Exchange": "US",
+    "Name": "General Mills, Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Packaged Foods"
+}, {
+    "id": "5e77a89055063157c132bdfd",
+    "SravzId": "idx_us_gspc",
+    "Code": "SIVB",
+    "Exchange": "US",
+    "Name": "SVB Financial Group",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89055063157c132be02",
+    "SravzId": "idx_us_gspc",
+    "Code": "CNC",
+    "Exchange": "US",
+    "Name": "Centene Corporation",
+    "Sector": "Healthcare",
+    "Industry": "Healthcare Plans"
+}, {
+    "id": "5e77a89055063157c132be07",
+    "SravzId": "idx_us_gspc",
+    "Code": "MLM",
+    "Exchange": "US",
+    "Name": "Martin Marietta Materials, Inc",
+    "Sector": "Basic Materials",
+    "Industry": "Building Materials"
+}, {
+    "id": "5e77a89055063157c132be0c",
+    "SravzId": "idx_us_gspc",
+    "Code": "NBL",
+    "Exchange": "US",
+    "Name": "Noble Energy, Inc",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas E\u0026P"
+}, {
+    "id": "5e77a89055063157c132be11",
+    "SravzId": "idx_us_gspc",
+    "Code": "QCOM",
+    "Exchange": "US",
+    "Name": "QUALCOMM Incorporated",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89055063157c132be16",
+    "SravzId": "idx_us_gspc",
+    "Code": "ACN",
+    "Exchange": "US",
+    "Name": "Accenture plc",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a89055063157c132be1b",
+    "SravzId": "idx_us_gspc",
+    "Code": "VMC",
+    "Exchange": "US",
+    "Name": "Vulcan Materials Company",
+    "Sector": "Basic Materials",
+    "Industry": "Building Materials"
+}, {
+    "id": "5e77a89055063157c132be20",
+    "SravzId": "idx_us_gspc",
+    "Code": "MRO",
+    "Exchange": "US",
+    "Name": "Marathon Oil Corporation",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas E\u0026P"
+}, {
+    "id": "5e77a89055063157c132be25",
+    "SravzId": "idx_us_gspc",
+    "Code": "AVGO",
+    "Exchange": "US",
+    "Name": "Broadcom Inc",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89055063157c132be2a",
+    "SravzId": "idx_us_gspc",
+    "Code": "AMT",
+    "Exchange": "US",
+    "Name": "American Tower Corporation (REIT)",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Specialty"
+}, {
+    "id": "5e77a89055063157c132be2d",
+    "SravzId": "idx_us_gspc",
+    "Code": "PKG",
+    "Exchange": "US",
+    "Name": "Packaging Corporation of America",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Packaging \u0026 Containers"
+}, {
+    "id": "5e77a89055063157c132be31",
+    "SravzId": "idx_us_gspc",
+    "Code": "CPB",
+    "Exchange": "US",
+    "Name": "Campbell Soup Company",
+    "Sector": "Consumer Defensive",
+    "Industry": "Packaged Foods"
+}, {
+    "id": "5e77a89055063157c132be37",
+    "SravzId": "idx_us_gspc",
+    "Code": "LB",
+    "Exchange": "US",
+    "Name": "L Brands, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Apparel Retail"
+}, {
+    "id": "5e77a89055063157c132be3c",
+    "SravzId": "idx_us_gspc",
+    "Code": "FMC",
+    "Exchange": "US",
+    "Name": "FMC Corporation",
+    "Sector": "Basic Materials",
+    "Industry": "Agricultural Inputs"
+}, {
+    "id": "5e77a89055063157c132be41",
+    "SravzId": "idx_us_gspc",
+    "Code": "RCL",
+    "Exchange": "US",
+    "Name": "Royal Caribbean Group",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Travel Services"
+}, {
+    "id": "5e77a89055063157c132be47",
+    "SravzId": "idx_us_gspc",
+    "Code": "WAT",
+    "Exchange": "US",
+    "Name": "Waters Corporation",
+    "Sector": "Healthcare",
+    "Industry": "Diagnostics \u0026 Research"
+}, {
+    "id": "5e77a89055063157c132be4b",
+    "SravzId": "idx_us_gspc",
+    "Code": "PPL",
+    "Exchange": "US",
+    "Name": "PPL Corporation",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89055063157c132be50",
+    "SravzId": "idx_us_gspc",
+    "Code": "FITB",
+    "Exchange": "US",
+    "Name": "Fifth Third Bancorp",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89055063157c132be56",
+    "SravzId": "idx_us_gspc",
+    "Code": "DISH",
+    "Exchange": "US",
+    "Name": "DISH Network Corporation",
+    "Sector": "Communication Services",
+    "Industry": "Entertainment"
+}, {
+    "id": "5e77a89055063157c132be5b",
+    "SravzId": "idx_us_gspc",
+    "Code": "SNPS",
+    "Exchange": "US",
+    "Name": "Synopsys, Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Infrastructure"
+}, {
+    "id": "5e77a89055063157c132be60",
+    "SravzId": "idx_us_gspc",
+    "Code": "HON",
+    "Exchange": "US",
+    "Name": "Honeywell International Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89055063157c132be65",
+    "SravzId": "idx_us_gspc",
+    "Code": "EW",
+    "Exchange": "US",
+    "Name": "Edwards Lifesciences Corporation",
+    "Sector": "Healthcare",
+    "Industry": "Medical Devices"
+}, {
+    "id": "5e77a89055063157c132be6a",
+    "SravzId": "idx_us_gspc",
+    "Code": "APD",
+    "Exchange": "US",
+    "Name": "Air Products and Chemicals, Inc",
+    "Sector": "Basic Materials",
+    "Industry": "Chemicals"
+}, {
+    "id": "5e77a89055063157c132be6f",
+    "SravzId": "idx_us_gspc",
+    "Code": "MCD",
+    "Exchange": "US",
+    "Name": "McDonald's Corporation",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Restaurants"
+}, {
+    "id": "5e77a89055063157c132be74",
+    "SravzId": "idx_us_gspc",
+    "Code": "MYL",
+    "Exchange": "US",
+    "Name": "Mylan N.V",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers—Specialty \u0026 Generic"
+}, {
+    "id": "5e77a89055063157c132be79",
+    "SravzId": "idx_us_gspc",
+    "Code": "HRB",
+    "Exchange": "US",
+    "Name": "H\u0026R Block, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Personal Services"
+}, {
+    "id": "5e77a89055063157c132be7e",
+    "SravzId": "idx_us_gspc",
+    "Code": "NTAP",
+    "Exchange": "US",
+    "Name": "NetApp, Inc",
+    "Sector": "Technology",
+    "Industry": "Computer Hardware"
+}, {
+    "id": "5e77a89055063157c132be84",
+    "SravzId": "idx_us_gspc",
+    "Code": "CERN",
+    "Exchange": "US",
+    "Name": "Cerner Corporation",
+    "Sector": "Healthcare",
+    "Industry": "Health Information Services"
+}, {
+    "id": "5e77a89055063157c132be8a",
+    "SravzId": "idx_us_gspc",
+    "Code": "KO",
+    "Exchange": "US",
+    "Name": "The Coca-Cola Company",
+    "Sector": "Consumer Defensive",
+    "Industry": "Beverages-Non-Alcoholic"
+}, {
+    "id": "5e77a89055063157c132be8f",
+    "SravzId": "idx_us_gspc",
+    "Code": "GS",
+    "Exchange": "US",
+    "Name": "The Goldman Sachs Group, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Capital Markets"
+}, {
+    "id": "5e77a89055063157c132be94",
+    "SravzId": "idx_us_gspc",
+    "Code": "AJG",
+    "Exchange": "US",
+    "Name": "Arthur J. Gallagher \u0026 Co",
+    "Sector": "Financial Services",
+    "Industry": "Insurance Brokers"
+}, {
+    "id": "5e77a89055063157c132be99",
+    "SravzId": "idx_us_gspc",
+    "Code": "NKE",
+    "Exchange": "US",
+    "Name": "NIKE, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Footwear \u0026 Accessories"
+}, {
+    "id": "5e77a89055063157c132be9e",
+    "SravzId": "idx_us_gspc",
+    "Code": "KMB",
+    "Exchange": "US",
+    "Name": "Kimberly-Clark Corporation",
+    "Sector": "Consumer Defensive",
+    "Industry": "Household \u0026 Personal Products"
+}, {
+    "id": "5e77a89055063157c132bea3",
+    "SravzId": "idx_us_gspc",
+    "Code": "ROL",
+    "Exchange": "US",
+    "Name": "Rollins, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Personal Services"
+}, {
+    "id": "5e77a89055063157c132bea8",
+    "SravzId": "idx_us_gspc",
+    "Code": "HES",
+    "Exchange": "US",
+    "Name": "Hess Corporation",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas E\u0026P"
+}, {
+    "id": "5e77a89055063157c132bead",
+    "SravzId": "idx_us_gspc",
+    "Code": "IT",
+    "Exchange": "US",
+    "Name": "Gartner, Inc",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a89055063157c132beb2",
+    "SravzId": "idx_us_gspc",
+    "Code": "INFO",
+    "Exchange": "US",
+    "Name": "IHS Markit Ltd",
+    "Sector": "Industrials",
+    "Industry": "Consulting Services"
+}, {
+    "id": "5e77a89055063157c132beb7",
+    "SravzId": "idx_us_gspc",
+    "Code": "CTSH",
+    "Exchange": "US",
+    "Name": "Cognizant Technology Solutions Corporation",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a89055063157c132bebc",
+    "SravzId": "idx_us_gspc",
+    "Code": "WEC",
+    "Exchange": "US",
+    "Name": "WEC Energy Group, Inc",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89055063157c132bec1",
+    "SravzId": "idx_us_gspc",
+    "Code": "FTI",
+    "Exchange": "US",
+    "Name": "TechnipFMC plc",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Equipment \u0026 Services"
+}, {
+    "id": "5e77a89055063157c132bec6",
+    "SravzId": "idx_us_gspc",
+    "Code": "PG",
+    "Exchange": "US",
+    "Name": "The Procter \u0026 Gamble Company",
+    "Sector": "Consumer Defensive",
+    "Industry": "Household \u0026 Personal Products"
+}, {
+    "id": "5e77a89055063157c132becb",
+    "SravzId": "idx_us_gspc",
+    "Code": "SNA",
+    "Exchange": "US",
+    "Name": "Snap-on Incorporated",
+    "Sector": "Industrials",
+    "Industry": "Tools \u0026 Accessories"
+}, {
+    "id": "5e77a89055063157c132bed0",
+    "SravzId": "idx_us_gspc",
+    "Code": "CMA",
+    "Exchange": "US",
+    "Name": "Comerica Incorporated",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89055063157c132bed5",
+    "SravzId": "idx_us_gspc",
+    "Code": "COTY",
+    "Exchange": "US",
+    "Name": "Coty Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Household \u0026 Personal Products"
+}, {
+    "id": "5e77a89055063157c132beda",
+    "SravzId": "idx_us_gspc",
+    "Code": "IRM",
+    "Exchange": "US",
+    "Name": "Iron Mountain Incorporated",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Specialty"
+}, {
+    "id": "5e77a89055063157c132bedd",
+    "SravzId": "idx_us_gspc",
+    "Code": "EOG",
+    "Exchange": "US",
+    "Name": "EOG Resources, Inc",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas E\u0026P"
+}, {
+    "id": "5e77a89055063157c132bedf",
+    "SravzId": "idx_us_gspc",
+    "Code": "FCX",
+    "Exchange": "US",
+    "Name": "Freeport-McMoRan Inc",
+    "Sector": "Basic Materials",
+    "Industry": "Copper"
+}, {
+    "id": "5e77a89055063157c132bee3",
+    "SravzId": "idx_us_gspc",
+    "Code": "TXN",
+    "Exchange": "US",
+    "Name": "Texas Instruments Incorporated",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89055063157c132bee8",
+    "SravzId": "idx_us_gspc",
+    "Code": "AON",
+    "Exchange": "US",
+    "Name": "Aon plc",
+    "Sector": "Financial Services",
+    "Industry": "Insurance Brokers"
+}, {
+    "id": "5e77a89055063157c132beed",
+    "SravzId": "idx_us_gspc",
+    "Code": "CHRW",
+    "Exchange": "US",
+    "Name": "C.H. Robinson Worldwide, Inc",
+    "Sector": "Industrials",
+    "Industry": "Integrated Freight \u0026 Logistics"
+}, {
+    "id": "5e77a89055063157c132bef3",
+    "SravzId": "idx_us_gspc",
+    "Code": "GPN",
+    "Exchange": "US",
+    "Name": "Global Payments Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Business Services"
+}, {
+    "id": "5e77a89055063157c132bef8",
+    "SravzId": "idx_us_gspc",
+    "Code": "CMG",
+    "Exchange": "US",
+    "Name": "Chipotle Mexican Grill, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Restaurants"
+}, {
+    "id": "5e77a89055063157c132befd",
+    "SravzId": "idx_us_gspc",
+    "Code": "TEL",
+    "Exchange": "US",
+    "Name": "TE Connectivity Ltd",
+    "Sector": "Technology",
+    "Industry": "Electronic Components"
+}, {
+    "id": "5e77a89055063157c132bf02",
+    "SravzId": "idx_us_gspc",
+    "Code": "CXO",
+    "Exchange": "US",
+    "Name": "Concho Resources Inc",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas E\u0026P"
+}, {
+    "id": "5e77a89055063157c132bf07",
+    "SravzId": "idx_us_gspc",
+    "Code": "MSCI",
+    "Exchange": "US",
+    "Name": "MSCI Inc",
+    "Sector": "Financial Services",
+    "Industry": "Financial Data \u0026 Stock Exchanges"
+}, {
+    "id": "5e77a89055063157c132bf0d",
+    "SravzId": "idx_us_gspc",
+    "Code": "DRE",
+    "Exchange": "US",
+    "Name": "Duke Realty Corporation",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Industrial"
+}, {
+    "id": "5e77a89055063157c132bf11",
+    "SravzId": "idx_us_gspc",
+    "Code": "KSS",
+    "Exchange": "US",
+    "Name": "Kohl's Corporation",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Department Stores"
+}, {
+    "id": "5e77a89055063157c132bf16",
+    "SravzId": "idx_us_gspc",
+    "Code": "CTXS",
+    "Exchange": "US",
+    "Name": "Citrix Systems, Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Application"
+}, {
+    "id": "5e77a89055063157c132bf1b",
+    "SravzId": "idx_us_gspc",
+    "Code": "CF",
+    "Exchange": "US",
+    "Name": "CF Industries Holdings, Inc",
+    "Sector": "Basic Materials",
+    "Industry": "Agricultural Inputs"
+}, {
+    "id": "5e77a89055063157c132bf20",
+    "SravzId": "idx_us_gspc",
+    "Code": "TJX",
+    "Exchange": "US",
+    "Name": "The TJX Companies, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Apparel Retail"
+}, {
+    "id": "5e77a89055063157c132bf27",
+    "SravzId": "idx_us_gspc",
+    "Code": "WRB",
+    "Exchange": "US",
+    "Name": "W. R. Berkley Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Property \u0026 Casualty"
+}, {
+    "id": "5e77a89055063157c132bf2c",
+    "SravzId": "idx_us_gspc",
+    "Code": "DLTR",
+    "Exchange": "US",
+    "Name": "Dollar Tree, Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Discount Stores"
+}, {
+    "id": "5e77a89055063157c132bf31",
+    "SravzId": "idx_us_gspc",
+    "Code": "DRI",
+    "Exchange": "US",
+    "Name": "Darden Restaurants, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Restaurants"
+}, {
+    "id": "5e77a89055063157c132bf36",
+    "SravzId": "idx_us_gspc",
+    "Code": "JPM",
+    "Exchange": "US",
+    "Name": "JPMorgan Chase \u0026 Co",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Diversified"
+}, {
+    "id": "5e77a89055063157c132bf3b",
+    "SravzId": "idx_us_gspc",
+    "Code": "XLNX",
+    "Exchange": "US",
+    "Name": "Xilinx, Inc",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89055063157c132bf40",
+    "SravzId": "idx_us_gspc",
+    "Code": "CB",
+    "Exchange": "US",
+    "Name": "Chubb Limited",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Property \u0026 Casualty"
+}, {
+    "id": "5e77a89055063157c132bf45",
+    "SravzId": "idx_us_gspc",
+    "Code": "KEY",
+    "Exchange": "US",
+    "Name": "KeyCorp",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89055063157c132bf49",
+    "SravzId": "idx_us_gspc",
+    "Code": "GD",
+    "Exchange": "US",
+    "Name": "General Dynamics Corporation",
+    "Sector": "Industrials",
+    "Industry": "Aerospace \u0026 Defense"
+}, {
+    "id": "5e77a89055063157c132bf4f",
+    "SravzId": "idx_us_gspc",
+    "Code": "TGT",
+    "Exchange": "US",
+    "Name": "Target Corporation",
+    "Sector": "Consumer Defensive",
+    "Industry": "Discount Stores"
+}, {
+    "id": "5e77a89055063157c132bf54",
+    "SravzId": "idx_us_gspc",
+    "Code": "EQR",
+    "Exchange": "US",
+    "Name": "Equity Residential",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Residential"
+}, {
+    "id": "5e77a89055063157c132bf59",
+    "SravzId": "idx_us_gspc",
+    "Code": "RJF",
+    "Exchange": "US",
+    "Name": "Raymond James Financial, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Capital Markets"
+}, {
+    "id": "5e77a89055063157c132bf5e",
+    "SravzId": "idx_us_gspc",
+    "Code": "SWKS",
+    "Exchange": "US",
+    "Name": "Skyworks Solutions, Inc",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89055063157c132bf62",
+    "SravzId": "idx_us_gspc",
+    "Code": "HBI",
+    "Exchange": "US",
+    "Name": "Hanesbrands Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Apparel Manufacturing"
+}, {
+    "id": "5e77a89055063157c132bf68",
+    "SravzId": "idx_us_gspc",
+    "Code": "MS",
+    "Exchange": "US",
+    "Name": "Morgan Stanley",
+    "Sector": "Financial Services",
+    "Industry": "Capital Markets"
+}, {
+    "id": "5e77a89055063157c132bf6d",
+    "SravzId": "idx_us_gspc",
+    "Code": "AAL",
+    "Exchange": "US",
+    "Name": "American Airlines Group Inc",
+    "Sector": "Industrials",
+    "Industry": "Airlines"
+}, {
+    "id": "5e77a89055063157c132bf71",
+    "SravzId": "idx_us_gspc",
+    "Code": "RF",
+    "Exchange": "US",
+    "Name": "Regions Financial Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89055063157c132bf77",
+    "SravzId": "idx_us_gspc",
+    "Code": "FBHS",
+    "Exchange": "US",
+    "Name": "Fortune Brands Home \u0026 Security, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Furnishings, Fixtures \u0026 Appliances"
+}, {
+    "id": "5e77a89055063157c132bf7c",
+    "SravzId": "idx_us_gspc",
+    "Code": "AEP",
+    "Exchange": "US",
+    "Name": "American Electric Power Company, Inc",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89055063157c132bf81",
+    "SravzId": "idx_us_gspc",
+    "Code": "CE",
+    "Exchange": "US",
+    "Name": "Celanese Corporation",
+    "Sector": "Basic Materials",
+    "Industry": "Chemicals"
+}, {
+    "id": "5e77a89055063157c132bf86",
+    "SravzId": "idx_us_gspc",
+    "Code": "AMAT",
+    "Exchange": "US",
+    "Name": "Applied Materials, Inc",
+    "Sector": "Technology",
+    "Industry": "Semiconductor Equipment \u0026 Materials"
+}, {
+    "id": "5e77a89055063157c132bf8b",
+    "SravzId": "idx_us_gspc",
+    "Code": "CCI",
+    "Exchange": "US",
+    "Name": "Crown Castle International Corp. (REIT)",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Specialty"
+}, {
+    "id": "5e77a89055063157c132bf90",
+    "SravzId": "idx_us_gspc",
+    "Code": "VTR",
+    "Exchange": "US",
+    "Name": "Ventas, Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Healthcare Facilities"
+}, {
+    "id": "5e77a89055063157c132bf95",
+    "SravzId": "idx_us_gspc",
+    "Code": "PPG",
+    "Exchange": "US",
+    "Name": "PPG Industries, Inc",
+    "Sector": "Basic Materials",
+    "Industry": "Specialty Chemicals"
+}, {
+    "id": "5e77a89055063157c132bf99",
+    "SravzId": "idx_us_gspc",
+    "Code": "INTU",
+    "Exchange": "US",
+    "Name": "Intuit Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Application"
+}, {
+    "id": "5e77a89055063157c132bf9e",
+    "SravzId": "idx_us_gspc",
+    "Code": "IPG",
+    "Exchange": "US",
+    "Name": "The Interpublic Group of Companies, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Advertising Agencies"
+}, {
+    "id": "5e77a89055063157c132bfa2",
+    "SravzId": "idx_us_gspc",
+    "Code": "A",
+    "Exchange": "US",
+    "Name": "Agilent Technologies, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Diagnostics \u0026 Research"
+}, {
+    "id": "5e77a89055063157c132bfa8",
+    "SravzId": "idx_us_gspc",
+    "Code": "IFF",
+    "Exchange": "US",
+    "Name": "International Flavors \u0026 Fragrances Inc",
+    "Sector": "Basic Materials",
+    "Industry": "Specialty Chemicals"
+}, {
+    "id": "5e77a89055063157c132bfad",
+    "SravzId": "idx_us_gspc",
+    "Code": "LNC",
+    "Exchange": "US",
+    "Name": "Lincoln National Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Life"
+}, {
+    "id": "5e77a89055063157c132bfb1",
+    "SravzId": "idx_us_gspc",
+    "Code": "EL",
+    "Exchange": "US",
+    "Name": "The Estée Lauder Companies Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Household \u0026 Personal Products"
+}, {
+    "id": "5e77a89055063157c132bfb7",
+    "SravzId": "idx_us_gspc",
+    "Code": "CNP",
+    "Exchange": "US",
+    "Name": "CenterPoint Energy, Inc",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Gas"
+}, {
+    "id": "5e77a89055063157c132bfbc",
+    "SravzId": "idx_us_gspc",
+    "Code": "AVY",
+    "Exchange": "US",
+    "Name": "Avery Dennison Corporation",
+    "Sector": "Industrials",
+    "Industry": "Business Equipment \u0026 Supplies"
+}, {
+    "id": "5e77a89055063157c132bfc0",
+    "SravzId": "idx_us_gspc",
+    "Code": "UNP",
+    "Exchange": "US",
+    "Name": "Union Pacific Corporation",
+    "Sector": "Industrials",
+    "Industry": "Railroads"
+}, {
+    "id": "5e77a89055063157c132bfc6",
+    "SravzId": "idx_us_gspc",
+    "Code": "JWN",
+    "Exchange": "US",
+    "Name": "Nordstrom, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Department Stores"
+}, {
+    "id": "5e77a89055063157c132bfcc",
+    "SravzId": "idx_us_gspc",
+    "Code": "CTL",
+    "Exchange": "US",
+    "Name": "CenturyLink, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Telecom Services"
+}, {
+    "id": "5e77a89055063157c132bfcf",
+    "SravzId": "idx_us_gspc",
+    "Code": "MAS",
+    "Exchange": "US",
+    "Name": "Masco Corporation",
+    "Sector": "Industrials",
+    "Industry": "Building Products \u0026 Equipment"
+}, {
+    "id": "5e77a89055063157c132bfd6",
+    "SravzId": "idx_us_gspc",
+    "Code": "PSX",
+    "Exchange": "US",
+    "Name": "Phillips 66",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Refining \u0026 Marketing"
+}, {
+    "id": "5e77a89055063157c132bfdb",
+    "SravzId": "idx_us_gspc",
+    "Code": "GLW",
+    "Exchange": "US",
+    "Name": "Corning Incorporated",
+    "Sector": "Technology",
+    "Industry": "Electronic Components"
+}, {
+    "id": "5e77a89055063157c132bfe0",
+    "SravzId": "idx_us_gspc",
+    "Code": "CME",
+    "Exchange": "US",
+    "Name": "CME Group Inc",
+    "Sector": "Financial Services",
+    "Industry": "Financial Data \u0026 Stock Exchanges"
+}, {
+    "id": "5e77a89055063157c132bfe5",
+    "SravzId": "idx_us_gspc",
+    "Code": "NCLH",
+    "Exchange": "US",
+    "Name": "Norwegian Cruise Line Holdings Ltd",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Travel Services"
+}, {
+    "id": "5e77a89055063157c132bfea",
+    "SravzId": "idx_us_gspc",
+    "Code": "SBUX",
+    "Exchange": "US",
+    "Name": "Starbucks Corporation",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Restaurants"
+}, {
+    "id": "5e77a89055063157c132bfef",
+    "SravzId": "idx_us_gspc",
+    "Code": "STE",
+    "Exchange": "US",
+    "Name": "STERIS plc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Instruments \u0026 Supplies"
+}, {
+    "id": "5e77a89055063157c132bff3",
+    "SravzId": "idx_us_gspc",
+    "Code": "CAG",
+    "Exchange": "US",
+    "Name": "Conagra Brands, Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Packaged Foods"
+}, {
+    "id": "5e77a89055063157c132bff9",
+    "SravzId": "idx_us_gspc",
+    "Code": "NWL",
+    "Exchange": "US",
+    "Name": "Newell Brands Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Household \u0026 Personal Products"
+}, {
+    "id": "5e77a89055063157c132bffe",
+    "SravzId": "idx_us_gspc",
+    "Code": "CLX",
+    "Exchange": "US",
+    "Name": "The Clorox Company",
+    "Sector": "Consumer Defensive",
+    "Industry": "Household \u0026 Personal Products"
+}, {
+    "id": "5e77a89055063157c132c002",
+    "SravzId": "idx_us_gspc",
+    "Code": "UHS",
+    "Exchange": "US",
+    "Name": "Universal Health Services, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Care Facilities"
+}, {
+    "id": "5e77a89055063157c132c008",
+    "SravzId": "idx_us_gspc",
+    "Code": "ILMN",
+    "Exchange": "US",
+    "Name": "Illumina, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Diagnostics \u0026 Research"
+}, {
+    "id": "5e77a89055063157c132c00d",
+    "SravzId": "idx_us_gspc",
+    "Code": "ODFL",
+    "Exchange": "US",
+    "Name": "Old Dominion Freight Line, Inc",
+    "Sector": "Industrials",
+    "Industry": "Trucking"
+}, {
+    "id": "5e77a89055063157c132c012",
+    "SravzId": "idx_us_gspc",
+    "Code": "LUV",
+    "Exchange": "US",
+    "Name": "Southwest Airlines Co",
+    "Sector": "Industrials",
+    "Industry": "Airlines"
+}, {
+    "id": "5e77a89055063157c132c017",
+    "SravzId": "idx_us_gspc",
+    "Code": "ZBRA",
+    "Exchange": "US",
+    "Name": "Zebra Technologies Corporation",
+    "Sector": "Technology",
+    "Industry": "Communication Equipment"
+}, {
+    "id": "5e77a89055063157c132c01c",
+    "SravzId": "idx_us_gspc",
+    "Code": "ROST",
+    "Exchange": "US",
+    "Name": "Ross Stores, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Apparel Retail"
+}, {
+    "id": "5e77a89055063157c132c021",
+    "SravzId": "idx_us_gspc",
+    "Code": "FFIV",
+    "Exchange": "US",
+    "Name": "F5 Networks, Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Infrastructure"
+}, {
+    "id": "5e77a89055063157c132c023",
+    "SravzId": "idx_us_gspc",
+    "Code": "HRL",
+    "Exchange": "US",
+    "Name": "Hormel Foods Corporation",
+    "Sector": "Consumer Defensive",
+    "Industry": "Packaged Foods"
+}, {
+    "id": "5e77a89055063157c132c029",
+    "SravzId": "idx_us_gspc",
+    "Code": "TSCO",
+    "Exchange": "US",
+    "Name": "Tractor Supply Company",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Specialty Retail"
+}, {
+    "id": "5e77a89055063157c132c02e",
+    "SravzId": "idx_us_gspc",
+    "Code": "COP",
+    "Exchange": "US",
+    "Name": "ConocoPhillips",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas E\u0026P"
+}, {
+    "id": "5e77a89055063157c132c032",
+    "SravzId": "idx_us_gspc",
+    "Code": "CSCO",
+    "Exchange": "US",
+    "Name": "Cisco Systems, Inc",
+    "Sector": "Technology",
+    "Industry": "Communication Equipment"
+}, {
+    "id": "5e77a89055063157c132c038",
+    "SravzId": "idx_us_gspc",
+    "Code": "AEE",
+    "Exchange": "US",
+    "Name": "Ameren Corporation",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89055063157c132c03d",
+    "SravzId": "idx_us_gspc",
+    "Code": "CL",
+    "Exchange": "US",
+    "Name": "Colgate-Palmolive Company",
+    "Sector": "Consumer Defensive",
+    "Industry": "Household \u0026 Personal Products"
+}, {
+    "id": "5e77a89055063157c132c041",
+    "SravzId": "idx_us_gspc",
+    "Code": "ALXN",
+    "Exchange": "US",
+    "Name": "Alexion Pharmaceuticals, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Biotechnology"
+}, {
+    "id": "5e77a89055063157c132c047",
+    "SravzId": "idx_us_gspc",
+    "Code": "DGX",
+    "Exchange": "US",
+    "Name": "Quest Diagnostics Incorporated",
+    "Sector": "Healthcare",
+    "Industry": "Diagnostics \u0026 Research"
+}, {
+    "id": "5e77a89055063157c132c04c",
+    "SravzId": "idx_us_gspc",
+    "Code": "AME",
+    "Exchange": "US",
+    "Name": "AMETEK, Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89055063157c132c052",
+    "SravzId": "idx_us_gspc",
+    "Code": "RTN",
+    "Exchange": "US",
+    "Name": "Raytheon Company",
+    "Sector": "Other",
+    "Industry": "Other"
+}, {
+    "id": "5e77a89055063157c132c057",
+    "SravzId": "idx_us_gspc",
+    "Code": "AOS",
+    "Exchange": "US",
+    "Name": "A. O. Smith Corporation",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89055063157c132c05c",
+    "SravzId": "idx_us_gspc",
+    "Code": "BIIB",
+    "Exchange": "US",
+    "Name": "Biogen Inc",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-General"
+}, {
+    "id": "5e77a89055063157c132c061",
+    "SravzId": "idx_us_gspc",
+    "Code": "MXIM",
+    "Exchange": "US",
+    "Name": "Maxim Integrated Products, Inc",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89055063157c132c066",
+    "SravzId": "idx_us_gspc",
+    "Code": "MSI",
+    "Exchange": "US",
+    "Name": "Motorola Solutions, Inc",
+    "Sector": "Technology",
+    "Industry": "Communication Equipment"
+}, {
+    "id": "5e77a89055063157c132c06b",
+    "SravzId": "idx_us_gspc",
+    "Code": "ESS",
+    "Exchange": "US",
+    "Name": "Essex Property Trust, Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Residential"
+}, {
+    "id": "5e77a89055063157c132c06f",
+    "SravzId": "idx_us_gspc",
+    "Code": "HIG",
+    "Exchange": "US",
+    "Name": "The Hartford Financial Services Group, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Diversified"
+}, {
+    "id": "5e77a89055063157c132c074",
+    "SravzId": "idx_us_gspc",
+    "Code": "HFC",
+    "Exchange": "US",
+    "Name": "HollyFrontier Corporation",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Refining \u0026 Marketing"
+}, {
+    "id": "5e77a89055063157c132c078",
+    "SravzId": "idx_us_gspc",
+    "Code": "CDNS",
+    "Exchange": "US",
+    "Name": "Cadence Design Systems, Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Application"
+}, {
+    "id": "5e77a89055063157c132c080",
+    "SravzId": "idx_us_gspc",
+    "Code": "EQIX",
+    "Exchange": "US",
+    "Name": "Equinix, Inc. (REIT)",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Specialty"
+}, {
+    "id": "5e77a89055063157c132c085",
+    "SravzId": "idx_us_gspc",
+    "Code": "EXR",
+    "Exchange": "US",
+    "Name": "Extra Space Storage Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Industrial"
+}, {
+    "id": "5e77a89055063157c132c08a",
+    "SravzId": "idx_us_gspc",
+    "Code": "CVX",
+    "Exchange": "US",
+    "Name": "Chevron Corporation",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Integrated"
+}, {
+    "id": "5e77a89055063157c132c08f",
+    "SravzId": "idx_us_gspc",
+    "Code": "HUM",
+    "Exchange": "US",
+    "Name": "Humana Inc",
+    "Sector": "Healthcare",
+    "Industry": "Healthcare Plans"
+}, {
+    "id": "5e77a89055063157c132c094",
+    "SravzId": "idx_us_gspc",
+    "Code": "BBY",
+    "Exchange": "US",
+    "Name": "Best Buy Co., Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Specialty Retail"
+}, {
+    "id": "5e77a89055063157c132c099",
+    "SravzId": "idx_us_gspc",
+    "Code": "PLD",
+    "Exchange": "US",
+    "Name": "Prologis, Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Industrial"
+}, {
+    "id": "5e77a89055063157c132c09e",
+    "SravzId": "idx_us_gspc",
+    "Code": "OXY",
+    "Exchange": "US",
+    "Name": "Occidental Petroleum Corporation",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas E\u0026P"
+}, {
+    "id": "5e77a89055063157c132c0a3",
+    "SravzId": "idx_us_gspc",
+    "Code": "T",
+    "Exchange": "US",
+    "Name": "AT\u0026T Inc",
+    "Sector": "Communication Services",
+    "Industry": "Telecom Services"
+}, {
+    "id": "5e77a89055063157c132c0a8",
+    "SravzId": "idx_us_gspc",
+    "Code": "KLAC",
+    "Exchange": "US",
+    "Name": "KLA Corporation",
+    "Sector": "Technology",
+    "Industry": "Semiconductor Equipment \u0026 Materials"
+}, {
+    "id": "5e77a89055063157c132c0ad",
+    "SravzId": "idx_us_gspc",
+    "Code": "LLY",
+    "Exchange": "US",
+    "Name": "Eli Lilly and Company",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-General"
+}, {
+    "id": "5e77a89055063157c132c0b2",
+    "SravzId": "idx_us_gspc",
+    "Code": "APH",
+    "Exchange": "US",
+    "Name": "Amphenol Corporation",
+    "Sector": "Technology",
+    "Industry": "Electronic Components"
+}, {
+    "id": "5e77a89055063157c132c0b7",
+    "SravzId": "idx_us_gspc",
+    "Code": "PRU",
+    "Exchange": "US",
+    "Name": "Prudential Financial, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Life"
+}, {
+    "id": "5e77a89055063157c132c0bc",
+    "SravzId": "idx_us_gspc",
+    "Code": "ATVI",
+    "Exchange": "US",
+    "Name": "Activision Blizzard, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Electronic Gaming \u0026 Multimedia"
+}, {
+    "id": "5e77a89055063157c132c0c1",
+    "SravzId": "idx_us_gspc",
+    "Code": "VFC",
+    "Exchange": "US",
+    "Name": "V.F. Corporation",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Apparel Manufacturing"
+}, {
+    "id": "5e77a89055063157c132c0c6",
+    "SravzId": "idx_us_gspc",
+    "Code": "EMN",
+    "Exchange": "US",
+    "Name": "Eastman Chemical Company",
+    "Sector": "Basic Materials",
+    "Industry": "Chemicals"
+}, {
+    "id": "5e77a89055063157c132c0cb",
+    "SravzId": "idx_us_gspc",
+    "Code": "IP",
+    "Exchange": "US",
+    "Name": "International Paper Company",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Packaging \u0026 Containers"
+}, {
+    "id": "5e77a89055063157c132c0d0",
+    "SravzId": "idx_us_gspc",
+    "Code": "SPG",
+    "Exchange": "US",
+    "Name": "Simon Property Group, Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Retail"
+}, {
+    "id": "5e77a89055063157c132c0d5",
+    "SravzId": "idx_us_gspc",
+    "Code": "COF",
+    "Exchange": "US",
+    "Name": "Capital One Financial Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Credit Services"
+}, {
+    "id": "5e77a89055063157c132c0da",
+    "SravzId": "idx_us_gspc",
+    "Code": "CHD",
+    "Exchange": "US",
+    "Name": "Church \u0026 Dwight Co., Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Household \u0026 Personal Products"
+}, {
+    "id": "5e77a89055063157c132c0df",
+    "SravzId": "idx_us_gspc",
+    "Code": "BLL",
+    "Exchange": "US",
+    "Name": "Ball Corporation",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Packaging \u0026 Containers"
+}, {
+    "id": "5e77a89055063157c132c0e4",
+    "SravzId": "idx_us_gspc",
+    "Code": "AIV",
+    "Exchange": "US",
+    "Name": "Apartment Investment and Management Company",
+    "Sector": "Real Estate",
+    "Industry": "REIT—Residential"
+}, {
+    "id": "5e77a89055063157c132c0e9",
+    "SravzId": "idx_us_gspc",
+    "Code": "M",
+    "Exchange": "US",
+    "Name": "Macy's, Inc",
+    "Sector": "Other",
+    "Industry": "Other"
+}, {
+    "id": "5e77a89055063157c132c0ee",
+    "SravzId": "idx_us_gspc",
+    "Code": "PCAR",
+    "Exchange": "US",
+    "Name": "PACCAR Inc",
+    "Sector": "Industrials",
+    "Industry": "Farm \u0026 Heavy Construction Machinery"
+}, {
+    "id": "5e77a89055063157c132c0f3",
+    "SravzId": "idx_us_gspc",
+    "Code": "UA",
+    "Exchange": "US",
+    "Name": "Under Armour, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Apparel Manufacturing"
+}, {
+    "id": "5e77a89055063157c132c0f8",
+    "SravzId": "idx_us_gspc",
+    "Code": "ORCL",
+    "Exchange": "US",
+    "Name": "Oracle Corporation",
+    "Sector": "Technology",
+    "Industry": "Software-Infrastructure"
+}, {
+    "id": "5e77a89055063157c132c0fd",
+    "SravzId": "idx_us_gspc",
+    "Code": "FRT",
+    "Exchange": "US",
+    "Name": "Federal Realty Investment Trust",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Retail"
+}, {
+    "id": "5e77a89055063157c132c102",
+    "SravzId": "idx_us_gspc",
+    "Code": "PNW",
+    "Exchange": "US",
+    "Name": "Pinnacle West Capital Corporation",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89055063157c132c107",
+    "SravzId": "idx_us_gspc",
+    "Code": "RL",
+    "Exchange": "US",
+    "Name": "Ralph Lauren Corporation",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Apparel Manufacturing"
+}, {
+    "id": "5e77a89055063157c132c10c",
+    "SravzId": "idx_us_gspc",
+    "Code": "HCA",
+    "Exchange": "US",
+    "Name": "HCA Healthcare, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Care Facilities"
+}, {
+    "id": "5e77a89055063157c132c10f",
+    "SravzId": "idx_us_gspc",
+    "Code": "FIS",
+    "Exchange": "US",
+    "Name": "Fidelity National Information Services, Inc",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a89055063157c132c116",
+    "SravzId": "idx_us_gspc",
+    "Code": "ZTS",
+    "Exchange": "US",
+    "Name": "Zoetis Inc",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-Specialty \u0026 Generic"
+}, {
+    "id": "5e77a89055063157c132c11b",
+    "SravzId": "idx_us_gspc",
+    "Code": "HOG",
+    "Exchange": "US",
+    "Name": "Harley-Davidson, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Recreational Vehicles"
+}, {
+    "id": "5e77a89055063157c132c120",
+    "SravzId": "idx_us_gspc",
+    "Code": "CDW",
+    "Exchange": "US",
+    "Name": "CDW Corporation",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a89055063157c132c126",
+    "SravzId": "idx_us_gspc",
+    "Code": "URI",
+    "Exchange": "US",
+    "Name": "United Rentals, Inc",
+    "Sector": "Industrials",
+    "Industry": "Rental \u0026 Leasing Services"
+}, {
+    "id": "5e77a89055063157c132c12b",
+    "SravzId": "idx_us_gspc",
+    "Code": "COST",
+    "Exchange": "US",
+    "Name": "Costco Wholesale Corporation",
+    "Sector": "Consumer Defensive",
+    "Industry": "Discount Stores"
+}, {
+    "id": "5e77a89055063157c132c130",
+    "SravzId": "idx_us_gspc",
+    "Code": "AAPL",
+    "Exchange": "US",
+    "Name": "Apple Inc",
+    "Sector": "Technology",
+    "Industry": "Consumer Electronics"
+}, {
+    "id": "5e77a89055063157c132c135",
+    "SravzId": "idx_us_gspc",
+    "Code": "BA",
+    "Exchange": "US",
+    "Name": "The Boeing Company",
+    "Sector": "Industrials",
+    "Industry": "Aerospace \u0026 Defense"
+}, {
+    "id": "5e77a89055063157c132c13a",
+    "SravzId": "idx_us_gspc",
+    "Code": "DUK",
+    "Exchange": "US",
+    "Name": "Duke Energy Corporation",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89055063157c132c13f",
+    "SravzId": "idx_us_gspc",
+    "Code": "BDX",
+    "Exchange": "US",
+    "Name": "Becton, Dickinson and Company",
+    "Sector": "Healthcare",
+    "Industry": "Medical Instruments \u0026 Supplies"
+}, {
+    "id": "5e77a89055063157c132c144",
+    "SravzId": "idx_us_gspc",
+    "Code": "SLG",
+    "Exchange": "US",
+    "Name": "SL Green Realty Corp",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Office"
+}, {
+    "id": "5e77a89055063157c132c149",
+    "SravzId": "idx_us_gspc",
+    "Code": "PNR",
+    "Exchange": "US",
+    "Name": "Pentair plc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89055063157c132c14e",
+    "SravzId": "idx_us_gspc",
+    "Code": "K",
+    "Exchange": "US",
+    "Name": "Kellogg Company",
+    "Sector": "Consumer Defensive",
+    "Industry": "Packaged Foods"
+}, {
+    "id": "5e77a89055063157c132c153",
+    "SravzId": "idx_us_gspc",
+    "Code": "PAYX",
+    "Exchange": "US",
+    "Name": "Paychex, Inc",
+    "Sector": "Industrials",
+    "Industry": "Staffing \u0026 Employment Services"
+}, {
+    "id": "5e77a89055063157c132c158",
+    "SravzId": "idx_us_gspc",
+    "Code": "CAH",
+    "Exchange": "US",
+    "Name": "Cardinal Health, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Distribution"
+}, {
+    "id": "5e77a89055063157c132c15d",
+    "SravzId": "idx_us_gspc",
+    "Code": "MKC",
+    "Exchange": "US",
+    "Name": "McCormick \u0026 Company, Incorporated",
+    "Sector": "Consumer Defensive",
+    "Industry": "Packaged Foods"
+}, {
+    "id": "5e77a89055063157c132c162",
+    "SravzId": "idx_us_gspc",
+    "Code": "FLIR",
+    "Exchange": "US",
+    "Name": "FLIR Systems, Inc",
+    "Sector": "Technology",
+    "Industry": "Scientific \u0026 Technical Instruments"
+}, {
+    "id": "5e77a89055063157c132c167",
+    "SravzId": "idx_us_gspc",
+    "Code": "PEG",
+    "Exchange": "US",
+    "Name": "Public Service Enterprise Group Incorporated",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Diversified"
+}, {
+    "id": "5e77a89055063157c132c16b",
+    "SravzId": "idx_us_gspc",
+    "Code": "ALK",
+    "Exchange": "US",
+    "Name": "Alaska Air Group, Inc",
+    "Sector": "Industrials",
+    "Industry": "Airlines"
+}, {
+    "id": "5e77a89055063157c132c16e",
+    "SravzId": "idx_us_gspc",
+    "Code": "UDR",
+    "Exchange": "US",
+    "Name": "UDR, Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Residential"
+}, {
+    "id": "5e77a89055063157c132c173",
+    "SravzId": "idx_us_gspc",
+    "Code": "VNO",
+    "Exchange": "US",
+    "Name": "Vornado Realty Trust",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Office"
+}, {
+    "id": "5e77a89055063157c132c178",
+    "SravzId": "idx_us_gspc",
+    "Code": "MA",
+    "Exchange": "US",
+    "Name": "Mastercard Incorporated",
+    "Sector": "Financial Services",
+    "Industry": "Credit Services"
+}, {
+    "id": "5e77a89055063157c132c17d",
+    "SravzId": "idx_us_gspc",
+    "Code": "GOOGL",
+    "Exchange": "US",
+    "Name": "Alphabet Inc",
+    "Sector": "Communication Services",
+    "Industry": "Internet Content \u0026 Information"
+}, {
+    "id": "5e77a89055063157c132c182",
+    "SravzId": "idx_us_gspc",
+    "Code": "HOLX",
+    "Exchange": "US",
+    "Name": "Hologic, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Instruments \u0026 Supplies"
+}, {
+    "id": "5e77a89055063157c132c187",
+    "SravzId": "idx_us_gspc",
+    "Code": "LVS",
+    "Exchange": "US",
+    "Name": "Las Vegas Sands Corp",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Resorts \u0026 Casinos"
+}, {
+    "id": "5e77a89055063157c132c18c",
+    "SravzId": "idx_us_gspc",
+    "Code": "BAC",
+    "Exchange": "US",
+    "Name": "Bank of America Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Diversified"
+}, {
+    "id": "5e77a89055063157c132c192",
+    "SravzId": "idx_us_gspc",
+    "Code": "MO",
+    "Exchange": "US",
+    "Name": "Altria Group, Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Tobacco"
+}, {
+    "id": "5e77a89055063157c132c197",
+    "SravzId": "idx_us_gspc",
+    "Code": "KMI",
+    "Exchange": "US",
+    "Name": "Kinder Morgan, Inc",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Midstream"
+}, {
+    "id": "5e77a89055063157c132c19d",
+    "SravzId": "idx_us_gspc",
+    "Code": "FE",
+    "Exchange": "US",
+    "Name": "FirstEnergy Corp",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Diversified"
+}, {
+    "id": "5e77a89055063157c132c1a1",
+    "SravzId": "idx_us_gspc",
+    "Code": "HII",
+    "Exchange": "US",
+    "Name": "Huntington Ingalls Industries, Inc",
+    "Sector": "Industrials",
+    "Industry": "Aerospace \u0026 Defense"
+}, {
+    "id": "5e77a89055063157c132c1a7",
+    "SravzId": "idx_us_gspc",
+    "Code": "IPGP",
+    "Exchange": "US",
+    "Name": "IPG Photonics Corporation",
+    "Sector": "Technology",
+    "Industry": "Semiconductor Equipment \u0026 Materials"
+}, {
+    "id": "5e77a89055063157c132c1ac",
+    "SravzId": "idx_us_gspc",
+    "Code": "NSC",
+    "Exchange": "US",
+    "Name": "Norfolk Southern Corporation",
+    "Sector": "Industrials",
+    "Industry": "Railroads"
+}, {
+    "id": "5e77a89055063157c132c1b2",
+    "SravzId": "idx_us_gspc",
+    "Code": "LEN",
+    "Exchange": "US",
+    "Name": "Lennar Corporation",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Residential Construction"
+}, {
+    "id": "5e77a89055063157c132c1b7",
+    "SravzId": "idx_us_gspc",
+    "Code": "ABT",
+    "Exchange": "US",
+    "Name": "Abbott Laboratories",
+    "Sector": "Healthcare",
+    "Industry": "Medical Devices"
+}, {
+    "id": "5e77a89055063157c132c1bd",
+    "SravzId": "idx_us_gspc",
+    "Code": "WMB",
+    "Exchange": "US",
+    "Name": "The Williams Companies, Inc",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Midstream"
+}, {
+    "id": "5e77a89055063157c132c1c2",
+    "SravzId": "idx_us_gspc",
+    "Code": "TRV",
+    "Exchange": "US",
+    "Name": "The Travelers Companies, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Property \u0026 Casualty"
+}, {
+    "id": "5e77a89055063157c132c1c7",
+    "SravzId": "idx_us_gspc",
+    "Code": "VLO",
+    "Exchange": "US",
+    "Name": "Valero Energy Corporation",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Refining \u0026 Marketing"
+}, {
+    "id": "5e77a89055063157c132c1cc",
+    "SravzId": "idx_us_gspc",
+    "Code": "CRM",
+    "Exchange": "US",
+    "Name": "salesforce.com, inc",
+    "Sector": "Technology",
+    "Industry": "Software-Application"
+}, {
+    "id": "5e77a89055063157c132c1d1",
+    "SravzId": "idx_us_gspc",
+    "Code": "SHW",
+    "Exchange": "US",
+    "Name": "The Sherwin-Williams Company",
+    "Sector": "Basic Materials",
+    "Industry": "Specialty Chemicals"
+}, {
+    "id": "5e77a89055063157c132c1d6",
+    "SravzId": "idx_us_gspc",
+    "Code": "WMT",
+    "Exchange": "US",
+    "Name": "Walmart Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Discount Stores"
+}, {
+    "id": "5e77a89055063157c132c1da",
+    "SravzId": "idx_us_gspc",
+    "Code": "ETFC",
+    "Exchange": "US",
+    "Name": "E*TRADE Financial Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Capital Markets"
+}, {
+    "id": "5e77a89055063157c132c1df",
+    "SravzId": "idx_us_gspc",
+    "Code": "MMM",
+    "Exchange": "US",
+    "Name": "3M Company",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89055063157c132c1e3",
+    "SravzId": "idx_us_gspc",
+    "Code": "NWS",
+    "Exchange": "US",
+    "Name": "News Corporation",
+    "Sector": "Communication Services",
+    "Industry": "Broadcasting"
+}, {
+    "id": "5e77a89055063157c132c1e9",
+    "SravzId": "idx_us_gspc",
+    "Code": "KMX",
+    "Exchange": "US",
+    "Name": "CarMax, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Auto \u0026 Truck Dealerships"
+}, {
+    "id": "5e77a89055063157c132c1ef",
+    "SravzId": "idx_us_gspc",
+    "Code": "AWK",
+    "Exchange": "US",
+    "Name": "American Water Works Company, Inc",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Water"
+}, {
+    "id": "5e77a89055063157c132c1f4",
+    "SravzId": "idx_us_gspc",
+    "Code": "DFS",
+    "Exchange": "US",
+    "Name": "Discover Financial Services",
+    "Sector": "Financial Services",
+    "Industry": "Credit Services"
+}, {
+    "id": "5e77a89055063157c132c1f9",
+    "SravzId": "idx_us_gspc",
+    "Code": "ALGN",
+    "Exchange": "US",
+    "Name": "Align Technology, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Devices"
+}, {
+    "id": "5e77a89055063157c132c1fe",
+    "SravzId": "idx_us_gspc",
+    "Code": "NVDA",
+    "Exchange": "US",
+    "Name": "NVIDIA Corporation",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89055063157c132c203",
+    "SravzId": "idx_us_gspc",
+    "Code": "LYB",
+    "Exchange": "US",
+    "Name": "LyondellBasell Industries N.V",
+    "Sector": "Basic Materials",
+    "Industry": "Specialty Chemicals"
+}, {
+    "id": "5e77a89055063157c132c208",
+    "SravzId": "idx_us_gspc",
+    "Code": "EBAY",
+    "Exchange": "US",
+    "Name": "eBay Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Internet Retail"
+}, {
+    "id": "5e77a89055063157c132c20d",
+    "SravzId": "idx_us_gspc",
+    "Code": "COO",
+    "Exchange": "US",
+    "Name": "The Cooper Companies, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Instruments \u0026 Supplies"
+}, {
+    "id": "5e77a89055063157c132c212",
+    "SravzId": "idx_us_gspc",
+    "Code": "XOM",
+    "Exchange": "US",
+    "Name": "Exxon Mobil Corporation",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Integrated"
+}, {
+    "id": "5e77a89055063157c132c217",
+    "SravzId": "idx_us_gspc",
+    "Code": "FOX",
+    "Exchange": "US",
+    "Name": "Fox Corporation",
+    "Sector": "Communication Services",
+    "Industry": "Broadcasting"
+}, {
+    "id": "5e77a89055063157c132c21c",
+    "SravzId": "idx_us_gspc",
+    "Code": "UAL",
+    "Exchange": "US",
+    "Name": "United Airlines Holdings, Inc",
+    "Sector": "Industrials",
+    "Industry": "Airlines"
+}, {
+    "id": "5e77a89055063157c132c221",
+    "SravzId": "idx_us_gspc",
+    "Code": "DG",
+    "Exchange": "US",
+    "Name": "Dollar General Corporation",
+    "Sector": "Consumer Defensive",
+    "Industry": "Discount Stores"
+}, {
+    "id": "5e77a89055063157c132c226",
+    "SravzId": "idx_us_gspc",
+    "Code": "ETN",
+    "Exchange": "US",
+    "Name": "Eaton Corporation plc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89055063157c132c22b",
+    "SravzId": "idx_us_gspc",
+    "Code": "ULTA",
+    "Exchange": "US",
+    "Name": "Ulta Beauty, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Specialty Retail"
+}, {
+    "id": "5e77a89055063157c132c230",
+    "SravzId": "idx_us_gspc",
+    "Code": "DISCK",
+    "Exchange": "US",
+    "Name": "Discovery, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Entertainment"
+}, {
+    "id": "5e77a89055063157c132c235",
+    "SravzId": "idx_us_gspc",
+    "Code": "LOW",
+    "Exchange": "US",
+    "Name": "Lowe's Companies, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Home Improvement Retail"
+}, {
+    "id": "5e77a89055063157c132c23a",
+    "SravzId": "idx_us_gspc",
+    "Code": "PAYC",
+    "Exchange": "US",
+    "Name": "Paycom Software, Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Application"
+}, {
+    "id": "5e77a89055063157c132c23f",
+    "SravzId": "idx_us_gspc",
+    "Code": "ADM",
+    "Exchange": "US",
+    "Name": "Archer-Daniels-Midland Company",
+    "Sector": "Consumer Defensive",
+    "Industry": "Farm Products"
+}, {
+    "id": "5e77a89055063157c132c244",
+    "SravzId": "idx_us_gspc",
+    "Code": "NTRS",
+    "Exchange": "US",
+    "Name": "Northern Trust Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Asset Management"
+}, {
+    "id": "5e77a89055063157c132c249",
+    "SravzId": "idx_us_gspc",
+    "Code": "EMR",
+    "Exchange": "US",
+    "Name": "Emerson Electric Co",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89055063157c132c24e",
+    "SravzId": "idx_us_gspc",
+    "Code": "AMZN",
+    "Exchange": "US",
+    "Name": "Amazon.com, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Internet Retail"
+}, {
+    "id": "5e77a89055063157c132c251",
+    "SravzId": "idx_us_gspc",
+    "Code": "ADSK",
+    "Exchange": "US",
+    "Name": "Autodesk, Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Application"
+}, {
+    "id": "5e77a89055063157c132c258",
+    "SravzId": "idx_us_gspc",
+    "Code": "KIM",
+    "Exchange": "US",
+    "Name": "Kimco Realty Corporation",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Retail"
+}, {
+    "id": "5e77a89055063157c132c25e",
+    "SravzId": "idx_us_gspc",
+    "Code": "CAT",
+    "Exchange": "US",
+    "Name": "Caterpillar Inc",
+    "Sector": "Industrials",
+    "Industry": "Farm \u0026 Heavy Construction Machinery"
+}, {
+    "id": "5e77a89055063157c132c263",
+    "SravzId": "idx_us_gspc",
+    "Code": "PM",
+    "Exchange": "US",
+    "Name": "Philip Morris International Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Tobacco"
+}, {
+    "id": "5e77a89055063157c132c268",
+    "SravzId": "idx_us_gspc",
+    "Code": "PNC",
+    "Exchange": "US",
+    "Name": "The PNC Financial Services Group, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89055063157c132c26d",
+    "SravzId": "idx_us_gspc",
+    "Code": "JNJ",
+    "Exchange": "US",
+    "Name": "Johnson \u0026 Johnson",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-General"
+}, {
+    "id": "5e77a89055063157c132c272",
+    "SravzId": "idx_us_gspc",
+    "Code": "EXPD",
+    "Exchange": "US",
+    "Name": "Expeditors International of Washington, Inc",
+    "Sector": "Industrials",
+    "Industry": "Integrated Freight \u0026 Logistics"
+}, {
+    "id": "5e77a89055063157c132c277",
+    "SravzId": "idx_us_gspc",
+    "Code": "C",
+    "Exchange": "US",
+    "Name": "Citigroup Inc",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Diversified"
+}, {
+    "id": "5e77a89055063157c132c27c",
+    "SravzId": "idx_us_gspc",
+    "Code": "MDLZ",
+    "Exchange": "US",
+    "Name": "Mondelez International, Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Confectioners"
+}, {
+    "id": "5e77a89055063157c132c281",
+    "SravzId": "idx_us_gspc",
+    "Code": "KSU",
+    "Exchange": "US",
+    "Name": "Kansas City Southern",
+    "Sector": "Industrials",
+    "Industry": "Railroads"
+}, {
+    "id": "5e77a89055063157c132c286",
+    "SravzId": "idx_us_gspc",
+    "Code": "TAP",
+    "Exchange": "US",
+    "Name": "Molson Coors Beverage Company",
+    "Sector": "Consumer Defensive",
+    "Industry": "Beverages-Brewers"
+}, {
+    "id": "5e77a89055063157c132c28b",
+    "SravzId": "idx_us_gspc",
+    "Code": "AXP",
+    "Exchange": "US",
+    "Name": "American Express Company",
+    "Sector": "Financial Services",
+    "Industry": "Credit Services"
+}, {
+    "id": "5e77a89055063157c132c290",
+    "SravzId": "idx_us_gspc",
+    "Code": "ALB",
+    "Exchange": "US",
+    "Name": "Albemarle Corporation",
+    "Sector": "Basic Materials",
+    "Industry": "Specialty Chemicals"
+}, {
+    "id": "5e77a89055063157c132c295",
+    "SravzId": "idx_us_gspc",
+    "Code": "AVB",
+    "Exchange": "US",
+    "Name": "AvalonBay Communities, Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Residential"
+}, {
+    "id": "5e77a89055063157c132c29a",
+    "SravzId": "idx_us_gspc",
+    "Code": "MDT",
+    "Exchange": "US",
+    "Name": "Medtronic plc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Devices"
+}, {
+    "id": "5e77a89055063157c132c29f",
+    "SravzId": "idx_us_gspc",
+    "Code": "AAP",
+    "Exchange": "US",
+    "Name": "Advance Auto Parts, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Specialty Retail"
+}, {
+    "id": "5e77a89055063157c132c2a4",
+    "SravzId": "idx_us_gspc",
+    "Code": "MHK",
+    "Exchange": "US",
+    "Name": "Mohawk Industries, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Furnishings, Fixtures \u0026 Appliances"
+}, {
+    "id": "5e77a89055063157c132c2a9",
+    "SravzId": "idx_us_gspc",
+    "Code": "EA",
+    "Exchange": "US",
+    "Name": "Electronic Arts Inc",
+    "Sector": "Communication Services",
+    "Industry": "Electronic Gaming \u0026 Multimedia"
+}, {
+    "id": "5e77a89055063157c132c2ae",
+    "SravzId": "idx_us_gspc",
+    "Code": "EFX",
+    "Exchange": "US",
+    "Name": "Equifax Inc",
+    "Sector": "Industrials",
+    "Industry": "Consulting Services"
+}, {
+    "id": "5e77a89055063157c132c2b0",
+    "SravzId": "idx_us_gspc",
+    "Code": "ADBE",
+    "Exchange": "US",
+    "Name": "Adobe Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Infrastructure"
+}, {
+    "id": "5e77a89055063157c132c2b5",
+    "SravzId": "idx_us_gspc",
+    "Code": "SCHW",
+    "Exchange": "US",
+    "Name": "The Charles Schwab Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Capital Markets"
+}, {
+    "id": "5e77a89055063157c132c2ba",
+    "SravzId": "idx_us_gspc",
+    "Code": "RSG",
+    "Exchange": "US",
+    "Name": "Republic Services, Inc",
+    "Sector": "Industrials",
+    "Industry": "Waste Management"
+}, {
+    "id": "5e77a89055063157c132c2bf",
+    "SravzId": "idx_us_gspc",
+    "Code": "PWR",
+    "Exchange": "US",
+    "Name": "Quanta Services, Inc",
+    "Sector": "Industrials",
+    "Industry": "Engineering \u0026 Construction"
+}, {
+    "id": "5e77a89055063157c132c2c5",
+    "SravzId": "idx_us_gspc",
+    "Code": "MRK",
+    "Exchange": "US",
+    "Name": "Merck \u0026 Co., Inc",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-General"
+}, {
+    "id": "5e77a89055063157c132c2cb",
+    "SravzId": "idx_us_gspc",
+    "Code": "DISCA",
+    "Exchange": "US",
+    "Name": "Discovery, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Entertainment"
+}, {
+    "id": "5e77a89055063157c132c2cf",
+    "SravzId": "idx_us_gspc",
+    "Code": "VRSK",
+    "Exchange": "US",
+    "Name": "Verisk Analytics, Inc",
+    "Sector": "Industrials",
+    "Industry": "Consulting Services"
+}, {
+    "id": "5e77a89055063157c132c2d4",
+    "SravzId": "idx_us_gspc",
+    "Code": "NWSA",
+    "Exchange": "US",
+    "Name": "News Corporation",
+    "Sector": "Communication Services",
+    "Industry": "Broadcasting"
+}, {
+    "id": "5e77a89055063157c132c2da",
+    "SravzId": "idx_us_gspc",
+    "Code": "MSFT",
+    "Exchange": "US",
+    "Name": "Microsoft Corporation",
+    "Sector": "Technology",
+    "Industry": "Software-Infrastructure"
+}, {
+    "id": "5e77a89055063157c132c2e0",
+    "SravzId": "idx_us_gspc",
+    "Code": "TSN",
+    "Exchange": "US",
+    "Name": "Tyson Foods, Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Farm Products"
+}, {
+    "id": "5e77a89055063157c132c2e4",
+    "SravzId": "idx_us_gspc",
+    "Code": "BSX",
+    "Exchange": "US",
+    "Name": "Boston Scientific Corporation",
+    "Sector": "Healthcare",
+    "Industry": "Medical Devices"
+}, {
+    "id": "5e77a89055063157c132c2ea",
+    "SravzId": "idx_us_gspc",
+    "Code": "LKQ",
+    "Exchange": "US",
+    "Name": "LKQ Corporation",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Auto Parts"
+}, {
+    "id": "5e77a89055063157c132c2ef",
+    "SravzId": "idx_us_gspc",
+    "Code": "IEX",
+    "Exchange": "US",
+    "Name": "IDEX Corporation",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89055063157c132c2f4",
+    "SravzId": "idx_us_gspc",
+    "Code": "DE",
+    "Exchange": "US",
+    "Name": "Deere \u0026 Company",
+    "Sector": "Industrials",
+    "Industry": "Farm \u0026 Heavy Construction Machinery"
+}, {
+    "id": "5e77a89055063157c132c2f9",
+    "SravzId": "idx_us_gspc",
+    "Code": "ROK",
+    "Exchange": "US",
+    "Name": "Rockwell Automation, Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89055063157c132c2fe",
+    "SravzId": "idx_us_gspc",
+    "Code": "NOC",
+    "Exchange": "US",
+    "Name": "Northrop Grumman Corporation",
+    "Sector": "Industrials",
+    "Industry": "Aerospace \u0026 Defense"
+}, {
+    "id": "5e77a89055063157c132c303",
+    "SravzId": "idx_us_gspc",
+    "Code": "PFG",
+    "Exchange": "US",
+    "Name": "Principal Financial Group, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Diversified"
+}, {
+    "id": "5e77a89055063157c132c309",
+    "SravzId": "idx_us_gspc",
+    "Code": "PXD",
+    "Exchange": "US",
+    "Name": "Pioneer Natural Resources Company",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas E\u0026P"
+}, {
+    "id": "5e77a89055063157c132c30e",
+    "SravzId": "idx_us_gspc",
+    "Code": "WDC",
+    "Exchange": "US",
+    "Name": "Western Digital Corporation",
+    "Sector": "Technology",
+    "Industry": "Computer Hardware"
+}, {
+    "id": "5e77a89055063157c132c313",
+    "SravzId": "idx_us_gspc",
+    "Code": "IDXX",
+    "Exchange": "US",
+    "Name": "IDEXX Laboratories, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Diagnostics \u0026 Research"
+}, {
+    "id": "5e77a89055063157c132c318",
+    "SravzId": "idx_us_gspc",
+    "Code": "AKAM",
+    "Exchange": "US",
+    "Name": "Akamai Technologies, Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Infrastructure"
+}, {
+    "id": "5e77a89055063157c132c31d",
+    "SravzId": "idx_us_gspc",
+    "Code": "WFC",
+    "Exchange": "US",
+    "Name": "Wells Fargo \u0026 Company",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Diversified"
+}, {
+    "id": "5e77a89055063157c132c322",
+    "SravzId": "idx_us_gspc",
+    "Code": "JNPR",
+    "Exchange": "US",
+    "Name": "Juniper Networks, Inc",
+    "Sector": "Technology",
+    "Industry": "Communication Equipment"
+}, {
+    "id": "5e77a89055063157c132c327",
+    "SravzId": "idx_us_gspc",
+    "Code": "CCL",
+    "Exchange": "US",
+    "Name": "Carnival Corporation \u0026 plc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Travel Services"
+}, {
+    "id": "5e77a89055063157c132c32c",
+    "SravzId": "idx_us_gspc",
+    "Code": "AZO",
+    "Exchange": "US",
+    "Name": "AutoZone, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Specialty Retail"
+}, {
+    "id": "5e77a89055063157c132c331",
+    "SravzId": "idx_us_gspc",
+    "Code": "HLT",
+    "Exchange": "US",
+    "Name": "Hilton Worldwide Holdings Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Lodging"
+}, {
+    "id": "5e77a89055063157c132c336",
+    "SravzId": "idx_us_gspc",
+    "Code": "LEG",
+    "Exchange": "US",
+    "Name": "Leggett \u0026 Platt, Incorporated",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Furnishings, Fixtures \u0026 Appliances"
+}, {
+    "id": "5e77a89055063157c132c33b",
+    "SravzId": "idx_us_gspc",
+    "Code": "SBAC",
+    "Exchange": "US",
+    "Name": "SBA Communications Corporation",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Specialty"
+}, {
+    "id": "5e77a89055063157c132c340",
+    "SravzId": "idx_us_gspc",
+    "Code": "GOOG",
+    "Exchange": "US",
+    "Name": "Alphabet Inc",
+    "Sector": "Communication Services",
+    "Industry": "Internet Content \u0026 Information"
+}, {
+    "id": "5e77a89055063157c132c345",
+    "SravzId": "idx_us_gspc",
+    "Code": "FOXA",
+    "Exchange": "US",
+    "Name": "Fox Corporation",
+    "Sector": "Communication Services",
+    "Industry": "Broadcasting"
+}, {
+    "id": "5e77a89055063157c132c34a",
+    "SravzId": "idx_us_gspc",
+    "Code": "ECL",
+    "Exchange": "US",
+    "Name": "Ecolab Inc",
+    "Sector": "Basic Materials",
+    "Industry": "Specialty Chemicals"
+}, {
+    "id": "5e77a89055063157c132c34f",
+    "SravzId": "idx_us_gspc",
+    "Code": "HST",
+    "Exchange": "US",
+    "Name": "Host Hotels \u0026 Resorts, Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Hotel \u0026 Motel"
+}, {
+    "id": "5e77a89055063157c132c354",
+    "SravzId": "idx_us_gspc",
+    "Code": "IBM",
+    "Exchange": "US",
+    "Name": "International Business Machines Corporation",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a89055063157c132c359",
+    "SravzId": "idx_us_gspc",
+    "Code": "ISRG",
+    "Exchange": "US",
+    "Name": "Intuitive Surgical, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Instruments \u0026 Supplies"
+}, {
+    "id": "5e77a89055063157c132c35e",
+    "SravzId": "idx_us_gspc",
+    "Code": "CPRT",
+    "Exchange": "US",
+    "Name": "Copart, Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Business Services"
+}, {
+    "id": "5e77a89055063157c132c363",
+    "SravzId": "idx_us_gspc",
+    "Code": "NOV",
+    "Exchange": "US",
+    "Name": "NOV Inc",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Equipment \u0026 Services"
+}, {
+    "id": "5e77a89055063157c132c368",
+    "SravzId": "idx_us_gspc",
+    "Code": "DLR",
+    "Exchange": "US",
+    "Name": "Digital Realty Trust, Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Office"
+}, {
+    "id": "5e77a89055063157c132c36d",
+    "SravzId": "idx_us_gspc",
+    "Code": "TDG",
+    "Exchange": "US",
+    "Name": "TransDigm Group Incorporated",
+    "Sector": "Industrials",
+    "Industry": "Aerospace \u0026 Defense"
+}, {
+    "id": "5e77a89055063157c132c372",
+    "SravzId": "idx_us_gspc",
+    "Code": "AES",
+    "Exchange": "US",
+    "Name": "The AES Corporation",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Diversified"
+}, {
+    "id": "5e77a89055063157c132c377",
+    "SravzId": "idx_us_gspc",
+    "Code": "ED",
+    "Exchange": "US",
+    "Name": "Consolidated Edison, Inc",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89055063157c132c37c",
+    "SravzId": "idx_us_gspc",
+    "Code": "ETR",
+    "Exchange": "US",
+    "Name": "Entergy Corporation",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Diversified"
+}, {
+    "id": "5e77a89055063157c132c381",
+    "SravzId": "idx_us_gspc",
+    "Code": "L",
+    "Exchange": "US",
+    "Name": "Loews Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Property \u0026 Casualty"
+}, {
+    "id": "5e77a89155063157c132c386",
+    "SravzId": "idx_us_gspc",
+    "Code": "HAL",
+    "Exchange": "US",
+    "Name": "Halliburton Company",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Equipment \u0026 Services"
+}, {
+    "id": "5e77a89155063157c132c38b",
+    "SravzId": "idx_us_gspc",
+    "Code": "MCK",
+    "Exchange": "US",
+    "Name": "McKesson Corporation",
+    "Sector": "Healthcare",
+    "Industry": "Medical Distribution"
+}, {
+    "id": "5e77a89155063157c132c390",
+    "SravzId": "idx_us_gspc",
+    "Code": "BAX",
+    "Exchange": "US",
+    "Name": "Baxter International Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Instruments \u0026 Supplies"
+}, {
+    "id": "5e77a89155063157c132c395",
+    "SravzId": "idx_us_gspc",
+    "Code": "GRMN",
+    "Exchange": "US",
+    "Name": "Garmin Ltd",
+    "Sector": "Technology",
+    "Industry": "Scientific \u0026 Technical Instruments"
+}, {
+    "id": "5e77a89155063157c132c39b",
+    "SravzId": "idx_us_gspc",
+    "Code": "XRAY",
+    "Exchange": "US",
+    "Name": "DENTSPLY SIRONA Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Instruments \u0026 Supplies"
+}, {
+    "id": "5e77a89155063157c132c3a0",
+    "SravzId": "idx_us_gspc",
+    "Code": "PVH",
+    "Exchange": "US",
+    "Name": "PVH Corp",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Apparel Manufacturing"
+}, {
+    "id": "5e77a89155063157c132c3a5",
+    "SravzId": "idx_us_gspc",
+    "Code": "TROW",
+    "Exchange": "US",
+    "Name": "T. Rowe Price Group, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Asset Management"
+}, {
+    "id": "5e77a89155063157c132c3aa",
+    "SravzId": "idx_us_gspc",
+    "Code": "HSY",
+    "Exchange": "US",
+    "Name": "The Hershey Company",
+    "Sector": "Consumer Defensive",
+    "Industry": "Confectioners"
+}, {
+    "id": "5e77a89155063157c132c3af",
+    "SravzId": "idx_us_gspc",
+    "Code": "DHI",
+    "Exchange": "US",
+    "Name": "D.R. Horton, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Residential Construction"
+}, {
+    "id": "5e77a89155063157c132c3b4",
+    "SravzId": "idx_us_gspc",
+    "Code": "BLK",
+    "Exchange": "US",
+    "Name": "BlackRock, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Asset Management"
+}, {
+    "id": "5e77a89155063157c132c3b9",
+    "SravzId": "idx_us_gspc",
+    "Code": "F",
+    "Exchange": "US",
+    "Name": "Ford Motor Company",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Auto Manufacturers"
+}, {
+    "id": "5e77a89155063157c132c3bd",
+    "SravzId": "idx_us_gspc",
+    "Code": "DAL",
+    "Exchange": "US",
+    "Name": "Delta Air Lines, Inc",
+    "Sector": "Industrials",
+    "Industry": "Airlines"
+}, {
+    "id": "5e77a89155063157c132c3c3",
+    "SravzId": "idx_us_gspc",
+    "Code": "LRCX",
+    "Exchange": "US",
+    "Name": "Lam Research Corporation",
+    "Sector": "Technology",
+    "Industry": "Semiconductor Equipment \u0026 Materials"
+}, {
+    "id": "5e77a89155063157c132c3c8",
+    "SravzId": "idx_us_gspc",
+    "Code": "HSIC",
+    "Exchange": "US",
+    "Name": "Henry Schein, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Distribution"
+}, {
+    "id": "5e77a89155063157c132c3cd",
+    "SravzId": "idx_us_gspc",
+    "Code": "WYNN",
+    "Exchange": "US",
+    "Name": "Wynn Resorts, Limited",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Resorts \u0026 Casinos"
+}, {
+    "id": "5e77a89155063157c132c3d2",
+    "SravzId": "idx_us_gspc",
+    "Code": "ADI",
+    "Exchange": "US",
+    "Name": "Analog Devices, Inc",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89155063157c132c3d7",
+    "SravzId": "idx_us_gspc",
+    "Code": "LNT",
+    "Exchange": "US",
+    "Name": "Alliant Energy Corporation",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89155063157c132c3dc",
+    "SravzId": "idx_us_gspc",
+    "Code": "INCY",
+    "Exchange": "US",
+    "Name": "Incyte Corporation",
+    "Sector": "Healthcare",
+    "Industry": "Biotechnology"
+}, {
+    "id": "5e77a89155063157c132c3e1",
+    "SravzId": "idx_us_gspc",
+    "Code": "HBAN",
+    "Exchange": "US",
+    "Name": "Huntington Bancshares Incorporated",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89155063157c132c3e4",
+    "SravzId": "idx_us_gspc",
+    "Code": "FB",
+    "Exchange": "US",
+    "Name": "Facebook, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Internet Content \u0026 Information"
+}, {
+    "id": "5e77a89155063157c132c3ea",
+    "SravzId": "idx_us_gspc",
+    "Code": "AMGN",
+    "Exchange": "US",
+    "Name": "Amgen Inc",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-General"
+}, {
+    "id": "5e77a89155063157c132c3f0",
+    "SravzId": "idx_us_gspc",
+    "Code": "AIG",
+    "Exchange": "US",
+    "Name": "American International Group, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Diversified"
+}, {
+    "id": "5e77a89155063157c132c3f5",
+    "SravzId": "idx_us_gspc",
+    "Code": "NI",
+    "Exchange": "US",
+    "Name": "NiSource Inc",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Gas"
+}, {
+    "id": "5e77a89155063157c132c3fa",
+    "SravzId": "idx_us_gspc",
+    "Code": "DVN",
+    "Exchange": "US",
+    "Name": "Devon Energy Corporation",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas E\u0026P"
+}, {
+    "id": "5e77a89155063157c132c3ff",
+    "SravzId": "idx_us_gspc",
+    "Code": "PEP",
+    "Exchange": "US",
+    "Name": "PepsiCo, Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Beverages-Non-Alcoholic"
+}, {
+    "id": "5e77a89155063157c132c404",
+    "SravzId": "idx_us_gspc",
+    "Code": "OMC",
+    "Exchange": "US",
+    "Name": "Omnicom Group Inc",
+    "Sector": "Communication Services",
+    "Industry": "Advertising Agencies"
+}, {
+    "id": "5e77a89155063157c132c409",
+    "SravzId": "idx_us_gspc",
+    "Code": "LDOS",
+    "Exchange": "US",
+    "Name": "Leidos Holdings, Inc",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a89155063157c132c40e",
+    "SravzId": "idx_us_gspc",
+    "Code": "TMO",
+    "Exchange": "US",
+    "Name": "Thermo Fisher Scientific Inc",
+    "Sector": "Healthcare",
+    "Industry": "Diagnostics \u0026 Research"
+}, {
+    "id": "5e77a89155063157c132c413",
+    "SravzId": "idx_us_gspc",
+    "Code": "COG",
+    "Exchange": "US",
+    "Name": "Cabot Oil \u0026 Gas Corporation",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas E\u0026P"
+}, {
+    "id": "5e77a89155063157c132c418",
+    "SravzId": "idx_us_gspc",
+    "Code": "MOS",
+    "Exchange": "US",
+    "Name": "The Mosaic Company",
+    "Sector": "Basic Materials",
+    "Industry": "Agricultural Inputs"
+}, {
+    "id": "5e77a89155063157c132c41d",
+    "SravzId": "idx_us_gspc",
+    "Code": "MPC",
+    "Exchange": "US",
+    "Name": "Marathon Petroleum Corporation",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Refining \u0026 Marketing"
+}, {
+    "id": "5e77a89155063157c132c422",
+    "SravzId": "idx_us_gspc",
+    "Code": "DIS",
+    "Exchange": "US",
+    "Name": "The Walt Disney Company",
+    "Sector": "Communication Services",
+    "Industry": "Entertainment"
+}, {
+    "id": "5e77a89155063157c132c427",
+    "SravzId": "idx_us_gspc",
+    "Code": "ATO",
+    "Exchange": "US",
+    "Name": "Atmos Energy Corporation",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Gas"
+}, {
+    "id": "5e77a89155063157c132c42c",
+    "SravzId": "idx_us_gspc",
+    "Code": "CMS",
+    "Exchange": "US",
+    "Name": "CMS Energy Corporation",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89155063157c132c432",
+    "SravzId": "idx_us_gspc",
+    "Code": "DD",
+    "Exchange": "US",
+    "Name": "DuPont de Nemours, Inc",
+    "Sector": "Basic Materials",
+    "Industry": "Chemicals"
+}, {
+    "id": "5e77a89155063157c132c437",
+    "SravzId": "idx_us_gspc",
+    "Code": "ORLY",
+    "Exchange": "US",
+    "Name": "O'Reilly Automotive, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Specialty Retail"
+}, {
+    "id": "5e77a89155063157c132c43c",
+    "SravzId": "idx_us_gspc",
+    "Code": "CMCSA",
+    "Exchange": "US",
+    "Name": "Comcast Corporation",
+    "Sector": "Communication Services",
+    "Industry": "Entertainment"
+}, {
+    "id": "5e77a89155063157c132c441",
+    "SravzId": "idx_us_gspc",
+    "Code": "STZ",
+    "Exchange": "US",
+    "Name": "Constellation Brands, Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Beverages-Wineries \u0026 Distilleries"
+}, {
+    "id": "5e77a89155063157c132c446",
+    "SravzId": "idx_us_gspc",
+    "Code": "NFLX",
+    "Exchange": "US",
+    "Name": "Netflix, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Entertainment"
+}, {
+    "id": "5e77a89155063157c132c44b",
+    "SravzId": "idx_us_gspc",
+    "Code": "FANG",
+    "Exchange": "US",
+    "Name": "Diamondback Energy, Inc",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas E\u0026P"
+}, {
+    "id": "5e77a89155063157c132c450",
+    "SravzId": "idx_us_gspc",
+    "Code": "FTNT",
+    "Exchange": "US",
+    "Name": "Fortinet, Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Infrastructure"
+}, {
+    "id": "5e77a89155063157c132c455",
+    "SravzId": "idx_us_gspc",
+    "Code": "GM",
+    "Exchange": "US",
+    "Name": "General Motors Company",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Auto Manufacturers"
+}, {
+    "id": "5e77a89155063157c132c45a",
+    "SravzId": "idx_us_gspc",
+    "Code": "V",
+    "Exchange": "US",
+    "Name": "Visa Inc",
+    "Sector": "Financial Services",
+    "Industry": "Credit Services"
+}, {
+    "id": "5e77a89155063157c132c45f",
+    "SravzId": "idx_us_gspc",
+    "Code": "SWK",
+    "Exchange": "US",
+    "Name": "Stanley Black \u0026 Decker, Inc",
+    "Sector": "Industrials",
+    "Industry": "Tools \u0026 Accessories"
+}, {
+    "id": "5e77a89155063157c132c462",
+    "SravzId": "idx_us_gspc",
+    "Code": "GE",
+    "Exchange": "US",
+    "Name": "General Electric Company",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89155063157c132c467",
+    "SravzId": "idx_us_gspc",
+    "Code": "JBHT",
+    "Exchange": "US",
+    "Name": "J.B. Hunt Transport Services, Inc",
+    "Sector": "Industrials",
+    "Industry": "Integrated Freight \u0026 Logistics"
+}, {
+    "id": "5e77a89155063157c132c46d",
+    "SravzId": "idx_us_gspc",
+    "Code": "MET",
+    "Exchange": "US",
+    "Name": "MetLife, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Life"
+}, {
+    "id": "5e77a89155063157c132c471",
+    "SravzId": "idx_us_gspc",
+    "Code": "GPC",
+    "Exchange": "US",
+    "Name": "Genuine Parts Company",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Specialty Retail"
+}, {
+    "id": "5e77a89155063157c132c476",
+    "SravzId": "idx_us_gspc",
+    "Code": "MAR",
+    "Exchange": "US",
+    "Name": "Marriott International, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Lodging"
+}, {
+    "id": "5e77a89155063157c132c47c",
+    "SravzId": "idx_us_gspc",
+    "Code": "O",
+    "Exchange": "US",
+    "Name": "Realty Income Corporation",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Retail"
+}, {
+    "id": "5e77a89155063157c132c482",
+    "SravzId": "idx_us_gspc",
+    "Code": "UPS",
+    "Exchange": "US",
+    "Name": "United Parcel Service, Inc",
+    "Sector": "Industrials",
+    "Industry": "Integrated Freight \u0026 Logistics"
+}, {
+    "id": "5e77a89155063157c132c487",
+    "SravzId": "idx_us_gspc",
+    "Code": "BK",
+    "Exchange": "US",
+    "Name": "The Bank of New York Mellon Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Asset Management"
+}, {
+    "id": "5e77a89155063157c132c48c",
+    "SravzId": "idx_us_gspc",
+    "Code": "OKE",
+    "Exchange": "US",
+    "Name": "ONEOK, Inc",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Midstream"
+}, {
+    "id": "5e77a89155063157c132c491",
+    "SravzId": "idx_us_gspc",
+    "Code": "SEE",
+    "Exchange": "US",
+    "Name": "Sealed Air Corporation",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Packaging \u0026 Containers"
+}, {
+    "id": "5e77a89155063157c132c496",
+    "SravzId": "idx_us_gspc",
+    "Code": "MKTX",
+    "Exchange": "US",
+    "Name": "MarketAxess Holdings Inc",
+    "Sector": "Financial Services",
+    "Industry": "Capital Markets"
+}, {
+    "id": "5e77a89155063157c132c49b",
+    "SravzId": "idx_us_gspc",
+    "Code": "VRTX",
+    "Exchange": "US",
+    "Name": "Vertex Pharmaceuticals Incorporated",
+    "Sector": "Healthcare",
+    "Industry": "Biotechnology"
+}, {
+    "id": "5e77a89155063157c132c4a0",
+    "SravzId": "idx_us_gspc",
+    "Code": "CHTR",
+    "Exchange": "US",
+    "Name": "Charter Communications, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Entertainment"
+}, {
+    "id": "5e77a89155063157c132c4a5",
+    "SravzId": "idx_us_gspc",
+    "Code": "MU",
+    "Exchange": "US",
+    "Name": "Micron Technology, Inc",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89155063157c132c4aa",
+    "SravzId": "idx_us_gspc",
+    "Code": "PBCT",
+    "Exchange": "US",
+    "Name": "People's United Financial, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89155063157c132c4af",
+    "SravzId": "idx_us_gspc",
+    "Code": "DVA",
+    "Exchange": "US",
+    "Name": "DaVita Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Care Facilities"
+}, {
+    "id": "5e77a89155063157c132c4b5",
+    "SravzId": "idx_us_gspc",
+    "Code": "PKI",
+    "Exchange": "US",
+    "Name": "PerkinElmer, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Diagnostics \u0026 Research"
+}, {
+    "id": "5e77a89155063157c132c4ba",
+    "SravzId": "idx_us_gspc",
+    "Code": "XEL",
+    "Exchange": "US",
+    "Name": "Xcel Energy Inc",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89155063157c132c4bf",
+    "SravzId": "idx_us_gspc",
+    "Code": "LYV",
+    "Exchange": "US",
+    "Name": "Live Nation Entertainment, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Entertainment"
+}, {
+    "id": "5e77a89155063157c132c4c4",
+    "SravzId": "idx_us_gspc",
+    "Code": "DTE",
+    "Exchange": "US",
+    "Name": "DTE Energy Company",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89155063157c132c4c9",
+    "SravzId": "idx_us_gspc",
+    "Code": "IVZ",
+    "Exchange": "US",
+    "Name": "Invesco Ltd",
+    "Sector": "Financial Services",
+    "Industry": "Asset Management"
+}, {
+    "id": "5e77a89155063157c132c4ce",
+    "SravzId": "idx_us_gspc",
+    "Code": "PH",
+    "Exchange": "US",
+    "Name": "Parker-Hannifin Corporation",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89155063157c132c4d3",
+    "SravzId": "idx_us_gspc",
+    "Code": "VRSN",
+    "Exchange": "US",
+    "Name": "VeriSign, Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Infrastructure"
+}, {
+    "id": "5e77a89155063157c132c4d8",
+    "SravzId": "idx_us_gspc",
+    "Code": "GILD",
+    "Exchange": "US",
+    "Name": "Gilead Sciences, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-General"
+}, {
+    "id": "5e77a89155063157c132c4dd",
+    "SravzId": "idx_us_gspc",
+    "Code": "APA",
+    "Exchange": "US",
+    "Name": "APA Corporation",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas E\u0026P"
+}, {
+    "id": "5e77a89155063157c132c4e2",
+    "SravzId": "idx_us_gspc",
+    "Code": "PSA",
+    "Exchange": "US",
+    "Name": "Public Storage",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Industrial"
+}, {
+    "id": "5e77a89155063157c132c4e7",
+    "SravzId": "idx_us_gspc",
+    "Code": "JCI",
+    "Exchange": "US",
+    "Name": "Johnson Controls International plc",
+    "Sector": "Industrials",
+    "Industry": "Engineering \u0026 Construction"
+}, {
+    "id": "5e77a89155063157c132c4ec",
+    "SravzId": "idx_us_gspc",
+    "Code": "EXPE",
+    "Exchange": "US",
+    "Name": "Expedia Group, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Travel Services"
+}, {
+    "id": "5e77a89155063157c132c4f1",
+    "SravzId": "idx_us_gspc",
+    "Code": "SJM",
+    "Exchange": "US",
+    "Name": "The J. M. Smucker Company",
+    "Sector": "Consumer Defensive",
+    "Industry": "Packaged Foods"
+}, {
+    "id": "5e77a89155063157c132c4f6",
+    "SravzId": "idx_us_gspc",
+    "Code": "MTB",
+    "Exchange": "US",
+    "Name": "M\u0026T Bank Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89155063157c132c4fb",
+    "SravzId": "idx_us_gspc",
+    "Code": "CVS",
+    "Exchange": "US",
+    "Name": "CVS Health Corporation",
+    "Sector": "Healthcare",
+    "Industry": "Healthcare Plans"
+}, {
+    "id": "5e77a89155063157c132c500",
+    "SravzId": "idx_us_gspc",
+    "Code": "D",
+    "Exchange": "US",
+    "Name": "Dominion Energy, Inc",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Diversified"
+}, {
+    "id": "5e77a89155063157c132c505",
+    "SravzId": "idx_us_gspc",
+    "Code": "XRX",
+    "Exchange": "US",
+    "Name": "Xerox Holdings Corporation",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a89155063157c132c50a",
+    "SravzId": "idx_us_gspc",
+    "Code": "XYL",
+    "Exchange": "US",
+    "Name": "Xylem Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89155063157c132c50f",
+    "SravzId": "idx_us_gspc",
+    "Code": "BEN",
+    "Exchange": "US",
+    "Name": "Franklin Resources, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Asset Management"
+}, {
+    "id": "5e77a89155063157c132c514",
+    "SravzId": "idx_us_gspc",
+    "Code": "TIF",
+    "Exchange": "US",
+    "Name": "Tiffany \u0026 Co",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Luxury Goods"
+}, {
+    "id": "5e77a89155063157c132c519",
+    "SravzId": "idx_us_gspc",
+    "Code": "ROP",
+    "Exchange": "US",
+    "Name": "Roper Technologies, Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89155063157c132c51e",
+    "SravzId": "idx_us_gspc",
+    "Code": "SYK",
+    "Exchange": "US",
+    "Name": "Stryker Corporation",
+    "Sector": "Healthcare",
+    "Industry": "Medical Devices"
+}, {
+    "id": "5e77a89155063157c132c523",
+    "SravzId": "idx_us_gspc",
+    "Code": "DHR",
+    "Exchange": "US",
+    "Name": "Danaher Corporation",
+    "Sector": "Healthcare",
+    "Industry": "Diagnostics \u0026 Research"
+}, {
+    "id": "5e77a89155063157c132c528",
+    "SravzId": "idx_us_gspc",
+    "Code": "TXT",
+    "Exchange": "US",
+    "Name": "Textron Inc",
+    "Sector": "Industrials",
+    "Industry": "Aerospace \u0026 Defense"
+}, {
+    "id": "5e77a89155063157c132c52d",
+    "SravzId": "idx_us_gspc",
+    "Code": "RHI",
+    "Exchange": "US",
+    "Name": "Robert Half International Inc",
+    "Sector": "Industrials",
+    "Industry": "Staffing \u0026 Employment Services"
+}, {
+    "id": "5e77a89155063157c132c532",
+    "SravzId": "idx_us_gspc",
+    "Code": "ITW",
+    "Exchange": "US",
+    "Name": "Illinois Tool Works Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89155063157c132c536",
+    "SravzId": "idx_us_gspc",
+    "Code": "ADS",
+    "Exchange": "US",
+    "Name": "Alliance Data Systems Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Credit Services"
+}, {
+    "id": "5e77a89155063157c132c53c",
+    "SravzId": "idx_us_gspc",
+    "Code": "JKHY",
+    "Exchange": "US",
+    "Name": "Jack Henry \u0026 Associates, Inc",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a89155063157c132c541",
+    "SravzId": "idx_us_gspc",
+    "Code": "NUE",
+    "Exchange": "US",
+    "Name": "Nucor Corporation",
+    "Sector": "Basic Materials",
+    "Industry": "Steel"
+}, {
+    "id": "5e77a89155063157c132c546",
+    "SravzId": "idx_us_gspc",
+    "Code": "BWA",
+    "Exchange": "US",
+    "Name": "BorgWarner Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Auto Parts"
+}, {
+    "id": "5e77a89155063157c132c54b",
+    "SravzId": "idx_us_gspc",
+    "Code": "VZ",
+    "Exchange": "US",
+    "Name": "Verizon Communications Inc",
+    "Sector": "Communication Services",
+    "Industry": "Telecom Services"
+}, {
+    "id": "5e77a89155063157c132c550",
+    "SravzId": "idx_us_gspc",
+    "Code": "AMP",
+    "Exchange": "US",
+    "Name": "Ameriprise Financial, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Asset Management"
+}, {
+    "id": "5e77a89155063157c132c555",
+    "SravzId": "idx_us_gspc",
+    "Code": "TWTR",
+    "Exchange": "US",
+    "Name": "Twitter, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Internet Content \u0026 Information"
+}, {
+    "id": "5e77a89155063157c132c55a",
+    "SravzId": "idx_us_gspc",
+    "Code": "MCO",
+    "Exchange": "US",
+    "Name": "Moody's Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Financial Data \u0026 Stock Exchanges"
+}, {
+    "id": "5e77a89155063157c132c55f",
+    "SravzId": "idx_us_gspc",
+    "Code": "YUM",
+    "Exchange": "US",
+    "Name": "Yum! Brands, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Restaurants"
+}, {
+    "id": "5e77a89155063157c132c564",
+    "SravzId": "idx_us_gspc",
+    "Code": "HAS",
+    "Exchange": "US",
+    "Name": "Hasbro, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Leisure"
+}, {
+    "id": "5e77a89155063157c132c569",
+    "SravzId": "idx_us_gspc",
+    "Code": "RMD",
+    "Exchange": "US",
+    "Name": "ResMed Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Instruments \u0026 Supplies"
+}, {
+    "id": "5e77a89155063157c132c56e",
+    "SravzId": "idx_us_gspc",
+    "Code": "UNH",
+    "Exchange": "US",
+    "Name": "UnitedHealth Group Incorporated",
+    "Sector": "Healthcare",
+    "Industry": "Healthcare Plans"
+}, {
+    "id": "5e77a89155063157c132c573",
+    "SravzId": "idx_us_gspc",
+    "Code": "FLT",
+    "Exchange": "US",
+    "Name": "FLEETCOR Technologies, Inc",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a89155063157c132c578",
+    "SravzId": "idx_us_gspc",
+    "Code": "PRGO",
+    "Exchange": "US",
+    "Name": "Perrigo Company plc",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-Specialty \u0026 Generic"
+}, {
+    "id": "5e77a89155063157c132c57d",
+    "SravzId": "idx_us_gspc",
+    "Code": "FRC",
+    "Exchange": "US",
+    "Name": "First Republic Bank",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89155063157c132c582",
+    "SravzId": "idx_us_gspc",
+    "Code": "CI",
+    "Exchange": "US",
+    "Name": "Cigna Corporation",
+    "Sector": "Healthcare",
+    "Industry": "Healthcare Plans"
+}, {
+    "id": "5e77a89155063157c132c587",
+    "SravzId": "idx_us_gspc",
+    "Code": "WY",
+    "Exchange": "US",
+    "Name": "Weyerhaeuser Company",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Specialty"
+}, {
+    "id": "5e77a89155063157c132c58c",
+    "SravzId": "idx_us_gspc",
+    "Code": "MMC",
+    "Exchange": "US",
+    "Name": "Marsh \u0026 McLennan Companies, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Insurance Brokers"
+}, {
+    "id": "5e77a89155063157c132c591",
+    "SravzId": "idx_us_gspc",
+    "Code": "IR",
+    "Exchange": "US",
+    "Name": "Ingersoll Rand Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89155063157c132c596",
+    "SravzId": "idx_us_gspc",
+    "Code": "AMD",
+    "Exchange": "US",
+    "Name": "Advanced Micro Devices, Inc",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89155063157c132c59b",
+    "SravzId": "idx_us_gspc",
+    "Code": "ALLE",
+    "Exchange": "US",
+    "Name": "Allegion plc",
+    "Sector": "Industrials",
+    "Industry": "Security \u0026 Protection Services"
+}, {
+    "id": "5e77a89155063157c132c5a0",
+    "SravzId": "idx_us_gspc",
+    "Code": "ARE",
+    "Exchange": "US",
+    "Name": "Alexandria Real Estate Equities, Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Office"
+}, {
+    "id": "5e77a89155063157c132c5a5",
+    "SravzId": "idx_us_gspc",
+    "Code": "KR",
+    "Exchange": "US",
+    "Name": "The Kroger Co",
+    "Sector": "Consumer Defensive",
+    "Industry": "Grocery Stores"
+}, {
+    "id": "5e77a89155063157c132c5aa",
+    "SravzId": "idx_us_gspc",
+    "Code": "MGM",
+    "Exchange": "US",
+    "Name": "MGM Resorts International",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Resorts \u0026 Casinos"
+}, {
+    "id": "5e77a89155063157c132c5af",
+    "SravzId": "idx_us_gspc",
+    "Code": "CINF",
+    "Exchange": "US",
+    "Name": "Cincinnati Financial Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Property \u0026 Casualty"
+}, {
+    "id": "5e77a89155063157c132c5b4",
+    "SravzId": "idx_us_gspc",
+    "Code": "CMI",
+    "Exchange": "US",
+    "Name": "Cummins Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89155063157c132c5b9",
+    "SravzId": "idx_us_gspc",
+    "Code": "DOV",
+    "Exchange": "US",
+    "Name": "Dover Corporation",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89155063157c132c5be",
+    "SravzId": "idx_us_gspc",
+    "Code": "SYY",
+    "Exchange": "US",
+    "Name": "Sysco Corporation",
+    "Sector": "Consumer Defensive",
+    "Industry": "Food Distribution"
+}, {
+    "id": "5e77a89155063157c132c5c3",
+    "SravzId": "idx_us_gspc",
+    "Code": "FLS",
+    "Exchange": "US",
+    "Name": "Flowserve Corporation",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89155063157c132c5c8",
+    "SravzId": "idx_us_gspc",
+    "Code": "BXP",
+    "Exchange": "US",
+    "Name": "Boston Properties, Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Office"
+}, {
+    "id": "5e77a89155063157c132c5ce",
+    "SravzId": "idx_us_gspc",
+    "Code": "RE",
+    "Exchange": "US",
+    "Name": "Everest Re Group, Ltd",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Reinsurance"
+}, {
+    "id": "5e77a89155063157c132c5d2",
+    "SravzId": "idx_us_gspc",
+    "Code": "WAB",
+    "Exchange": "US",
+    "Name": "Westinghouse Air Brake Technologies Corporation",
+    "Sector": "Industrials",
+    "Industry": "Railroads"
+}, {
+    "id": "5e77a89155063157c132c5d8",
+    "SravzId": "idx_us_gspc",
+    "Code": "TMUS",
+    "Exchange": "US",
+    "Name": "T-Mobile US, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Telecom Services"
+}, {
+    "id": "5e77a89155063157c132c5dd",
+    "SravzId": "idx_us_gspc",
+    "Code": "USB",
+    "Exchange": "US",
+    "Name": "U.S. Bancorp",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89155063157c132c5e2",
+    "SravzId": "idx_us_gspc",
+    "Code": "ZION",
+    "Exchange": "US",
+    "Name": "Zions Bancorporation, National Association",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89155063157c132c5e7",
+    "SravzId": "idx_us_gspc",
+    "Code": "WM",
+    "Exchange": "US",
+    "Name": "Waste Management, Inc",
+    "Sector": "Industrials",
+    "Industry": "Waste Management"
+}, {
+    "id": "5e77a89155063157c132c5ec",
+    "SravzId": "idx_us_gspc",
+    "Code": "ICE",
+    "Exchange": "US",
+    "Name": "Intercontinental Exchange, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Financial Data \u0026 Stock Exchanges"
+}, {
+    "id": "5e77a89155063157c132c5f1",
+    "SravzId": "idx_us_gspc",
+    "Code": "FDX",
+    "Exchange": "US",
+    "Name": "FedEx Corporation",
+    "Sector": "Industrials",
+    "Industry": "Integrated Freight \u0026 Logistics"
+}, {
+    "id": "5e77a89155063157c132c5f6",
+    "SravzId": "idx_us_gspc",
+    "Code": "HPQ",
+    "Exchange": "US",
+    "Name": "HP Inc",
+    "Sector": "Technology",
+    "Industry": "Computer Hardware"
+}, {
+    "id": "5e77a89155063157c132c5fb",
+    "SravzId": "idx_us_gspc",
+    "Code": "NLSN",
+    "Exchange": "US",
+    "Name": "Nielsen Holdings plc",
+    "Sector": "Industrials",
+    "Industry": "Consulting Services"
+}, {
+    "id": "5e77a89155063157c132c5fe",
+    "SravzId": "idx_us_gspc",
+    "Code": "PFE",
+    "Exchange": "US",
+    "Name": "Pfizer Inc",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-General"
+}, {
+    "id": "5e77a89155063157c132c604",
+    "SravzId": "idx_us_gspc",
+    "Code": "DOW",
+    "Exchange": "US",
+    "Name": "Dow Inc",
+    "Sector": "Basic Materials",
+    "Industry": "Chemicals"
+}, {
+    "id": "5e77a89155063157c132c608",
+    "SravzId": "idx_us_gspc",
+    "Code": "SRE",
+    "Exchange": "US",
+    "Name": "Sempra Energy",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Diversified"
+}, {
+    "id": "5e77a89155063157c132c60d",
+    "SravzId": "idx_us_gspc",
+    "Code": "REGN",
+    "Exchange": "US",
+    "Name": "Regeneron Pharmaceuticals, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Biotechnology"
+}, {
+    "id": "5e77a89155063157c132c613",
+    "SravzId": "idx_us_gspc",
+    "Code": "STX",
+    "Exchange": "US",
+    "Name": "Seagate Technology plc",
+    "Sector": "Technology",
+    "Industry": "Computer Hardware"
+}, {
+    "id": "5e77a89155063157c132c618",
+    "SravzId": "idx_us_gspc",
+    "Code": "TTWO",
+    "Exchange": "US",
+    "Name": "Take-Two Interactive Software, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Electronic Gaming \u0026 Multimedia"
+}, {
+    "id": "5e77a89155063157c132c61e",
+    "SravzId": "idx_us_gspc",
+    "Code": "HP",
+    "Exchange": "US",
+    "Name": "Helmerich \u0026 Payne, Inc",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Drilling"
+}, {
+    "id": "5e77a89155063157c132c623",
+    "SravzId": "idx_us_gspc",
+    "Code": "ABC",
+    "Exchange": "US",
+    "Name": "AmerisourceBergen Corporation",
+    "Sector": "Healthcare",
+    "Industry": "Medical Distribution"
+}, {
+    "id": "5e77a89155063157c132c628",
+    "SravzId": "idx_us_gspc",
+    "Code": "WU",
+    "Exchange": "US",
+    "Name": "The Western Union Company",
+    "Sector": "Financial Services",
+    "Industry": "Credit Services"
+}, {
+    "id": "5e77a89155063157c132c62c",
+    "SravzId": "idx_us_gspc",
+    "Code": "NOW",
+    "Exchange": "US",
+    "Name": "ServiceNow, Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Application"
+}, {
+    "id": "5e77a89155063157c132c632",
+    "SravzId": "idx_us_gspc",
+    "Code": "NVR",
+    "Exchange": "US",
+    "Name": "NVR, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Residential Construction"
+}, {
+    "id": "5e77a89155063157c132c637",
+    "SravzId": "idx_us_gspc",
+    "Code": "STT",
+    "Exchange": "US",
+    "Name": "State Street Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Asset Management"
+}, {
+    "id": "5e77a89155063157c132c63c",
+    "SravzId": "idx_us_gspc",
+    "Code": "TFX",
+    "Exchange": "US",
+    "Name": "Teleflex Incorporated",
+    "Sector": "Healthcare",
+    "Industry": "Medical Instruments \u0026 Supplies"
+}, {
+    "id": "5e77a89155063157c132c641",
+    "SravzId": "idx_us_gspc",
+    "Code": "ABMD",
+    "Exchange": "US",
+    "Name": "Abiomed, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Devices"
+}, {
+    "id": "5e77a89155063157c132c646",
+    "SravzId": "idx_us_gspc",
+    "Code": "ABBV",
+    "Exchange": "US",
+    "Name": "AbbVie Inc",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-General"
+}, {
+    "id": "5e77a89155063157c132c64b",
+    "SravzId": "idx_us_gspc",
+    "Code": "BR",
+    "Exchange": "US",
+    "Name": "Broadridge Financial Solutions, Inc",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a89155063157c132c650",
+    "SravzId": "idx_us_gspc",
+    "Code": "NEE",
+    "Exchange": "US",
+    "Name": "NextEra Energy, Inc",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89155063157c132c655",
+    "SravzId": "idx_us_gspc",
+    "Code": "MCHP",
+    "Exchange": "US",
+    "Name": "Microchip Technology Incorporated",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89155063157c132c65a",
+    "SravzId": "idx_us_gspc",
+    "Code": "AGN",
+    "Exchange": "US",
+    "Name": "Allergan plc",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers—General"
+}, {
+    "id": "5e77a89155063157c132c65f",
+    "SravzId": "idx_us_gspc",
+    "Code": "PYPL",
+    "Exchange": "US",
+    "Name": "PayPal Holdings, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Credit Services"
+}, {
+    "id": "5e77a89155063157c132c665",
+    "SravzId": "idx_us_gspc",
+    "Code": "BF-B",
+    "Exchange": "US",
+    "Name": "Brown-Forman Corporation",
+    "Sector": "Consumer Defensive",
+    "Industry": "Beverages-Wineries \u0026 Distilleries"
+}, {
+    "id": "5e77a89155063157c132c66a",
+    "SravzId": "idx_us_gspc",
+    "Code": "SYF",
+    "Exchange": "US",
+    "Name": "Synchrony Financial",
+    "Sector": "Financial Services",
+    "Industry": "Credit Services"
+}, {
+    "id": "5e77a89155063157c132c66f",
+    "SravzId": "idx_us_gspc",
+    "Code": "ANET",
+    "Exchange": "US",
+    "Name": "Arista Networks, Inc",
+    "Sector": "Technology",
+    "Industry": "Computer Hardware"
+}, {
+    "id": "5e77a89155063157c132c674",
+    "SravzId": "idx_us_gspc",
+    "Code": "ANTM",
+    "Exchange": "US",
+    "Name": "Anthem, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Healthcare Plans"
+}, {
+    "id": "5e77a89155063157c132c679",
+    "SravzId": "idx_us_gspc",
+    "Code": "MAA",
+    "Exchange": "US",
+    "Name": "Mid-America Apartment Communities, Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Residential"
+}, {
+    "id": "5e77a89155063157c132c67e",
+    "SravzId": "idx_us_gspc",
+    "Code": "KEYS",
+    "Exchange": "US",
+    "Name": "Keysight Technologies, Inc",
+    "Sector": "Technology",
+    "Industry": "Scientific \u0026 Technical Instruments"
+}, {
+    "id": "5e77a89155063157c132c683",
+    "SravzId": "idx_us_gspc",
+    "Code": "BRK-B",
+    "Exchange": "US",
+    "Name": "Berkshire Hathaway Inc",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Diversified"
+}, {
+    "id": "5e77a89155063157c132c688",
+    "SravzId": "idx_us_gspc",
+    "Code": "CFG",
+    "Exchange": "US",
+    "Name": "Citizens Financial Group, Inc",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89155063157c132c68d",
+    "SravzId": "idx_us_gspc",
+    "Code": "KHC",
+    "Exchange": "US",
+    "Name": "The Kraft Heinz Company",
+    "Sector": "Consumer Defensive",
+    "Industry": "Packaged Foods"
+}, {
+    "id": "5e77a89155063157c132c692",
+    "SravzId": "idx_us_gspc",
+    "Code": "HPE",
+    "Exchange": "US",
+    "Name": "Hewlett Packard Enterprise Company",
+    "Sector": "Technology",
+    "Industry": "Communication Equipment"
+}, {
+    "id": "5e77a89155063157c132c697",
+    "SravzId": "idx_us_gspc",
+    "Code": "WBA",
+    "Exchange": "US",
+    "Name": "Walgreens Boots Alliance, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Pharmaceutical Retailers"
+}, {
+    "id": "5e77a89155063157c132c69c",
+    "SravzId": "idx_us_gspc",
+    "Code": "ES",
+    "Exchange": "US",
+    "Name": "Eversource Energy",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89155063157c132c6a1",
+    "SravzId": "idx_us_gspc",
+    "Code": "ZBH",
+    "Exchange": "US",
+    "Name": "Zimmer Biomet Holdings, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Devices"
+}, {
+    "id": "5e77a89155063157c132c6a6",
+    "SravzId": "idx_us_gspc",
+    "Code": "QRVO",
+    "Exchange": "US",
+    "Name": "Qorvo, Inc",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "5e77a89155063157c132c6ab",
+    "SravzId": "idx_us_gspc",
+    "Code": "WRK",
+    "Exchange": "US",
+    "Name": "WestRock Company",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Packaging \u0026 Containers"
+}, {
+    "id": "5e77a89155063157c132c6b0",
+    "SravzId": "idx_us_gspc",
+    "Code": "WLTW",
+    "Exchange": "US",
+    "Name": "Willis Towers Watson Public Limited Company",
+    "Sector": "Financial Services",
+    "Industry": "Insurance Brokers"
+}, {
+    "id": "5e77a89155063157c132c6b5",
+    "SravzId": "idx_us_gspc",
+    "Code": "SPGI",
+    "Exchange": "US",
+    "Name": "S\u0026P Global Inc",
+    "Sector": "Financial Services",
+    "Industry": "Financial Data \u0026 Stock Exchanges"
+}, {
+    "id": "5e77a89155063157c132c6ba",
+    "SravzId": "idx_us_gspc",
+    "Code": "FTV",
+    "Exchange": "US",
+    "Name": "Fortive Corporation",
+    "Sector": "Technology",
+    "Industry": "Scientific \u0026 Technical Instruments"
+}, {
+    "id": "5e77a89155063157c132c6bd",
+    "SravzId": "idx_us_gspc",
+    "Code": "ARNC",
+    "Exchange": "US",
+    "Name": "Arconic Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89155063157c132c6c3",
+    "SravzId": "idx_us_gspc",
+    "Code": "LW",
+    "Exchange": "US",
+    "Name": "Lamb Weston Holdings, Inc",
+    "Sector": "Consumer Defensive",
+    "Industry": "Packaged Foods"
+}, {
+    "id": "5e77a89155063157c132c6c9",
+    "SravzId": "idx_us_gspc",
+    "Code": "UAA",
+    "Exchange": "US",
+    "Name": "Under Armour, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Apparel Manufacturing"
+}, {
+    "id": "5e77a89155063157c132c6ce",
+    "SravzId": "idx_us_gspc",
+    "Code": "DXC",
+    "Exchange": "US",
+    "Name": "DXC Technology Company",
+    "Sector": "Technology",
+    "Industry": "Information Technology Services"
+}, {
+    "id": "5e77a89155063157c132c6d3",
+    "SravzId": "idx_us_gspc",
+    "Code": "HD",
+    "Exchange": "US",
+    "Name": "The Home Depot, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Home Improvement Retail"
+}, {
+    "id": "5e77a89155063157c132c6d8",
+    "SravzId": "idx_us_gspc",
+    "Code": "EXC",
+    "Exchange": "US",
+    "Name": "Exelon Corporation",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Diversified"
+}, {
+    "id": "5e77a89155063157c132c6dd",
+    "SravzId": "idx_us_gspc",
+    "Code": "LH",
+    "Exchange": "US",
+    "Name": "Laboratory Corporation of America Holdings",
+    "Sector": "Healthcare",
+    "Industry": "Diagnostics \u0026 Research"
+}, {
+    "id": "5e77a89155063157c132c6e2",
+    "SravzId": "idx_us_gspc",
+    "Code": "MTD",
+    "Exchange": "US",
+    "Name": "Mettler-Toledo International Inc",
+    "Sector": "Healthcare",
+    "Industry": "Diagnostics \u0026 Research"
+}, {
+    "id": "5e77a89155063157c132c6e7",
+    "SravzId": "idx_us_gspc",
+    "Code": "SLB",
+    "Exchange": "US",
+    "Name": "Schlumberger Limited",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Equipment \u0026 Services"
+}, {
+    "id": "5e77a89155063157c132c6ec",
+    "SravzId": "idx_us_gspc",
+    "Code": "UTX",
+    "Exchange": "US",
+    "Name": "United Technologies Corporation",
+    "Sector": "Industrials",
+    "Industry": "Aerospace \u0026 Defense"
+}, {
+    "id": "5e77a89155063157c132c6f1",
+    "SravzId": "idx_us_gspc",
+    "Code": "CBRE",
+    "Exchange": "US",
+    "Name": "CBRE Group, Inc",
+    "Sector": "Real Estate",
+    "Industry": "Real Estate Services"
+}, {
+    "id": "5e77a89155063157c132c6f5",
+    "SravzId": "idx_us_gspc",
+    "Code": "TPR",
+    "Exchange": "US",
+    "Name": "Tapestry, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Luxury Goods"
+}, {
+    "id": "5e77a89155063157c132c6fb",
+    "SravzId": "idx_us_gspc",
+    "Code": "IQV",
+    "Exchange": "US",
+    "Name": "IQVIA Holdings Inc",
+    "Sector": "Healthcare",
+    "Industry": "Diagnostics \u0026 Research"
+}, {
+    "id": "5e77a89155063157c132c700",
+    "SravzId": "idx_us_gspc",
+    "Code": "APTV",
+    "Exchange": "US",
+    "Name": "Aptiv PLC",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Auto Parts"
+}, {
+    "id": "5e77a89155063157c132c705",
+    "SravzId": "idx_us_gspc",
+    "Code": "BKNG",
+    "Exchange": "US",
+    "Name": "Booking Holdings Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Travel Services"
+}, {
+    "id": "5e77a89155063157c132c70a",
+    "SravzId": "idx_us_gspc",
+    "Code": "WELL",
+    "Exchange": "US",
+    "Name": "Welltower Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Healthcare Facilities"
+}, {
+    "id": "5e77a89155063157c132c70f",
+    "SravzId": "idx_us_gspc",
+    "Code": "EVRG",
+    "Exchange": "US",
+    "Name": "Evergy, Inc",
+    "Sector": "Utilities",
+    "Industry": "Utilities-Regulated Electric"
+}, {
+    "id": "5e77a89155063157c132c714",
+    "SravzId": "idx_us_gspc",
+    "Code": "LIN",
+    "Exchange": "US",
+    "Name": "Linde plc",
+    "Sector": "Basic Materials",
+    "Industry": "Specialty Chemicals"
+}, {
+    "id": "5e77a89155063157c132c719",
+    "SravzId": "idx_us_gspc",
+    "Code": "CPRI",
+    "Exchange": "US",
+    "Name": "Capri Holdings Limited",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Apparel Manufacturing"
+}, {
+    "id": "5e77a89155063157c132c71e",
+    "SravzId": "idx_us_gspc",
+    "Code": "BKR",
+    "Exchange": "US",
+    "Name": "Baker Hughes Company",
+    "Sector": "Energy",
+    "Industry": "Oil \u0026 Gas Equipment \u0026 Services"
+}, {
+    "id": "5e77a89155063157c132c723",
+    "SravzId": "idx_us_gspc",
+    "Code": "GL",
+    "Exchange": "US",
+    "Name": "Globe Life Inc",
+    "Sector": "Financial Services",
+    "Industry": "Insurance-Life"
+}, {
+    "id": "5e77a89155063157c132c728",
+    "SravzId": "idx_us_gspc",
+    "Code": "PEAK",
+    "Exchange": "US",
+    "Name": "Healthpeak Properties, Inc",
+    "Sector": "Real Estate",
+    "Industry": "REIT-Healthcare Facilities"
+}, {
+    "id": "5e77a89155063157c132c72a",
+    "SravzId": "idx_us_gspc",
+    "Code": "TT",
+    "Exchange": "US",
+    "Name": "Trane Technologies plc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5e77a89155063157c132c730",
+    "SravzId": "idx_us_gspc",
+    "Code": "VIAC",
+    "Exchange": "US",
+    "Name": "ViacomCBS Inc",
+    "Sector": "Communication Services",
+    "Industry": "Entertainment"
+}, {
+    "id": "5e77a89155063157c132c736",
+    "SravzId": "idx_us_gspc",
+    "Code": "TFC",
+    "Exchange": "US",
+    "Name": "Truist Financial Corporation",
+    "Sector": "Financial Services",
+    "Industry": "Banks-Regional"
+}, {
+    "id": "5e77a89155063157c132c73b",
+    "SravzId": "idx_us_gspc",
+    "Code": "CTVA",
+    "Exchange": "US",
+    "Name": "Corteva, Inc",
+    "Sector": "Basic Materials",
+    "Industry": "Agricultural Inputs"
+}, {
+    "id": "5e77a89155063157c132c740",
+    "SravzId": "idx_us_gspc",
+    "Code": "AMCR",
+    "Exchange": "US",
+    "Name": "Amcor plc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Packaging \u0026 Containers"
+}, {
+    "id": "5e77a89155063157c132c745",
+    "SravzId": "idx_us_gspc",
+    "Code": "LHX",
+    "Exchange": "US",
+    "Name": "L3Harris Technologies, Inc",
+    "Sector": "Industrials",
+    "Industry": "Aerospace \u0026 Defense"
+}, {
+    "id": "5e77a89155063157c132c74a",
+    "SravzId": "idx_us_gspc",
+    "Code": "NLOK",
+    "Exchange": "US",
+    "Name": "NortonLifeLock Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Infrastructure"
+}, {
+    "id": "5e77a89155063157c132c74f",
+    "SravzId": "idx_us_gspc",
+    "Code": "J",
+    "Exchange": "US",
+    "Name": "Jacobs Engineering Group Inc",
+    "Sector": "Industrials",
+    "Industry": "Engineering \u0026 Construction"
+}, {
+    "id": "5eab67be55063157c1152f4c",
+    "SravzId": "idx_us_gspc",
+    "Code": "HWM",
+    "Exchange": "US",
+    "Name": "Howmet Aerospace Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5eab67bf55063157c1152f5b",
+    "SravzId": "idx_us_gspc",
+    "Code": "CARR",
+    "Exchange": "US",
+    "Name": "Carrier Global Corporation",
+    "Sector": "Industrials",
+    "Industry": "Building Products \u0026 Equipment"
+}, {
+    "id": "5eab67bf55063157c1152f60",
+    "SravzId": "idx_us_gspc",
+    "Code": "OTIS",
+    "Exchange": "US",
+    "Name": "Otis Worldwide Corporation",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "5eab67bf55063157c1152f65",
+    "SravzId": "idx_us_gspc",
+    "Code": "RTX",
+    "Exchange": "US",
+    "Name": "Raytheon Technologies Corporation",
+    "Sector": "Industrials",
+    "Industry": "Aerospace \u0026 Defense"
+}, {
+    "id": "5ed4493e6a036b67a7c232d3",
+    "SravzId": "idx_us_gspc",
+    "Code": "DXCM",
+    "Exchange": "US",
+    "Name": "DexCom, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Diagnostics \u0026 Research"
+}, {
+    "id": "5ed449486a036b67a7c2340a",
+    "SravzId": "idx_us_gspc",
+    "Code": "WST",
+    "Exchange": "US",
+    "Name": "West Pharmaceutical Services, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Instruments \u0026 Supplies"
+}, {
+    "id": "5ed4494a6a036b67a7c23459",
+    "SravzId": "idx_us_gspc",
+    "Code": "DPZ",
+    "Exchange": "US",
+    "Name": "Domino's Pizza, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Restaurants"
+}, {
+    "id": "5f24b84a6a036b67a7ff592b",
+    "SravzId": "idx_us_gspc",
+    "Code": "TDY",
+    "Exchange": "US",
+    "Name": "Teledyne Technologies Incorporated",
+    "Sector": "Technology",
+    "Industry": "Scientific \u0026 Technical Instruments"
+}, {
+    "id": "5f24b84b6a036b67a7ff5946",
+    "SravzId": "idx_us_gspc",
+    "Code": "BIO",
+    "Exchange": "US",
+    "Name": "Bio-Rad Laboratories, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Medical Devices"
+}, {
+    "id": "5f24b8686a036b67a7ff5c13",
+    "SravzId": "idx_us_gspc",
+    "Code": "TYL",
+    "Exchange": "US",
+    "Name": "Tyler Technologies, Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Application"
+}, {
+    "id": "5f6cae926a036b67a7eacc8d",
+    "SravzId": "idx_us_gspc",
+    "Code": "LUMN",
+    "Exchange": "US",
+    "Name": "Lumen Technologies, Inc",
+    "Sector": "Communication Services",
+    "Industry": "Telecom Services"
+}, {
+    "id": "5f9e34e26a036b67a7f2ca3d",
+    "SravzId": "idx_us_gspc",
+    "Code": "POOL",
+    "Exchange": "US",
+    "Name": "Pool Corporation",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Leisure"
+}, {
+    "id": "5f9e34e66a036b67a7f2caaf",
+    "SravzId": "idx_us_gspc",
+    "Code": "TER",
+    "Exchange": "US",
+    "Name": "Teradyne, Inc",
+    "Sector": "Technology",
+    "Industry": "Semiconductor Equipment \u0026 Materials"
+}, {
+    "id": "5f9e34ec6a036b67a7f2cb9f",
+    "SravzId": "idx_us_gspc",
+    "Code": "CTLT",
+    "Exchange": "US",
+    "Name": "Catalent, Inc",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-Specialty \u0026 Generic"
+}, {
+    "id": "5f9e34ed6a036b67a7f2cbaa",
+    "SravzId": "idx_us_gspc",
+    "Code": "ETSY",
+    "Exchange": "US",
+    "Name": "Etsy, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Internet Retail"
+}, {
+    "id": "5f9e34ee6a036b67a7f2cbda",
+    "SravzId": "idx_us_gspc",
+    "Code": "VNT",
+    "Exchange": "US",
+    "Name": "Vontier Corporation",
+    "Sector": "Technology",
+    "Industry": "Scientific \u0026 Technical Instruments"
+}, {
+    "id": "5fc5d0f26a036b67a7b6515a",
+    "SravzId": "idx_us_gspc",
+    "Code": "VTRS",
+    "Exchange": "US",
+    "Name": "Viatris Inc",
+    "Sector": "Healthcare",
+    "Industry": "Drug Manufacturers-Specialty \u0026 Generic"
+}, {
+    "id": "5feeadcc6a036b67a778a36f",
+    "SravzId": "idx_us_gspc",
+    "Code": "TSLA",
+    "Exchange": "US",
+    "Name": "Tesla, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Auto Manufacturers"
+}, {
+    "id": "60178ffc6a036b67a73c3b52",
+    "SravzId": "idx_us_gspc",
+    "Code": "ENPH",
+    "Exchange": "US",
+    "Name": "Enphase Energy, Inc",
+    "Sector": "Technology",
+    "Industry": "Solar"
+}, {
+    "id": "601790266a036b67a73c3c2e",
+    "SravzId": "idx_us_gspc",
+    "Code": "TRMB",
+    "Exchange": "US",
+    "Name": "Trimble Inc",
+    "Sector": "Technology",
+    "Industry": "Scientific \u0026 Technical Instruments"
+}, {
+    "id": "603c79926a036b67a7e64103",
+    "SravzId": "idx_us_gspc",
+    "Code": "MPWR",
+    "Exchange": "US",
+    "Name": "Monolithic Power Systems, Inc",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "606555b46a036b67a703b67e",
+    "SravzId": "idx_us_gspc",
+    "Code": "NXPI",
+    "Exchange": "US",
+    "Name": "NXP Semiconductors N.V",
+    "Sector": "Technology",
+    "Industry": "Semiconductors"
+}, {
+    "id": "606555b76a036b67a703b98a",
+    "SravzId": "idx_us_gspc",
+    "Code": "GNRC",
+    "Exchange": "US",
+    "Name": "Generac Holdings Inc",
+    "Sector": "Industrials",
+    "Industry": "Specialty Industrial Machinery"
+}, {
+    "id": "606555b96a036b67a703bc9a",
+    "SravzId": "idx_us_gspc",
+    "Code": "PENN",
+    "Exchange": "US",
+    "Name": "Penn National Gaming, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Resorts \u0026 Casinos"
+}, {
+    "id": "606555bc6a036b67a703c1e4",
+    "SravzId": "idx_us_gspc",
+    "Code": "CZR",
+    "Exchange": "US",
+    "Name": "Caesars Entertainment, Inc",
+    "Sector": "Consumer Cyclical",
+    "Industry": "Resorts \u0026 Casinos"
+}, {
+    "id": "608cd3af064a0a4dc41c4120",
+    "SravzId": "idx_us_gspc",
+    "Code": "PTC",
+    "Exchange": "US",
+    "Name": "PTC Inc",
+    "Sector": "Technology",
+    "Industry": "Software-Application"
+}]
+
