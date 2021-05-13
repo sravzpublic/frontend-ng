@@ -317,7 +317,6 @@
     margin-left: -.5em;
     margin-top: -.5em;
   }
-
 </style>
 
 <!-- Toolbar -->
@@ -337,25 +336,28 @@
 </div>
 
 <div class="content" role="main">
+  
+  <app-chart></app-chart>
   <div class="select">
-  <span><label>Select</label></span>
-  <span>
-    <igx-input-group #inputGroup [igxToggleAction]="dropDown" class="input-group">
-      <input #input class="input" type="text" igxInput [igxDropDownItemNavigation]="dropDown" readonly="true"
-        placeholder="Choose an option" [value]="type" (keydown.ArrowDown)="openDropDown()" />
-      <igx-suffix igxButton="icon" class="dropdownToggleButton" igxRipple>
-        <igx-icon>arrow_drop{{ dropDown.collapsed ? '_down' : '_up' }}</igx-icon>
-      </igx-suffix>
-    </igx-input-group>
-    <!-- <span>Selected: {{ dropDown.selectedItem?.value }}</span> -->
+    <span><label>Select</label></span>
+    <span>
+      <igx-input-group #inputGroup [igxToggleAction]="dropDown" class="input-group">
+        <input #input class="input" type="text" igxInput [igxDropDownItemNavigation]="dropDown" readonly="true"
+          placeholder="Choose an option" [value]="type" (keydown.ArrowDown)="openDropDown()" />
+        <igx-suffix igxButton="icon" class="dropdownToggleButton" igxRipple>
+          <igx-icon>arrow_drop{{ dropDown.collapsed ? '_down' : '_up' }}</igx-icon>
+        </igx-suffix>
+      </igx-input-group>
+      <!-- <span>Selected: {{ dropDown.selectedItem?.value }}</span> -->
 
-    <igx-drop-down #dropDown (onSelection)="onDDLSelection($event)" [width]="'180px'">
-      <igx-drop-down-item *ngFor="let item of items" [value]="item.field">
-        {{ item.field }}
-      </igx-drop-down-item>
-    </igx-drop-down>
-  </span>
-</div>
+      <igx-drop-down #dropDown (onSelection)="onDDLSelection($event)" [width]="'180px'">
+        <igx-drop-down-item *ngFor="let item of items" [value]="item.field">
+          {{ item.field }}
+        </igx-drop-down-item>
+      </igx-drop-down>
+    </span>
+  </div>
+
   <!-- <button class="button" igxButton="raised" [igxToggleAction]="dropdown"
     [igxDropDownItemNavigation]="dropdown">{{type==null?'Select':type}}</button>
   <igx-drop-down #dropdown (onSelection)="onDDLSelection($event)">

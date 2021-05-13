@@ -69,7 +69,7 @@ export class AppComponent {
         this.createPortfolio();
         this.data = this.dataCommoditiesGrid;
         this.selectedRows = [];
-        this.igxDropDown.selectedItem.value = this.type;
+        //this.igxDropDown.selectedItem.value = this.type;
 
     }
 

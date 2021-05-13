@@ -7,10 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IgxAvatarModule, IgxBadgeModule, IgxButtonModule, IgxCheckboxModule, IgxDropDownModule, IgxGridModule, IgxGridRowComponent, IgxIconModule, IgxInputGroupModule, IgxSnackbarModule, IgxSwitchModule, IgxToggleModule } from 'igniteui-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
+import { IgxCategoryChartModule } from 'igniteui-angular-charts';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { DatePipe } from '@angular/common';
     IgxToggleModule,
     IgxDropDownModule,
     IgxInputGroupModule,
-    IgxCheckboxModule
+    IgxCheckboxModule,
+    IgxCategoryChartModule
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
