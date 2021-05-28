@@ -7,13 +7,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IgxAvatarModule, IgxBadgeModule, IgxButtonModule, IgxCheckboxModule, IgxDropDownModule, IgxGridModule, IgxGridRowComponent, IgxIconModule, IgxInputGroupModule, IgxSnackbarModule, IgxSwitchModule, IgxToggleModule } from 'igniteui-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
-import { IgxCategoryChartModule } from 'igniteui-angular-charts';
+import { IgxCategoryChartModule, IgxFinancialChartModule, IgxLegendModule } from 'igniteui-angular-charts';
 import { ChartComponent } from './chart/chart.component';
+import { FinalcialChartComponent } from './finalcial-chart/finalcial-chart.component';
+import { StockDataService } from '../app/services/stock-data.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChartComponent
+    ChartComponent,
+    FinalcialChartComponent
   ],
   imports: [
     BrowserModule,
@@ -36,9 +39,12 @@ import { ChartComponent } from './chart/chart.component';
     IgxDropDownModule,
     IgxInputGroupModule,
     IgxCheckboxModule,
-    IgxCategoryChartModule
+    IgxCategoryChartModule,
+    IgxFinancialChartModule,
+    IgxLegendModule
   ],
-  providers: [DatePipe],
+
+  providers: [DatePipe, StockDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

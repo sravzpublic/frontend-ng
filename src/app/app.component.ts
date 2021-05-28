@@ -1,4 +1,5 @@
 import { DatePipe } from '@angular/common';
+import { ThrowStmt } from '@angular/compiler';
 import { Component, Injectable, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ConnectedPositioningStrategy, HorizontalAlignment, IgxDropDownComponent, IgxGridComponent, IgxInputGroupComponent, IgxNumberSummaryOperand, IgxSnackbarComponent, IgxSummaryResult, ISelectionEventArgs, NoOpScrollStrategy, VerticalAlignment } from 'igniteui-angular';
@@ -116,6 +117,21 @@ export class AppComponent {
         console.log("this.type: ", this.type);
         // eventArgs.cancel = true;
     }
+
+    private backgroundClasses = (rowData: any, columnKey: string): boolean => {
+        return rowData.Chg_Pct > 0;
+    };
+
+    private backgroundClasssesPsPercentage = (rowData: any, columnKey: string): boolean => {
+        return rowData.Chg_Pct < 0;
+    };
+    
+    backgroundCell = {
+        'showUp': this.backgroundClasses,
+        'showDown': this.backgroundClasssesPsPercentage
+    };
+
+
 
     getSelectedRows(type) {
         if (this.selectedItemsNewGrid.length > 0) {

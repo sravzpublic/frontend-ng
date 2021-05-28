@@ -336,7 +336,7 @@
 </div>
 
 <div class="content" role="main">
-  
+  <app-finalcial-chart></app-finalcial-chart>
   <app-chart></app-chart>
   <div class="select">
     <span><label>Select</label></span>
@@ -378,16 +378,17 @@
         <igx-grid #grid1 [data]="data" [allowFiltering]="true" [paging]="true" primaryKey="id"
           [rowSelection]="'multiple'" (onRowSelectionChange)="handleRowSelection($event)" width="auto" [perPage]="10"
           height="600px">
-          <igx-column header="SravzId" [dataType]="'string'" width="200" field="SravzId" sortable="true"
+          <igx-column header="SravzId" [dataType]="'string'" width="200" field="SravzId" sortable="true" [cellClasses]="backgroundCell"
             [filterable]="false"></igx-column>
-          <igx-column field="Name" header="Name" [dataType]="'string'" width="200" sortable="true"></igx-column>
-          <igx-column field="Country" header="Country" [dataType]="'string'" sortable="true"></igx-column>
-          <igx-column field="Last" header="Last" dataType="number" sortable="true"></igx-column>
-          <igx-column field="High" header="High" dataType="number" sortable="true"></igx-column>
-          <igx-column field="Low" header="Low" dataType="number" sortable="true"></igx-column>
-          <igx-column field="chg" header="Change" dataType="number" sortable="true"></igx-column>
-          <igx-column field="Chg_Pct" header="Chg%" dataType="number" sortable="true"></igx-column>
-          <igx-column field="Time" header="Time" [dataType]="'date'" sortable="true">
+          <igx-column field="Name" header="Name" [dataType]="'string'" width="200" sortable="true" [cellClasses]="backgroundCell"></igx-column>
+          <igx-column field="Country" header="Country" [dataType]="'string'" sortable="true" [cellClasses]="backgroundCell"></igx-column>
+          <igx-column field="Last" header="Last" dataType="number" sortable="true" [cellClasses]="backgroundCell"></igx-column>
+          <igx-column field="High" header="High" dataType="number" sortable="true" [cellClasses]="backgroundCell"></igx-column>
+          <igx-column field="Low" header="Low" dataType="number" sortable="true" [cellClasses]="backgroundCell"></igx-column>
+          <igx-column field="chg" header="Change" dataType="number" sortable="true" [cellClasses]="backgroundCell"></igx-column>
+          <igx-column field="Chg_Pct" header="Chg%" dataType="number" sortable="true" [cellClasses]="backgroundCell">
+          </igx-column>
+          <igx-column field="Time" header="Time" [dataType]="'date'" sortable="true" [cellClasses]="backgroundCell">
             <ng-template igxCell let-value>
               {{ value | date : 'MM/dd/yyyy h:mm:ss a' }}
             </ng-template>

@@ -1,9 +1,9 @@
 .cellAlignSyle {
     text-align: right;
-    float:right;
+    float: right;
 }
 .cellAlignSyle > span {
-    float:right;
+    float: right;
 }
 .up {
     color: green;
@@ -11,6 +11,15 @@
 .down {
     color: red;
 }
+::ng-deep {
+    .showUp {
+        background-color: lightgreen;
+    }
+    .showDown {
+        background-color: lightpink;
+    }
+}
+
 .headerAlignSyle {
     text-align: right !important;
 }
@@ -19,7 +28,7 @@
     width: 20%;
     display: flex;
 
-    margin: 0% 0% 20px 10px
+    margin: 0% 0% 20px 10px;
 }
 
 .grid-controls {
@@ -69,20 +78,20 @@ igx-snackbar {
         margin: 20px;
     }
 }
-.select{
-    label{
+.select {
+    label {
         font-weight: bold;
     }
-   span{
-    display: inline-block;
-    margin-right: 11px;
-   } 
+    span {
+        display: inline-block;
+        margin-right: 11px;
+    }
 }
 .form-sec {
     padding: 10px;
     border: 1px solid #ddd;
     margin-top: 20px;
-    button{
+    button {
         margin-left: 10px;
     }
 }

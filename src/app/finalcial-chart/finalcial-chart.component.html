@@ -1,0 +1,11 @@
+<div class="container sample">
+    <igx-financial-chart height="100%" width="100%" [dataSource]="data" #chart>
+    </igx-financial-chart>
+</div>
+<div>
+    <label>Select</label>
+    <select (change)="onOptionSelect($event)">
+        <option value="1">Amazon 1</option>
+        <option value="2">Amazon 2</option>
+    </select>
+</div>
