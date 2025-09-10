@@ -1,0 +1,12 @@
+.linear-container {
+    margin-top: 20px;
+}
+
+.button-sample {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 30%;
+    margin: 16px 0;
+}

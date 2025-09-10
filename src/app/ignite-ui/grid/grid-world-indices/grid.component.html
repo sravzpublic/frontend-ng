@@ -1,0 +1,122 @@
+<div>
+
+    <div>
+        <div class="switch-sample">
+            <h5 class="switch-sample__title">Index Quotes</h5>
+        </div>
+        <igx-input-group>
+            <input class="gridSample__filter" igxInput type="text" placeholder="Filter by name"
+                (input)="filter($event.target.value, 'name')">
+        </igx-input-group>
+        <igx-input-group>
+            <input class="gridSample__filter" igxInput type="text" placeholder="Filter by country"
+                (input)="filter($event.target.value, 'country')">
+        </igx-input-group>
+    </div>
+
+    <igx-grid #grid1 [data]="indexQuotes"  height="600px" [allowFiltering]="true">
+        <igx-paginator [perPage]="10">
+        </igx-paginator>
+        <igx-column field="SravzId" header="Sravz ID" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Name" header="Name" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Country" header="Country" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Currency" header="Currency" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Time" header="Time" dataType="number" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Open" header="Open" dataType="number" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="High" header="High" dataType="number" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Low" header="Low" dataType="number" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Last" header="Last" dataType="number" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Change" header="Change" dataType="number" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Volume" header="Volume" dataType="number" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+        <igx-column field="PreviousClose" header="Previous Close" dataType="number" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+        <igx-column field="PercentChange" header="Percent Change" dataType="number" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+    </igx-grid>
+</div>

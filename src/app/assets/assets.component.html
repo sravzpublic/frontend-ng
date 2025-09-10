@@ -1,0 +1,75 @@
+<h5 class="sample-title">Charts
+  <a href="https://youtu.be/nNVu_Zq68eA" target="_blank" class="pull-right" style="margin-left:5px">
+    <span class="fa fa-youtube"></span>
+  </a>
+  <a href="https://github.com/sravzpublic/training/blob/master/notebooks/Charts.ipynb" target="_blank"
+    class="pull-right" style="margin-left:5px">
+    <span class="fa fa-github"></span>
+  </a>
+  <a href="https://docs.sravz.com/docs/data/charts/" target="_blank" class="pull-right">
+    <span class="fa fa-book"></span>
+  </a>
+</h5>
+
+<igx-tabs (selectedItemChange)="onTabSelected($event)" #tab>
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Real Time</span>
+    </igx-tab-header>
+    <igx-tab-content>
+    </igx-tab-content>
+  </igx-tab-item>
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Market Heatmap</span>
+    </igx-tab-header>
+    <igx-tab-content> 
+      <div class="tradingview-widget-container" [hidden]="!showChartMarketHeatMap">
+        <h5>NASDQA 100</h5>
+        <div #tradingview_heatmap></div>
+        <h5>S&P 500</h5>
+        <div #tradingview_heatmap_spx500></div>
+      </div>           
+    </igx-tab-content>
+  </igx-tab-item>  
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Technical</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <iframe height="800" width="1034" src="https://ssltvc.investing.com/?pair_ID=8849&height=800&width=800&interval=300&plotStyle=area&domain_ID=1&lang_ID=1&timezone_ID=7"></iframe>
+    </igx-tab-content>
+  </igx-tab-item>
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Historical</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <div class="layout-sample">
+        <div class="layout-box" igxLayout igxLayoutDir="column">
+          <div class="layout-box__el" igxFlex igxFlexGrow="0">
+            <div class="sample__header">
+            </div>
+            <h5>Select upto {{selectedAssets.length}}/{{maxNumberOfAssetSelectionAllowed}} assets</h5>
+            <grid-assets [rowSelectionMode]="'multiple'" [assets]="assets" (assetsSelected)="onAssetsSelected($event)">
+            </grid-assets>
+          </div>
+          <button style="margin: 5px;" class="pull-right" igxButton="contained" [disabled]="selectedAssets.length == 0 || selectedAssets.length > maxNumberOfAssetSelectionAllowed" (click)="getCombinedChart()" igxRipple>Submit</button>
+          <div class="layout-box__el" igxFlex igxFlexGrow="0">
+            <layout-expansion-combined-chart></layout-expansion-combined-chart>
+          </div>
+        </div>
+      </div>
+    </igx-tab-content>
+  </igx-tab-item>
+</igx-tabs>
+
+<!-- <div class="tradingview-widget-container" [hidden]="!showChartMarketHeatMap">
+  <div id="tradingview_heatmap"></div>
+</div> -->
+
+
+
+<div class="tradingview-widget-container" [hidden]="!showChart">
+  <div id="tradingview"></div>
+</div>

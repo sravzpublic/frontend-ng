@@ -1,0 +1,37 @@
+<igx-dialog #dialog [closeOnOutsideSelect]="true">
+  <igx-dialog-title>
+    <div class="title-container">
+      <div class="dialog-title">{{modalHeader}}</div>
+    </div>
+  </igx-dialog-title>
+  <span *ngIf="portfolioToDelete != undefined && portfolioToDelete != undefined">{{portfolioToDelete.name}}</span>
+      <div igxDialogActions>
+      <button igxButton (click)="dialog.close()">Close</button>
+      <button igxButton (click)="DeleteOrUpdate()" [disabled]="!enableSubmitButton">{{modalSubmitButtonText}}</button>
+    </div>
+
+</igx-dialog>
+<h5>Portfolios
+  <!-- <a href="https://youtu.be/h6OVjj4NoCc" target="_blank" class="pull-right" style="margin-left:5px">
+    <span class="fa fa-youtube"></span>
+  </a> -->
+  <a href="https://docs.sravz.com/docs/data/portfolios/" target="_blank" class="pull-right" style="margin-left:5px">
+    <span class="fa fa-book"></span>
+  </a>
+  <button class="btn btn-primary pull-right btn-sm" [routerLink]="'/portfolio/create'">
+    <i class="fa fa-plus"></i>
+  </button>
+</h5>
+
+<grid-portfolios *ngIf="portfolios?.length > 0" (deleteEvent)="DeleteRow($event)" [isDeleteIcon] = "true" [isDetailIcon] = "true" (rowDetailEvent)="RowDetails($event)"
+  [portfoliosEvents]="portfolios"></grid-portfolios>
+
+<div *ngIf="selectedPortfolio">
+  <h5>{{selectedPortfolio.name}} assets</h5>
+  <grid-portfolios-assests *ngIf="portfolioAssets?.length > 0" [portfolioAssetsEvents]="portfolioAssets">
+  </grid-portfolios-assests>
+</div>
+
+<div class="layout-sample">
+  <portfolio-tearsheet [portfolioName]="portfolioName"></portfolio-tearsheet>
+</div>

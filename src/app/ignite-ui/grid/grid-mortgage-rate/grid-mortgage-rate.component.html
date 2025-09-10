@@ -1,0 +1,97 @@
+<div>
+    <igx-grid #grid1 [data]="quotesEvents"  height="600px" [allowFiltering]="true">
+        <igx-paginator [perPage]="10">
+        </igx-paginator>
+
+        <igx-column field="SravzId" header="SravzId">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Country" header="Country">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Source" header="Source">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Terms" header="Terms">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+
+        <igx-column field="ARMProgram" header="ARMProgram">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | date:'long'}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="InterestRate" header="InterestRate">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="InitialInterestRate" header="InitialInterestRate">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="InitialInterestRatePeriod" header="InitialInterestRatePeriod">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="APR" header="APR">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="EMPper1000" header="EMPper1000">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Time" header="Time">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | date:'long'}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+
+    </igx-grid>
+</div>

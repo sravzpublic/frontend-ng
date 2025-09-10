@@ -1,0 +1,20 @@
+<h5 class="sample-title">Fundamentals - {{sravzId}}
+  <a href="https://docs.sravz.com/docs/data/fundamentals/" target="_blank" class="pull-right">
+    <span class="fa fa-book"></span>
+  </a>
+</h5>
+<a href="#" (click)="back()" class="link back-link pull-right" aria-label="Back">
+  <i class="fa fa-arrow-left" aria-hidden="true"></i>
+</a>
+
+<h5 class="sample-title">Select an asset</h5>
+<div class="layout-box" igxLayout igxLayoutDir="column" style="margin-bottom:5px">
+  <div igxFlex igxFlexGrow="0">
+    <grid-stock-tickers [stockTickers]="stockTickers" (stockTickerSelected)="onStockTickerSelected($event)">
+    </grid-stock-tickers>
+  </div>
+</div>
+
+<div *ngIf="fundamentals" igxFlex igxFlexGrow="0">
+  <grid-fundamentals [fundamentals]="fundamentals"></grid-fundamentals>
+</div>

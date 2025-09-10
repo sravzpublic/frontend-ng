@@ -1,0 +1,47 @@
+<div>
+    <igx-grid #grid1 [data]="bondTickers"  height="600px"  [rowSelection]="'single'"
+        (rowSelectionChanging)="handleRowSelectionChange($event)"  (onSelection)="cellSelection($event)" [allowFiltering]="true">
+        <igx-paginator [perPage]="10">
+        </igx-paginator>
+        <igx-column field="Code" header="BondCode">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Name" header="BondName">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Country" header="Country">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Exchange" header="Exchange">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="SravzId" header="SravzId">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+    </igx-grid>
+</div>

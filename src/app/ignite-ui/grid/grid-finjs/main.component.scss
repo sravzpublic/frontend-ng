@@ -1,0 +1,23 @@
+.main__wrapper {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    app-finjs-grid {
+        height: 100%;
+    }
+}
+
+.chart-container {
+
+    width: 50vw;
+}
+
+:host ::ng-deep {
+    .fin-dark-theme {
+        .finjs-slider,
+        .sample-toolbar {
+            color: rgba(255, 255, 255, 0.87);
+        }
+    }
+}

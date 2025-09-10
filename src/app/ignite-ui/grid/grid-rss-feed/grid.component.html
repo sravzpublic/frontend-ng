@@ -1,0 +1,42 @@
+<div>
+    <igx-grid #grid1 [data]="rssFeedEntries"  height="600px" [rowSelection]="'single'"
+        (rowSelectionChanging)="handleRowSelectionChange($event)" (onSelection)="cellSelection($event)" [allowFiltering]="true">
+        <igx-paginator [perPage]="10">
+        </igx-paginator>
+        <igx-column field="title" header="Title">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="summary" header="Summary">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="sentiment" header="Sentiment" sortable="true" [cellStyles]="sentimentCellStyle">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    Neg: {{ val?.neg }}
+                    <br /> Neu: {{ val?.neu }}
+                    <br /> Pos: {{ val?.pos }}
+                    <br /> Cum: {{ val?.compound }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="datetime" header="Datetime" sortable="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | date:'full'}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+    </igx-grid>
+</div>

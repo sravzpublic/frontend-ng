@@ -1,0 +1,23 @@
+<div>
+  <div class="switch-sample">
+    <h5 class="switch-sample__title">Create Portfolio - Notional Value - $100
+      <a href="https://docs.sravz.com/docs/home/home/" target="_blank" class="pull-right" style="margin-left: 5px;">
+        <span class="fa fa-book"></span>
+      </a>
+      <!-- <a class="pull-right">
+        <span (click)="isCollapsed = !isCollapsed" class="fa fa-youtube"></span>
+      </a> -->
+      <button class="btn btn-primary pull-right btn-sm" [routerLink]="'/portfolio/list'">
+        <i class="fa fa-list"></i>
+      </button>
+    </h5>
+  </div>
+</div>
+
+<div>
+  <grid-portfolio-create [futureQuotes]="futureQuotes" [readOnly]="readOnly" [snpQuotes]="snpQuotes" [indexQuotes]="indexQuotes"
+    [currencyQuotes]="currencyQuotes" [ratesQuotes]="ratesQuotes" [cryptoQuotes]="cryptoQuotes" 
+    [vixQuotes]="vixQuotes" [etfQuotes]="etfQuotes"
+    (createPortfolio)="onPortfolioCreate($event)"
+    (fetchSnpQuotes)="onFetchSnpQuotes($event)"></grid-portfolio-create>
+</div>

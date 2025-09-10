@@ -1,0 +1,26 @@
+<div>
+    <igx-checkbox [(ngModel)]="displayLogarithmicScale">
+        Display Logarithmic Scale
+    </igx-checkbox>
+</div>
+
+<igx-financial-chart height="calc(100% - 60px)" width="100%"
+[dataSource]="stocksData"
+    chartType="line"
+    volumeType="none"
+    [yAxisIsLogarithmic]="displayLogarithmicScale"
+    brushes="#8c42f4, #1aba2a, #6b6b6b"
+    outlines="#8c42f4, #1aba2a, #6b6b6b"
+    negativeBrushes="#e23a31"
+    negativeOutlines="#e23a31"
+    finalValueAnnotationsVisible="true"
+    crosshairsDisplayMode="both"
+    crosshairsAnnotationEnabled="true"
+    calloutsVisible="true"
+    calloutsXMemberPath="index"
+    calloutsYMemberPath="value"
+    isLegendVisible="true"
+    yAxisTitle="Adjusted Close/Settle Price"
+    xAxisTitle="Date"
+    calloutsLabelMemberPath="label">
+</igx-financial-chart>

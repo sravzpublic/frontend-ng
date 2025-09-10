@@ -1,0 +1,82 @@
+<h5>Mortgage Rates
+  <a href="https://docs.sravz.com/docs/finance/mortgage-rates/" target="_blank" class="pull-right">
+    <span class="fa fa-book"></span>
+  </a>
+</h5>
+<igx-tabs #tabs>
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Rates</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <div class="mnd-rates-widget">
+        <div class="w-header" style="text-align: center; padding:4px 0;background-color: #336699; color: #FFFFFF;"> <a
+            href="https://www.mortgagenewsdaily.com/mortgage-rates/" target="_blank"
+            style="color: #FFFFFF;text-decoration:none;">Current Mortgage Rates</a></div>
+        <iframe src="//widgets.mortgagenewsdaily.com/widget/f/rates?t=large&sn=false&c=336699&u=&cbu=&w=648&h=290" frameborder="0" scrolling="no"
+          style="border: solid 1px #336699; border-width: 0 1px;box-sizing:border-box;width:100%;height:400px;display:block;"></iframe>
+      </div>
+
+      <!-- MORTGAGE RATES BEGIN -->
+      <!-- <div #rates></div> -->
+      <!-- <script
+        type="text/javascript">if (typeof jQuery == "undefined") { document.write(unescape("%3Cscript src='" + (document.location.protocol == 'https:' ? 'https:' : 'http:') + "//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'%3E%3C/script%3E")); mlcalc_jquery_noconflict = 1; };</script>
+      <div
+        style="line-height:10px;font-weight:normal;font-size:9px;font-family:Tahoma;padding:0;margin:0;border:0;text-align:right;background:transparent;color:#EEEEEE;width:150px;text-align:center;"
+        class="mlcalcRatesWidgetHolder" id="mlcalcRatesWidgetHolderXX">
+        <script
+          type="text/javascript">document.write(unescape("%3Cscript src='//www.mlcalc.com" + "/mortgage-rates/widget-narrow.js' type='text/javascript'%3E%3C/script%3E"));</script>
+        <a href="https://www.mlcalc.com/mortgage-rates/"
+          style="font-weight:normal;font-size:9px;font-family:Tahoma;color:#EEEEEE;text-decoration:none;">Mortgage
+          Rates</a>
+      </div> -->
+      <!-- MORTGAGE RATES END -->
+    </igx-tab-content>
+  </igx-tab-item>
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Loan Calculator</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <iframe title="Iframewidgetcode"
+        src="https://www.cmgfi.com/calculator/iframe-widget?HighchartColumnInterest=138890&HighchartColumnPrincipal=3DABB2&HighchartPieInterest=9CC846&HighchartPiePrincipal=138890&HighchartPieInsurance=9B9B9B&HighchartPieMortgageInsurance=32A4AC&ButtonColor=9AC125&HighlightTextColor=138890&HighlightTextColorLight=32A4AC&HeaderColor=138890&NavigateMode=true&CalcMode=Mortgage&Footnote=true&AmortTab=true&lo=false&lo-name= &lo-title=&lo-nmls=&lo-location=, &lo-email=&lo-phone=&lo-imageurl=&lo-applynow=&lo-mysite=&lo-logo="
+        width="100%" height="1000" frameborder="0"></iframe>
+      <!-- <div #loancalculator></div> -->
+      <!-- MORTGAGE LOAN CALCULATOR BEGIN -->
+      <!--       <script type="text/javascript">
+        mlcalc_default_calculator = 'loan';
+        mlcalc_currency_code = 'usd';
+        mlcalc_amortization = 'year_nc';
+        mlcalc_purchase_price = '300,000';
+        mlcalc_down_payment = '20';
+        mlcalc_mortgage_term = '30';
+        mlcalc_interest_rate = '4.5';
+        mlcalc_property_tax = '3,000';
+        mlcalc_property_insurance = '1,500';
+        mlcalc_pmi = '0.52';
+        mlcalc_loan_amount = '250,000';
+        mlcalc_loan_term = '15';
+      </script>
+      <script
+        type="text/javascript">if (typeof jQuery == "undefined") { document.write(unescape("%3Cscript src='" + (document.location.protocol == 'https:' ? 'https:' : 'http:') + "//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'%3E%3C/script%3E")); mlcalc_jquery_noconflict = 1; };</script>
+      <div
+        style="font-weight:normal;font-size:9px;font-family:Tahoma;padding:0;margin:0;border:0;text-align:center;background:transparent;color:#EEEEEE;width:150px;"
+        id="mlcalcWidgetHolder">
+        <script
+          type="text/javascript">document.write(unescape("%3Cscript src='https://www.mlcalc.com/widget-narrow.js' type='text/javascript'%3E%3C/script%3E"));</script>
+        <a href="https://www.mlcalc.com/"
+          style="font-weight:normal;font-size:9px;font-family:Tahoma;color:#EEEEEE;text-decoration:none;">Mortgage Loan
+          Calculator</a>
+      </div> -->
+      <!-- MORTGAGE LOAN CALCULATOR END -->
+    </igx-tab-content>
+  </igx-tab-item>
+  <!-- <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Major Banks Offered</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <grid-mortgage-rate *ngIf="quotes?.length > 0" [quotesEvents]="quotes"></grid-mortgage-rate>
+    </igx-tab-content>
+  </igx-tab-item> -->
+</igx-tabs>

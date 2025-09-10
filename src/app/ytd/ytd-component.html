@@ -1,0 +1,50 @@
+<h5 class="sample-title">Year To Date (YTD)
+  <a href="https://youtu.be/4b8qH3Ghm54" target="_blank" class="pull-right" style="margin-left:5px">
+    <span class="fa fa-youtube"></span>
+  </a>
+  <a href="https://docs.sravz.com/docs/analytics/ytd-analysis/" target="_blank" class="pull-right">
+    <span class="fa fa-book"></span>
+  </a>
+</h5>
+<a href="#" (click)="back()" class="link back-link pull-right" aria-label="Back">
+  <i class="fa fa-arrow-left" aria-hidden="true"></i>
+</a>
+
+<igx-tabs>
+  <igx-tab-item>
+      <igx-tab-header>
+          <span igxTabHeaderLabel>Stocks</span>
+      </igx-tab-header>
+      <igx-tab-content>
+        <grid-assets [rowSelectionMode]="'multiple'" [assets]="assets" (assetsSelected)="onAssetsSelected($event)"></grid-assets>
+      </igx-tab-content>
+  </igx-tab-item>
+  <igx-tab-item>
+    <igx-tab-header>
+        <span igxTabHeaderLabel>Mutual Funds</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <grid-mutualfund-tickers [mfTickers]="mfTickers" (mfTickerSelected)="onMFTickerSelected($event)"></grid-mutualfund-tickers>
+    </igx-tab-content>
+  </igx-tab-item>
+  <igx-tab-item>
+    <igx-tab-header>
+        <span igxTabHeaderLabel>ETFs</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <grid-etf-tickers [etfTickers]="etfTickers" (etfTickerSelected)="onETFTickerSelected($event)"></grid-etf-tickers>
+    </igx-tab-content>
+  </igx-tab-item>
+  <igx-tab-item>
+      <igx-tab-header>
+          <span igxTabHeaderLabel>Codes</span>
+      </igx-tab-header>
+      <igx-tab-content>
+        <grid-ytd-codes [ytdCodes]="ytdCodes" (ytdCodesSelected)="onYTDCodeSelected($event)"></grid-ytd-codes>
+      </igx-tab-content>
+  </igx-tab-item>
+</igx-tabs>
+
+<div igxFlex igxFlexGrow="0">
+  <grid-ytd></grid-ytd>
+</div>

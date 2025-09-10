@@ -1,0 +1,35 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "importHelpers": true,
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "target": "esnext",
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "paths": {
+      "igniteui-angular": ["./node_modules/@infragistics/igniteui-angular"],
+      "igniteui-dockmanager": ["./node_modules/@infragistics/igniteui-dockmanager"],
+      "igniteui-dockmanager/*": ["./node_modules/@infragistics/igniteui-dockmanager/*"],
+    },
+    "lib": [
+      "es2017",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "disableTypeScriptVersionCheck": true,
+    "enableIvy": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}

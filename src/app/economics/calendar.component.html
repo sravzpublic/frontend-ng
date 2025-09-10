@@ -1,0 +1,49 @@
+<h5>Economic Calendar</h5>
+<!--Card image-->
+<!-- <div class="layout-sample"> -->
+<!-- <label class="col-md-1">From:</label> -->
+<!-- <mat-form-field class="col-md-2">
+    <input matInput [matDatepicker]="pickerFrom" placeholder="Choose a date" [(ngModel)]='fromDate'>
+    <mat-datepicker-toggle matSuffix [for]="pickerFrom"></mat-datepicker-toggle>
+    <mat-datepicker #pickerFrom></mat-datepicker>
+  </mat-form-field>
+
+  <label class="col-md-1">To:</label>
+  <mat-form-field class="col-md-2">
+    <input matInput [matDatepicker]="pickerTo" placeholder="Choose a date" [(ngModel)]='toDate'>
+    <mat-datepicker-toggle matSuffix [for]="pickerTo"></mat-datepicker-toggle>
+    <mat-datepicker #pickerTo></mat-datepicker>
+  </mat-form-field>
+
+  <button class="btn btn-primary btn-md col-md-2" [disabled]="!fromDate || !toDate || fromDate >  toDate"
+    (click)="getEvents()">Fetch</button> -->
+<!-- </div> -->
+<igx-tabs #tabs>
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Latest</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div #tradingview></div>
+      </div>
+    </igx-tab-content>
+  </igx-tab-item>
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Current Week</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <grid-economic-calender *ngIf="events?.length > 0" [calenderEvents]="events"></grid-economic-calender>
+    </igx-tab-content>
+  </igx-tab-item>
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>US Fed</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <grid-usfed-calender *ngIf="usFedCalendar?.events?.length > 0" [calenderEvents]="usFedCalendar"></grid-usfed-calender>
+    </igx-tab-content>
+  </igx-tab-item>
+</igx-tabs>

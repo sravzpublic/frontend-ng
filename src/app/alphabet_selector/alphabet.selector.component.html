@@ -1,0 +1,8 @@
+<ng-select [(ngModel)]="selectedTypes"
+(change)="onTypeChange($event)"
+[items]="availableTypes" bindLabel="name"
+bindValue="name"
+placeholder="Select Alphabet/#"
+[(ngModel)]="selectedTypes"
+[multiple]="true">
+</ng-select>

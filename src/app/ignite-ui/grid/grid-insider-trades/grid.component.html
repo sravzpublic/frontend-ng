@@ -1,0 +1,119 @@
+<div>
+    <igx-grid #grid1 [data]="insiderTrades"  height="600px" [rowSelection]="'single'"
+        (rowSelectionChanging)="handleRowSelectionChange($event)" (onSelection)="cellSelection($event)" [allowFiltering]="true">
+        <igx-paginator [perPage]="10">
+        </igx-paginator>
+        <igx-column field="code" header="Code" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="date" header="Date" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | date:'full'}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="exchange" header="Exchange" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="reportDate" header="Report Date" sortable="true" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | date:'full'}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="transactionAcquiredDisposed" header="Transaction Acquired Disposed" sortable="true" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="transactionAmount" header="Transaction Amount" sortable="true" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="transactionCode" header="Transaction Code" sortable="true" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="transactionDate" header="Transaction Date" sortable="true" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | date:'full'}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="transactionPrice" header="Transaction Price" sortable="true" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="ownerCik" header="Owner Cik" sortable="true" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="ownerName" header="Owner Name" sortable="true" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="ownerRelationship" header="Owner Relationship" sortable="true" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="ownerTitle" header="OwnerTitle" sortable="true" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="postTransactionAmount" header="Post Transaction Amount" sortable="true" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+    </igx-grid>
+</div>

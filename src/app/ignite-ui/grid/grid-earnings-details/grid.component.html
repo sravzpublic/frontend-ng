@@ -1,0 +1,89 @@
+<div>
+    <igx-grid #grid1 [data]="earningsDetails.earnings"  height="600px"
+        [allowFiltering]="true">
+        <igx-paginator [perPage]="10">
+        </igx-paginator>
+        <igx-column field="code" header="Code" sortable="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="date" header="Date" sortable="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="report_date" header="Report Date" sortable="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="actual" header="Actual" [cellStyles]="sentimentCellStyle" sortable="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="estimate" header="Estimate" sortable="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="difference" header="Difference" sortable="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="percent" header="Percent" sortable="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+    </igx-grid>
+</div>
+
+
+<div>
+    <div>
+        <span class="legendTitle">Legend: </span>
+        <div class="legendInline">
+            <igx-legend #legend orientation="Horizontal"></igx-legend>
+        </div>
+    </div>
+
+    <div>
+        <igx-data-chart #chart isHorizontalZoomEnabled="true" isVerticalZoomEnabled="true" width="100%" height="250px"
+            [dataSource]="earningsDetails.earnings" [legend]="legend">
+            <igx-numeric-y-axis title="Actual and Estimated Earnings" #yAxis>
+            </igx-numeric-y-axis>
+            <igx-category-x-axis label="date" title="Year" #xAxis>
+            </igx-category-x-axis>
+
+            <igx-step-line-series valueMemberPath="actual" [xAxis]="xAxis" [yAxis]="yAxis" title="Actual">
+            </igx-step-line-series>
+
+            <igx-step-line-series valueMemberPath="estimate" [xAxis]="xAxis" [yAxis]="yAxis" title="Estimate">
+            </igx-step-line-series>
+        </igx-data-chart>
+    </div>
+</div>

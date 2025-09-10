@@ -1,0 +1,33 @@
+<h5 class="sample-title">Insider Trades
+  <a href="https://youtu.be/4b8qH3Ghm54" target="_blank" class="pull-right" style="margin-left:5px">
+    <span class="fa fa-youtube"></span>
+  </a>
+  <a href="https://docs.sravz.com/docs/data/fundamentals/" target="_blank" class="pull-right">
+    <span class="fa fa-book"></span>
+  </a>
+</h5>
+<a href="#" (click)="back()" class="link back-link pull-right" aria-label="Back">
+  <i class="fa fa-arrow-left" aria-hidden="true"></i>
+</a>
+
+<div class="layout-sample">
+  <div class="layout-box" igxLayout igxLayoutDir="column">
+    <div class="layout-box__el" *ngIf="insiderTrades" igxFlex igxFlexGrow="0">
+      <grid-insider-trades [insiderTrades]="insiderTrades"
+        (insiderTradesEntrySelected)="onInsiderTradeSelected($event)"></grid-insider-trades>
+      <div class="container sample">
+        <div class="options vertical">
+          <span id="legendTitle">Insider trades acquired vs disposed</span>
+          <igx-item-legend #legend></igx-item-legend>
+        </div>
+        <igx-pie-chart height="250px" width="100%" [dataSource]="chartData" [legend]="legend" valueMemberPath="value"
+          labelMemberPath="name" labelsPosition="bestFit" style="padding-top: 5px;"> </igx-pie-chart>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Create a gird similar to grid-rss: name grid-insider-trading -->
+<!-- <div *ngIf="insiderTrades" igxFlex igxFlexGrow="0">
+  <grid-insider-trades [insiderTrades]="insiderTrades"></grid-insider-trades>
+</div> -->

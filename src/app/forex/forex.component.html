@@ -1,0 +1,55 @@
+<h5>Forex Assets
+  <a href="https://docs.sravz.com/docs/finance/forex-assets/" target="_blank" class="pull-right">
+    <span class="fa fa-book"></span>
+  </a>
+</h5>
+
+<igx-tabs #tabs>
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Cross</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div #tradingview></div>
+      </div>
+    </igx-tab-content>
+  </igx-tab-item>
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Heatmap</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div #tradingview_heatmap></div>
+      </div>
+    </igx-tab-content>
+  </igx-tab-item>
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Converter</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <iframe height="375" width="197"
+        src="https://ssltools.investing.com/currency-converter/index.php?from=17&to=12&force_lang=1"></iframe><br />
+      <table width="197">
+        <tr>
+          <td><span style="font-size: 11px;color: #333333;text-decoration: none;">The Currency Converter is powered by
+              <a href="https://www.investing.com/" rel="nofollow" target="_blank"
+                style="font-size: 11px;color: #06529D; font-weight: bold;"
+                class="underline_link">Investing.com</a></span></td>
+        </tr>
+      </table>
+    </igx-tab-content>
+  </igx-tab-item>
+  <igx-tab-item>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Historical</span>
+    </igx-tab-header>
+    <igx-tab-content>
+      <asset-component [showDetails]="showDetails" [assets]="assets"></asset-component>
+    </igx-tab-content>
+  </igx-tab-item>
+</igx-tabs>

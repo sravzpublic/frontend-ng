@@ -1,0 +1,867 @@
+<div class="main" igxLayout>
+    <igx-nav-drawer id="navigation" #drawer [isOpen]="drawerState.open" [(pin)]="drawerState.pin" [pinThreshold]="0">
+        <ng-template igxDrawer>
+            <nav>
+                <span igxDrawerItem class="parent_item" [isHeader]="true" (click)="showSubMenu(1)">Data</span>
+                <div *ngIf="showDataGroup" class="sub_item">
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/ig/market-dashboard"
+                            routerLinkActive="router-link-active">Dashboard</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/asset/list"
+                            routerLinkActive="router-link-active">Assets</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/asset/all"
+                            routerLinkActive="router-link-active">Charts</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/earnings/earnings"
+                            routerLinkActive="router-link-active">Earnings</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/fundamentals/fundamentals"
+                            routerLinkActive="router-link-active">Fundamentals</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/insider-trades/all"
+                            routerLinkActive="router-link-active">Insider Trades</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/feeds/feed"
+                            routerLinkActive="router-link-active">News</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/portfolio/list"
+                            routerLinkActive="router-link-active">Portfolios</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/quotes/list"
+                            routerLinkActive="router-link-active">Quotes</a>
+                    </span>
+                </div>
+                <span igxDrawerItem [isHeader]="true" (click)="showSubMenu(2)">Finance</span>
+                <div *ngIf="showFinanceGroup" class="sub_item">
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/bond/bond"
+                            routerLinkActive="router-link-active">Bonds</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/etfs/etfs"
+                            routerLinkActive="router-link-active">ETFs</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/forex/all"
+                            routerLinkActive="router-link-active">Forex</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/futures/all"
+                            routerLinkActive="router-link-active">Futures</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/marketindex/index"
+                            routerLinkActive="router-link-active">Indices</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/rates/mortgage"
+                            routerLinkActive="router-link-active">Mortgage Rates</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/mutualfunds/mutualfunds"
+                            routerLinkActive="router-link-active">Mutual Funds</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/option/option"
+                            routerLinkActive="router-link-active">Options</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/rates/all"
+                            routerLinkActive="router-link-active">Rates</a>
+                    </span>
+                </div>
+                <span igxDrawerItem [isHeader]="true" (click)="showSubMenu(3)">Crypto</span>
+                <div *ngIf="showCryptoGroup" class="sub_item">
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/crypto/all"
+                            routerLinkActive="router-link-active">Assets</a>
+                    </span>
+                </div>
+                <span igxDrawerItem [isHeader]="true" (click)="showSubMenu(4)">Economics</span>
+                <div *ngIf="showEconomicsGroup" class="sub_item">
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/economics/calendar"
+                            routerLinkActive="router-link-active">Calendar</a>
+                    </span>
+                </div>
+                <span igxDrawerItem [isHeader]="true" (click)="showSubMenu(5)">Analytics</span>
+                <div *ngIf="showAnalyticsGroup" class="sub_item">
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'PCA Analysis','assetType':'portfolio'}"
+                            routerLinkActive="router-link-active">PCA Analysis</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'Prophet Model Analysis', 'assetType': 'asset'}"
+                            routerLinkActive="router-link-active">Prophet Model Analysis</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'Pyfolio Returns Analysis', 'assetType': 'asset'}"
+                            routerLinkActive="router-link-active">Pyfolio Returns Analysis</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'Rolling Statistics', 'assetType':'asset'}"
+                            routerLinkActive="router-link-active">Rolling Statistics</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'Time Series Analysis', 'assetType': 'asset'}"
+                            routerLinkActive="router-link-active">Time Series Analysis</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'Covariance Analysis', 'assetType': 'portfolio'}"
+                            routerLinkActive="router-link-active">Covariance Analysis</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/ytd/all"
+                            routerLinkActive="router-link-active">Year To Date Analysis</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/spread/all"
+                            routerLinkActive="router-link-active">Spread Analysis</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'Leveraged Funds','assetType':'portfolio'}"
+                            routerLinkActive="router-link-active">Leveraged Funds</a>
+                    </span>                    
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/alert/alert"
+                            routerLinkActive="router-link-active">Alerts</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/ibkr/all"
+                            routerLinkActive="router-link-active">IBKR</a>
+                    </span>
+                </div>
+                <span igxDrawerItem [isHeader]="true" (click)="showSubMenu(6)">Links</span>
+                <div *ngIf="showLinksGroup" class="sub_item">
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/about"
+                            routerLinkActive="router-link-active">About</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/training"
+                            routerLinkActive="router-link-active">Knowledge Center</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/careers"
+                            routerLinkActive="router-link-active">Careers</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/contactus"
+                            routerLinkActive="router-link-active">Contact Us</a>
+                    </span>
+                    <!-- <span *ngIf="isAdmin"> -->
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/admin"
+                            routerLinkActive="router-link-active">Admin</a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/settings"
+                            routerLinkActive="router-link-active">Settings</a>
+                    </span>
+                </div>
+            </nav>
+        </ng-template>
+        <ng-template igxDrawerMini>
+            <nav>
+                <span igxDrawerItem [isHeader]="true" (click)="showSubMenu(1)">
+                    <span class="material-icons">folder</span>
+                </span>
+                <div *ngIf="showDataGroup" class="sub_item">
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/ig/market-dashboard"
+                            routerLinkActive="router-link-active">
+                            <igx-icon family="imx-icons" name="terminal"></igx-icon>
+                        </a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/asset/list"
+                            routerLinkActive="router-link-active">
+                            <span class="material-icons">analytics</span>
+                        </a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/asset/all"
+                            routerLinkActive="router-link-active"><span class="material-icons">show_chart</span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/earnings/earnings"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                money</span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/fundamentals/fundamentals"
+                            routerLinkActive="router-link-active">
+                            <igx-icon family="imx-icons" name="scales-balanced"></igx-icon>
+                        </a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/insider-trades/all"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                do_not_disturb_on_total_silence
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/feeds/feed"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                feed
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/portfolio/list"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                account_balance_wallet
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/quotes/list"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                request_quote
+                            </span></a>
+                    </span>
+                </div>
+                <span igxDrawerItem [isHeader]="true" (click)="showSubMenu(2)"><span class="material-icons">
+                        attach_money
+                    </span></span>
+                <div *ngIf="showFinanceGroup" class="sub_item">
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/marketindex/index"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                list
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/forex/all"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                currency_exchange
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/futures/all"
+                            routerLinkActive="router-link-active">
+                            <igx-icon family="imx-icons" name="pay-date"></igx-icon>
+                        </a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/rates/all"
+                            routerLinkActive="router-link-active">
+                            <igx-icon family="imx-icons" name="debt"></igx-icon>
+                        </a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/etfs/etfs"
+                            routerLinkActive="router-link-active">
+                            <igx-icon family="imx-icons" name="money-bag"></igx-icon>
+                        </a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/bond/bond"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                format_bold
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/option/option"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                keyboard_option_key
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/mutualfunds/mutualfunds"
+                            routerLinkActive="router-link-active">
+                            <igx-icon family="imx-icons" name="crowdfunding"></igx-icon>
+                        </a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/rates/mortgage"
+                            routerLinkActive="router-link-active">
+                            <igx-icon family="imx-icons" name="loan"></igx-icon>
+                        </a>
+                    </span>
+                </div>
+                <span igxDrawerItem [isHeader]="true" (click)="showSubMenu(3)"><span class="material-icons">
+                        currency_bitcoin
+                    </span></span>
+                <div *ngIf="showCryptoGroup" class="sub_item">
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/crypto/all"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                list
+                            </span></a>
+                    </span>
+                </div>
+                <span igxDrawerItem [isHeader]="true" (click)="showSubMenu(4)"><span class="material-icons">
+                        assured_workload
+                    </span></span>
+                <div *ngIf="showEconomicsGroup" class="sub_item">
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/economics/calendar"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                calendar_month
+                            </span></a>
+                    </span>
+                </div>
+                <span igxDrawerItem [isHeader]="true" (click)="showSubMenu(5)"><span class="material-icons">
+                        analytics
+                    </span></span>
+                <div *ngIf="showAnalyticsGroup" class="sub_item">
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'PCA Analysis','assetType':'portfolio'}"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                trending_up
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'Prophet Model Analysis', 'assetType': 'asset'}"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                insights
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'Pyfolio Returns Analysis', 'assetType': 'asset'}"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                account_tree
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'Rolling Statistics', 'assetType':'asset'}"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                assessment
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'Time Series Analysis', 'assetType': 'asset'}"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                multiline_chart
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'Covariance Analysis', 'assetType': 'portfolio'}"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                stacked_line_chart
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/ytd/all"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                addchart
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/spread/all"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                label
+                            </span></a>
+                    </span>           
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/analytics/all"
+                            [queryParams]="{'analyticsType':'Leveraged Funds','assetType':'portfolio'}"
+                            routerLinkActive="router-link-active">
+                            <span class="material-icons">
+                                calculate
+                            </span>
+                        </a>
+                    </span> 
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/alert/alert"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                notifications
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/ibkr/all"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                account_balance_wallet
+                            </span></a>
+                    </span>
+                </div>
+                <span igxDrawerItem [isHeader]="true" (click)="showSubMenu(6)"><span class="material-icons">
+                        link
+                    </span></span>
+                <div *ngIf="showLinksGroup" class="sub_item">
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/about"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                info
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/training"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                school
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/careers"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                work
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/contactus"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                contact_support
+                            </span></a>
+                    </span>
+                    <!-- <span *ngIf="isAdmin"> -->
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/admin"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                admin_panel_settings
+                            </span></a>
+                    </span>
+                    <span>
+                        <a class="dropdown-item waves-light" routerLink="/settings"
+                            routerLinkActive="router-link-active"><span class="material-icons">
+                                settings
+                            </span></a>
+                    </span>
+                </div>
+            </nav>
+        </ng-template>
+    </igx-nav-drawer>
+    <main height="60px" igxFlex [class.mini-padding]="!drawerState.pin && drawerState.miniTemplate">
+        <igx-navbar actionButtonIcon="menu" (onAction)="drawer.toggle()">
+            <button igxIconButton="flat">
+                <span *ngIf="userStore.getUser()" routerLink="/home" routerLinkActive="router-link-active"><span
+                        class="material-icons">
+                        search</span></span>
+            </button>
+            <button igxIconButton="flat">
+                <span *ngIf="userStore.getUser()" (click)='share()'><span class="material-icons">
+                        share</span></span>
+            </button>
+            <button igxIconButton="flat">
+                <span *ngIf="userStore.getUser()" routerLink="/user/profile" routerLinkActive="router-link-active"><span
+                        class="material-icons">
+                        account_circle</span>
+                    <!-- <span>{{userStore.getUser()?.login}}{{userStore.getUser()?.userName}}</span> -->
+                </span>
+            </button>
+            <button igxIconButton="flat" *ngIf="userStore.getUser()">
+                <igx-icon fontSet="material" routerLink="/auth/logout" routerLinkActive="router-link-active">logout
+                </igx-icon>
+            </button>
+            <button igxIconButton="flat" *ngIf="!userStore.getUser()">
+                <igx-icon fontSet="material" routerLink="/auth/login" routerLinkActive="router-link-active">login
+                </igx-icon>
+            </button>
+            <igx-navbar-action>
+                <igx-icon (click)="drawer.toggle()" style="margin-right: 20px;">menu</igx-icon>
+                <a href="/home">
+                    <img width="100px" height="70px" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAABVCAYAAAAbgjvKAAAAAXNSR0
+                    IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAAD
+                    x4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC
+                    4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLX
+                    JkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgIC
+                    AgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgIC
+                    AgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZX
+                    NjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAAQABJREFUeAHt3Qecnl
+                    WVOP47k8mk00ICAQKTgIoUCyAWUEfAjl1sq24U665lXde1r7OKurqWtSuuKzbsdW1YIICiKyIgWF
+                    gpARKBUNMIKZP3d7533jM88+adSQPL/7/n8znzPM8t55577mn3Ps/MTCr/B38NEpgUTLbajM6L65
+                    zAWwOH22U97ev/Xe5ACRDq5MC+xvWvVdD4pkS9XTDLo+ovGvAJDg38fuDNgasC/xD4ssCEv9Y1Sv
+                    7/oq4UZjyYqG68Pn/O8v8vKEYawV1DkAxAVOjEN7aF/Ne2Pm22/zIuTWUhdKHW9YTAewduDDwr8L
+                    RAQNib6t1f9g/zojAzA3cNxHNzrurMRXpxY+BfIiS/eP124KMD1wZOCQTWpr/elXJYXM8PzDVsF/
+                    /fZVslkJ5H7nlmYKfX+a8GQW0t0p8bGyxtdiutAycGMu7lgTcFUnrX6wKVfzoQMIqtgZzz1rSdqM
+                    3W0Eme9gpC+LYmeG6uzfr286viCqS0WwvJg+uOQtLaUTp/tv4UxiQIGHwu8EGBBGwhCN31OYHXB7
+                    46MBcibv9iIRd3enCIfwbeDXbuVtilDL07Yt7bQifnMDXGHk/Bs43IB/C4tbAtbbdE846ktaWx7p
+                    R6SpLR4Oi4f2igNIKB5GY5J/m8KMs0I27/KkD6AG4LZOzmBj0DBr8lIB8ykJqcE/i6wIRUxHye6J
+                    p0jopGZwa+s9G4Gx18gmWB19S7kXSofTvGMH/TLuxGJ9u7Wm+wW+ApgT8K/I/ANLQt9Y+mo5C09o
+                    +S7wR+KnBWuzbr2o/bfxkaGuV5+4lsRU/KnnBg+yYNIcuzDSM4M3BFoLI0kLj9kwClxZtFJPT3Bl
+                    KujGZxuxlkDs2rguQ5n0WMLUEqB/ncP1Ce/rbALI/brQLKgdeBwAcF7h74z4HjAV7Nb13gewI/Gm
+                    g+ZJC0KPAvAr8eCNLwR542/5k8m/dTA8mBIov0QH3KqBZM8AMPeDGPRwXi85WBTrRynLjdbuhttU
+                    pPT08Zbl8R2lretmvQVHSCMdCG9tV9IgHn/V/C9ePBD0jeR55u/5keySI/K/ARgR8JTN6/FPePCz
+                    w6EEy0cDnG30U7/b+mQ4A+E/WrjRo/ks6TogydnzTqxqPTLD+p3U/fXI/z436/Nh1GsyVIucyLhk
+                    sD0TovMDfgWR9FW4Qc7/BoiY7IxUmBbaEz0qPxc2ioua57jqa1J5wwmr00Wt8xt31BxiTAWYGsWX
+                    iTOqQ3ZenTAi8IZCz6/CmBwG8OpEDvDaQcTntA8j7ydPtPnkq7y9qoZpfAF7kJMJdv1ruRH+PRaT
+                    QZXdwdnX8qydbQwVcawxvi/tzArwaSyS8DHxDIcXmeKDJG9RhAM8fP65gG2/CQ/O0oHUP2fuyXh0
+                    964RHnxZxaPd/9+ow3HHTgjf+8dNnUfz/6uNve/OUvl2HG4LoN/G1T07Tu50cvwu9ExkDof07gwZ
+                    OvD7YZ2ZLwzWtGu+0LG/3f2i5j4FuCdAgvjYbG/1a7A9owFaFd3PVC+dPrZuT9eZQp1z+NI267gh
+                    QIHBC4OhAf3w0E6nL9asE4P4yTdPaJ+2sD0bkwMOWwJT7UG8s15XKfuEfHSZw0CWyJzkir23/2lB
+                    ccnryV/3xHOfLSi3p+2Vrf14q0qNXa0NM658dTRfQKg0ODW1r3bLrV12SYhRGUlIPC/SrwlkBHjT
+                    8OvF/gOYEmnwpwZ163NFGGCSzAeGA+5rWm3YACJaxt3+Q1y7td7U1AbrClJQBtiAdjdYMsF6GS54
+                    xm+irXPyNY3G4GaPD6CUkz104dWiDrRp5u/6ncOElH5E/Z6ZtyyLIo2gzQwGfynXJJuapLOuPxsR
+                    nRKOipnJx83obYCE0rz7jnG89asv/Ze+0x8/AyeePGjSunbYxRh+9/zG0vOvP707+t/eKhxRubht
+                    ON6LaWdTJMuLko8+Peov+xTZTip8DbRXfKJcdxSnNiIMUh9LsEHh0IrgiUIrw50KLmQsdthZyHKG
+                    Ajd33gIYH3DQS84O8Dfx34tsBOSHqubwncP3BBoP5LA88IBDsF4uMzgTlm3FbI573i6a2B0wMZZc
+                    7jhrg/LZBzeWegVGdSYFPGSeOIKP+nQNHNfoejuCbwR4E8KSN9XaCy7BO3FfL5ifH07EAODt/oiA
+                    Q3Bp4VeFngGwIZbM4/bivk8z/E04MDyRwP1mWPwIcHavOawHcE5phxOy5oD6rx7Tt4l+OX33fnd+
+                    6+/053X3rtuvI31+204aQX/XHywEGxVBtK6zcX9g1/9BO79H3whrlnHDNp5bNO//LSZeVjEUVeKI
+                    26c8BidEK3ss42d9SzhQUWhZA60cSVrQicHQgIvgnJ75ejsNmfkcMs+1mzU+M+FwldBpPtKWne5/
+                    Xkdr/OKJY8HNylTyedp4xDI2k+uUED/5398XL3No0ct/04uhd4exQkz3ltykOqxNBApzzzmeFm3+
+                    aV8Xj+QSBI+Y08jf3ZEw0nBfa2hoZ6h8Kg9jh24SfKu45qlY8f2yrvG9ywx0ceNFzecWzr4EX3a5
+                    179r1aX/zUftF8n03lFfddP+cTx7b6hu63bK+99joM2TsqTcoJNlklZBNRB90ru6Mg6Xa9HnDAAc
+                    pBhlnerlv4v37WrFlV4IODg2NoHX744UljZaV0+5ea2kOeDDAmMOmEE06gQJVO3Nf+QUeZjTqw2M
+                    opD36Sv5p6HXzwwbVvu01v8tDf3689PmIxKw2ybNIpkyZNql6tk0b7ebQ++tV2jf6pgKtiHPRLe9
+                    xRXpJGVGVKlvLUvrm2N+6+++76lQ55Tmo/q0p5mTte4MbA2i+uVd5t+Y3Kc6gt1zNGokgrBh0O3N
+                    QzNLRp6Kgyd+/ltz3niGXRaN3G9b09pe+6dT29e8zeVH6z19ry7MfvWZ76+t1Lede8nr0OnD75+t
+                    Ub12+cN32vFS/e7+wHvOygx0mTzjij7hnMZbthhzpv96hb11EYdkpEcZpeLp+vjHLeNvcAcbsZfC
+                    JKnhtosdK7apTPPJwUYSL4n6g8MjD7ZNt8jtS2np9need1QRT8JlAawihSaVIRo6gcH/gdN+PAI6
+                    P8u4FV2eOa65b0KOZBgUsCx4PXR8VJgSm/bJfzuCQKyFP9ePDlqBCdsk+2YxAiuTRR/YTw6X3nPX
+                    +3np4nrlswfMrQ4skrLyq3fPOQcu/Je/399NYP9r+pp0yeUXb/9U1l56vXlKVHzCjzl28qu82YU3
+                    6xf5Dd1Cq79/WsL1N6+2847fpSvvTrY6P09NhUT4p3DuSRMpqQh87KpnJ01t0pz+GxwrzL5L6+vk
+                    0BuaB1rN7e3tbatWsnP/jBD77+E5/4xK633ppObHNW4k3LpP3222/+vHnzlq9fv36Kvtkqtli9c+
+                    bMWXHGGWfM2LDBGnWH8MRTg5/ZcTSR6VhtiK/oNxz1fRdeeGF/PHcnEKVTpkyZ9fSnP33q+eefPz
+                    u88qgS4WHPPfdcHf33/uMfc5u1GZlqDLvsssvchz70odMuueSS2UGPklWIeU3ad999bz777LPn3n
+                    KL1H5c6IlUYe973vOeN8VYs5p8oHHXu971pm9961s7r1sngFSo47bv6xqEPPui3b4777zzyuHh4f
+                    6mPMlj6tSpq//nf/5nWsyr3W3MpdKINZ1+9NFH77Jq1appzf5To//Zs2ZteP+Vi/c+sGfPtyzon/
+                    qY2TM2leWL+x7xt/dYv6LvxEm9vzv/4vKxD80pD/jbu5Y1PUvL5Rsml2uPW1j6Z7bKpXNvK8ddMa
+                    Mc/Zt15ScH3lxuWDOtv3zkpo0ffs7VfY8c6v/Bry/qf0lPz+qPtl+8cTTjL9gYtm9/GKOItxff4X
+                    eVuQixfSGk04P64YE2XDx9c1HirCxMe9KkTddff/2MJUuWzAglaQX2RFk0jVgcit1WrOFDDjnkFm
+                    0tlFeQTVC+bNmynaLtVIuiTdZH2xim1TN79uz1AwMDwv1oXdwnP7XN5ZdfvnMo4eTskzSS5vz589
+                    eGwq8K5elt8mAe2oTy9V188cW7GC/7dl7vdre7rdxpp51u66BRxzePkNnU3//+9zuhj25C8uRKFo
+                    yoQxajNFKe2aeTxowZM4bDEG5uKzBeUw7ZtEWe11577ZROGimLPfbYY90+++wjPcq5tmJD0FMi31
+                    m6Zs3wf6xaP/uY6aVv3YY/tq6+YveNV/39xr6jXnZjzz4D68uG2/ZvXXb5ZT0fe/9A+fTv5pWbnh
+                    rbt6l7RhK7XxCYWlpxpLDX/64qh67cJ5K8K8urn35hechxk4fLtA2Tytre8u3vTXvdY560xj4IbL
+                    Mx/MkjQjC5B88Ri+4UpStMnjy5hJKWaNO6+uqrezq9YQi+7L///hEKe2YHrTJt2rSqIKkkruEJk3
+                    bngnpvXy0h6PTH7Zxs2LxGeaVprIDNaERZVZaonxZtecBm9/ptgDJ0EpJmx3Mr2lHynbrR0KdNYz
+                    wekOuJvrt29q8V7f5boIEH8twdjZRj8tmkE/etaEd+Y6rb5SLznDF1IZbejT1l590nlY/cb6D89t
+                    p1G/f77V6T5n7qksknPG15q7d/6qayftfeyX2X9dx0Uyk37Prx8vBjDiqrr7mgXDXzrHLLzN+Wq6
+                    auLJPWx+Zh1a3linNuKY99xG3lgQ+OEfs3TNqwom948pSNvcc/du3bLvjZpHn3uv8TX1HKl0XmNO
+                    Ymn+Pe/zkM4bbwWoRNU0fcPK5jwZRHCC7hActFF11kIlW7/v3f/70axooVK8oVV1xR3v/+95c//O
+                    EP5aijjhpevXp1iZC92QTvcY97lDAS/SnJmHpjKQ8MNlrjhtH2go7SaD9XWkkDgYBNgbW8+UNZoP
+                    F7zU2fdr/RZuoD9Qej5XmjLLDKolt/7cwv6E9IQ7PAKovmOGiGw4mLw5zIwEfGi9uuUGnokzLV3n
+                    PAqDyb9JUG0TJt05Ry5pz1PWfObfWVGbuWN116aJlzztKeu97lkp51628rn/ry68unfve8cvTd9y
+                    19vcPxufCjyh7rjyvfuuDk0prx0rLPbw+Jjcm6ctlz15Z3rdi97PLBfcrLnvu/ZdacqyfF1nu4DG
+                    +atOza2S8t5WefDV5+EW+ge7flDfSfwxBS+V3z3mKUmTNnlvPOO68ceuih5aMf/Wg57LDDSqQe1Q
+                    gYx2233Vbv/+7v/q587WtfK6973euc9pR//Md/LHLXNWvWVDo3hWv5+c9/Xo3FCo2T1yq3eKM8aJ
+                    uQCpF7DPx1g9C/CWnok33HKEiDWJRXS1XfVqpG7e23jKkbtOnHR2qbG1K2z77JS5bnNWTLILvKIt
+                    tk37x2Kd+cRrBsB9Z346ay340by8qBmWXq9EvLv77lCYFHl6c/7bdhoSvK51c+pDx/cK/IonSYVJ
+                    beem255jdfK+894z1l+Q27l1e8uK/MPSjSpDC6ObOGyxuW9Zelb9u7DL3i6jJ9eqv1npMXlqF/mf
+                    H9Ui76Bb7CCLoLK5nuuP45DGGz1bJIsUkrixcvrkpN0WMTXFmdPn266FCkR1Kmm2++uUQ+XV75yl
+                    eWyIvLDTfcUJ797GfXSCFN0kb9Bz/4wfLDH/6wttG3qWDujRk5dYc4xj5Woc+ZU3njAZuKpo5CRG
+                    49pnwshbCy2NvEhnfcNmji2bXJY9LJ+si9N6vXPvsZZzzQhhz33nvvyo/nBDTIAg9JL+s6r9ZIO2
+                    N10iALY3QDo/VGcJ52zfpy5Z63lkl7Ti4HP3hF6Z98z/L5L/WXl79kTfnkw/9Qzrvo/HLFqtg+zp
+                    pe9jn9reWlF/x3udtddy8XzJ1Vyrz+srxvU5kW+/3r4/xj3/m3xue4w2XNm49pbShr+77w87Vl8B
+                    k97158agwWe9FQpq67+m78KZvIEHgp0k3L8oz47VKMhx0FAhUJGMFrXvOa8s///M9l+fLl1ZtTst
+                    isVsHvtttu1QgIe+XKleW6664r97///YvyX/ziF+Waa66pe4WFCxeW2LQVKRNQT+G7KZn65oJ67g
+                    T9twTj0VBOaebOnTshCe0mohGnQCU25DtEgyzhRDAeD/qoYwhwIuhGg5PfNDXOj5e2yvw1s8uqOJ
+                    9YPnxR2Wv4wLLnYTPLDTevKgsXHlgWLthYLv7DxeWGr55cnhTXaYccVm4dDsd3/aoyeNqccs3Dpp
+                    RLZocl9EwqV60dLgeu2Fg+87PrNpYDpk8+7O7lB4tPPf9HwVtPKFP38D0B4zUkd6lPA3D2iCh0X4
+                    07rtsKXY2H0ChpbIjLIx/5yBoNLJaNrg3wZZddVvcMhP+///u/1ePES7SyZMmSaggixU9/+tOar/
+                    J2MF7IVd6aOaxxxsMtTWS8fs3yHaWxpf7qm+N1u98SjW59OsvuVBqR/fX2rSkzVh5SZp73jLLvun
+                    nxRvLycm3fpPLNX/aWOI0qU6buVO5yt3uX2XscUaJpua0VB1Ct4TJ7574y75qVZfbpw2XBsvWlZ8
+                    3aiBi3lGveP6U1fZe1kx6327xywG0DH8H/4OAg3e2qbxPNr5shIETxZwa+PPBTgZ8MPDEwDaRbv6
+                    geBZFmFOPtpnP6nlBgZXLqUaCwFPtf/uVfqvLHUWNNOeKorvCEDIUR3Pe+9y0HHnhg9ez3u9/9qm
+                    eSFjEcXlekSK/J+2eYHi8SjDLwfzd/IgnEQUH40kmTl5WZc2aX3/UfVo5afWp55eTvlNW/u7xceu
+                    UfY3/QKjMi9dpwt7vWD6CmTwm1WTNczl3VW34w+aZy8Zmnl71OX1/u/c04jv3mnmXqfj3DTz/0gb
+                    37zpr/yy997xvfMJEztiMa6Ecxm5BGMD8Kvx14j0blorh/RuDjA70DiJPdajCp2KzQveuY/Ow3v/
+                    FiNV57LllyW7zo2tj21i0KbIMbhlI3xVdeeWXdC8hZpUvqRIVjjjmmGsdrX/vaEufh1Sge97jHlT
+                    h/L06SbKKDbh1j6dKlRT7NiMYDnnA8UMd4mgaU7ZvleATNduPRzPKkk8/b0jf7uDbH3hLN7R0j5d
+                    Ac13238bKsOVZnf4dzsVMpfRuuKLeuPrTc2j8rHN8R5YR5p5X7P3RjOevM68t3h9eXI+KAZNf996
+                    8KtvbCG8qp+04tb37mnmXmig1lj0tuDYXrLb/66a7l7gff2Drk0Pm9O8/YpSy76op34m1oaKgvPt
+                    sYo3vKtwaahkCJRQLwmUBG4LsUxgGs/DGBHwp8duDoQX3cd8LRUSC5lk6hK4JsDMWfHPn9LgwgFr
+                    OHst544401p496x5316NQRqg2ujbFUSPlJJ500epL01a9+tfzsZz8r73jHO+opklMhBmLDFm+bka
+                    pRot40fhiXEcJcNNe2YY4agNQM5gLjB6/KjKFPPitLWo2hRm9TIcwBagvRgXjPNqOdxrnRzmYVP+
+                    P1Uc5QXCHIcdyTAUg+sp1nckgjwyveYII2UlZX/dAF+qGbJ2zKtEELZn1v7/TS2rSu7DErNsVXH1
+                    I+fP388tg9ZpdD915Y1i69pFz02h+Xix94VLnkXvcu8497WPnypCXl40fvVubtObMsXxJ7hfnzyp
+                    QZ+5ZnPGVZ2Xnuhg1Tb+7vn3HROed98fRzffpRhoaGUn89bhM0DYGEzPqowAcHUnzHKunxR1zgyN
+                    88sje/MtAxQQ6uHcWXUn0hcO/AMUBw8RmBMis0Kd4YV4XPNEYEIECb4fgArG4yXZX99re/Lfe617
+                    2qYTziEY8oX//618ujH/3o8sxnPrPE5wM1CogQ3i/c/e53H90s50JbWBtohmcznkoyhsHGgyNcfF
+                    H4c845Z3TRG01qeiZdowB4bEKOS3EogjGleE3Ab0ay+LSk8tRJJ9ujZw7oeJeyLTAwMFAPDfBBBm
+                    gxYGNSYOmlzy/Q3nXXXWs0jjfZRT/yp8zaWZ9f/tLX4reDyJ0HE0rJLD+NcXrn4MI4InXCa191fX
+                    nmk9eVd566uvx22aSyz5SlZd7sOOA4Yvdy8DVXl33O/mk588mPLh+///wyf+qGsmzthjJjp2nl5t
+                    1uLUcvXFLmHzC88bqfl/57rfxdufa2pRxzGRosfUOLx2Yi7fE4YTjiFUYKU2fbTTZPjVQsaNfq2F
+                    zdJMY4vtduM9GF4TT717ax0Mrqm8n0NpSXkCmUMsInTJ6PB6QAjkuPP/748sAHPrAK1oJ5V/CYxz
+                    ymGgQjO+2006oRWLimousvwthMezdh801BjZeLZVwnRMY888wzC0WwB/Gy7gUveEF5xjOeUZVBhI
+                    LofSPS0g996EMlPk0Y4w1NlELg/Xe/i8WKjWB8S1S886A4yimzMX784x9XucTLwapwFLKbMegj6s
+                    W3PEWKiF/zotzuKap+oijZQSkjuThhc/pGxubIuM2fAZAVuuQgBZVqchZPecpTqtP69a9/Xeu8x3
+                    Ei96xnPauOizbDQdN6kS1Dxz8Zok1+aNnnOTlbuHAg6sMI1y0rdztwfXnfq2eWb35rZvneFTeXA1
+                    b/uKxYu3tZO3N+WXjY7mXNheeWjx22sKyaPKXsObm//PG2leUBC64uCw+424brlm6avNeyDeXmnX
+                    pf/6pzrv8kAYYRbKbcUcy5K08nHrcVUpdHjaMZEbJRft3VaQhZ73pOoPNJ/UeJte8Nfp9AkWEzY0
+                    gFtWg8ycDAgL1DiY/WqpITOAUlPBEDWNQHPehB5Utf+lJdIJ7UvsKxKSXzzgEN3pmiET7lAMZxb/
+                    Hf/va318VMZUyFowjKtDPmwx72sPKqV72qKumPfvSjEh8BVgXT7qCDDhoN9xbeyzu08Uyp8E0pf/
+                    KTn9Tx44O88qIXvajyRpnNRRvjmT8FZQzxcrBGNcpGucgp+UOX4mr7lre8pRolXvCKHoPgdSl9em
+                    AKjYaxyOPkk0+uNP7mb/6mljtYUM9wKC4akIJ7NiYa3up/+9vfrsaP56c+9am1nTlro60xyE77TI
+                    PMAT0ZwL3vfe8a+dSL9l6SnvHDt5bJk75RHvCAY0s55oFlyaXHlvO/8qWycOXysvP0WWXumj3Kfj
+                    dtLMvm7Fxuuf6ycreL92wdsvdxrY2bLp285rrh6zacu+5Z7y5X/LAKecThNvVQcRrBHnH/lMCFgT
+                    6p/1bgBYGAU679moaQVrM4Kq8OnB/o897+QGBP4FPinwdKn8YDxH8deEgga2yOMbq4UV7BIoGnPe
+                    1p1XvyTBSE12YUni0OQUuJfvWrX1WPyPsPDg4WC+ukiYISvIWhNLzVEUccUZWDkf393/99XYCspz
+                    SUmHLxYhTIWGikEopUCxYsqHxpbwHxa0EZMCUE2R7PxpXGOQVjvE64eMerrrqqemZtjYUGg0HnhS
+                    98YXnIQx5S3vrWt1alE/WkLowrjUE/kLIQkXhc86HM5iAyiTLkxjnglfExLjJxZTBe8Bk7vmqtCu
+                    6eMhvP/PHEyJQZFz3H0l/4whdqZCYnclNGsc1ZO/IxTwccZCFqc1rax1e4lV9rctbZPyk3r9q/LN
+                    zvxaXv+q+WyT1Hlgcd94gybdfZ5Z0v+GA54ZBJ5cCbLygPvPEe5bNXX1SefOWRrUUnPK+15rbres
+                    /9yYnfP3vGoqdfUE65ZeiEg/uHvvwbHo9w6F0CnZOmPyjwa4GzAxP+NW5eHWiDrU9XQ2BFPP2LAv
+                    87kOInuPel5t+1C9Lisl64YUza5Zsbx6ZjoL2go4wTsoUhwE996lPlDW94Qw2xXpBJLygC78OzSE
+                    kIPz7RLv/5n/9ZhoaGim+KeGyKwUOhR8m09ZyAjhCOFgWSsxpDucWiMPrxZBaQh1b3ne98p6Zbmc
+                    un1+X5jAXcU0T5M2XjQR/1qEfV8SmZyEEBKW18Ll0VB7+U3ZgMgxL9x3/8R01PfDIiuuEDXXwYFz
+                    hWxjtngZa58NT2RQ4Q0BQt0U3vnn3xYJ/FcBgB5yJtwhcjAPhPh2B+xjKOtsBYUBkDlzr6QJIjou
+                    ycB2NiiNIlY3/mM5/xkWR1XF/84hervJ7ylKeGI1lbrrk2DkhWrykbN2wsd124X9n0kKPLq2/cuz
+                    z8LoeUdb84vbxiztPKo5/+iNYuu+/We/VV61e+60P+FtQpq86IE6KHDA2Nd2BjMj5N+EogI9AulZ
+                    5jf0fg7wLpOKPZSHmbQNrKvht4ZKCGlwdeFvj5wMMDzw/UmZYhnjjiskYGPTHKnxD4mMDHBj4u8P
+                    hQiieE0l0ZQuuJhR62eJDCH3nkkeXf/u3filTERpWgCdPinX766VXolJu3dX3Tm95U9wSUWU5PaZ
+                    RD9wmUCFg0i33ppZdWr8mby5d5UcpGwSgPpbaw6nzu7e01/gAFYciUj8HoByiJMRnoWWedVfcsPC
+                    XEH8/sSJexMXh8UFjGoB/jFNWAyGU+ognFpqTAGBxG5uzSjTTigYGB4iQN7/YQxjQ22pQez7w7oP
+                    hkqIzX1tc9hb3Pfe5T4ncaKj/KyMhLS4qPNsCne2tjjyb396kLw2KcFJ5jMt9zzz23fPOb36xzEf
+                    H+67/+qxq96L9ihVPBG8pDjn162W/gruVzn/tMfBHYV447Ym78yYj+8vu5DyyLbzm+POjI+5WZu+
+                    zUsyZox3ymPfS4Y6Xlv/i3n/1sp7hiiuM1ucR0wi+MMmfqFonyc8quI4tWSnylWoGF91DoJoxozU
+                    in86KCEseHHlXp17QbigQj7qFd0HFRd0ZHWX0k7FCmoRDkfuGt03DqQmjAGB7/+MfHB1NfLt4T+A
+                    DPhvTYY4+ti2ZxKSMFIPTBwcG6t7Bhlf8zIIuvLg3AggLeMRdcFBHOtbHYlIUX0xd9QPl5R2NadI
+                    p7wQUjqaU34UJ8RgSpwHOf+9yyaNGiqiTG0Y+i2RTz0O4ZgCjF+/O0aBqTYjE8dWi5JwtpDmOhxO
+                    ooJF6Td+3QIa+HP/zhNeKJnIxHewZLIdGXyuCBQ2DovDXjkjaanwhkfTICiWIcA8PRNuVIZgza2l
+                    B6jsd7IrIS2TgPaZh2IrDxjfmBD3ygGgRDQ5Mj0Qef1vj9UX/ttdfE90ehr9PjtKp3drly9Zzyx+
+                    uWlz3n7d0TMmhFtJkMY3kOC8NzfJWOe1SXrF0AJy0iAMrfhNT5faOQbq8KjI82bof08ogiZEAW51
+                    2CUOMejsTouJkA0IXa98RvgfWFl2oNDAxMDSFJu+aGAEK2rdEvJgmE8BYsWFDe/e53VyFSWApnES
+                    wq5fSewGJRBkDIvCfP7XMLXlT6RMnQQ9fGkIJRSEqQZTwnZYaUQvpjYdNbUzyLatHcAx7dWBZdCs
+                    QrOomyd+H5eXdtjYku5TMe70hJ8K1cKoF3BmM+lJURMhyK7BSJNzZGyK3yRAEpq1MjdHhwebvNvX
+                    HNBw0baSmZNMg9nr///e/XOSrDm3kyIhHRPUdgXI4BX2TH8B1QiESe0TEWGZIVhU7wkaNoLpp973
+                    vfq7zd5S53qXNFg6FaW/PFK/mhif9XvOIV5YAwqrN/8tPy64suLrtOWl36p88uN6yaVQ5Z4IXr/i
+                    G/X/Y8P07vblmxYtOsmTOHY02EaV6LMndDoZT+gXTw7um28mWBjl49jzZQUQviijhlzwjAIHj5Tq
+                    uLonGhaWAaob8hFHRKKMZ5segHh3IYY0w7Cp8KIR36p3/6p/Kyl72sekSpC89EkIC3UWbDa4EcT/
+                    L68uz3vve9NUWwqIQNKTeloJSuUiTj8WYWlZFJxyiSMSgdb8wrUmYpmnEsoo0kJfB7EelpeXvGAJ
+                    785CfX6GDv8YMf/KBGK0rXBKnd85///DqGdMcnJHikzCIbOTihEX2Mx1ATRIhzzjmnnHrqqeWxj3
+                    1szcspMSPxdp6n5eHx6CNGERJdzkQ0oswveclLanQRYRiGuZKllMtcX/ziF1cjp7D4YhzSn5NOOq
+                    l+HEmGDJrHd3o3ODhY5ahcesgIyNi80TQHDsKa4NW9PeFznvOcupZ4nB5OZzg+wV5xS+x7+ktr9f
+                    rjhx/z2LnlHgfvXt769nea/nDQmRK8Xh73Dwt0wiklSt2N25q23xRX6fipgepS1+gwp85I3h34T4
+                    F00B8TqEqq8XGBrw/cP1DHc9vPf4hrbRzXHYbw8BeGt7pHKOTGUMQMU5UuxQSuFHLx4sV1UW2wRA
+                    aeecmSJdUwpAAUlLB5OV7KIlN0EYUCiBQWi1IlMgpe3GIxAMpjYSx0einKR6F4VeN4YecFXieIMA
+                    wIDfTRwbu0gkI0gfLx/JSe8gHvRmyMtaeMjA4fDJISP+95z6tKnKlR0jOOeRmbt2WcFEyUoJgchu
+                    ijHe/spaO9A69Ppu973/uKY908+iVTyq6N8f/7v/+7Ghj5UVCAlnciT3ziE+vRMkUma/0cEsj7gS
+                    gi/SE3azMQ0QyI5IyZs7JujnP/4R/+odYbfyz4ay/DNV2hiKC/f3KZ0j8lNtY17b0h5Lx3FI+3Wa
+                    594scHAl+SD43r+XH/4EBpUQ0CmQ6ZxecDmzAQD4OBOthhTwm83S3FQwcwKpqM8IJAVlctNRaqNw
+                    S2MbxsfwhiOgULIWo/Ck1FVchD2XTxwvJlnvW4446riymc2mRbfGkKRdGfJ7dgfj/B7yJIh2zmLJ
+                    ZFo6SUB1hgC8ajy5Hl2zymnJl3l3YwwJe+9KU11aIkICOMe56TEShDm6HiBW8MwQvARYsW1TQIfx
+                    SAsooccmwGS4HwKLqpl6aYF6MhJ3Q7Qb29RaYhogIFz5w7T27QIjsGTwHxBryE5DgYu42zzS4DAu
+                    Tyuc99rjoVimtuAD/2BE6JKDB54pnszJtTsFcZGBioa6bcnMnHfcoHLe9C7OkYGqdjbG3bYMI9kT
+                    mvvua6tV+Y1rd+zdy5O/dde+3yVhgBfZoStK6NK+cMXDuFhBhdfWngksAXBNo4ex3wncDXBjKCUQ
+                    dvlrFNr3/EylGL/YBUCOR7gzPi/phasvU/7CrvGYgeY0tGjWfwEenGTYJFkzfnYlmAVDKekif9yl
+                    e+UiPDNRHmKb0IIOSmAehjwZTzTIzkAQ94QDWEVCgeTzSwQWNovKRFtbegYJRCWJcGWCjGl4qZNJ
+                    LnVBLPaDBCXpY3pEzmgxfGR2nk2l4AGtPC2w/wlOZDmSi3tubAy9sL8LYiVTM1yvG1wbf9h77klQ
+                    qfsqO8FE9KQ8ZSIikZ+TB8PJKhMe11vNwzZ3PHUyeYs2iEPufBsJcsWVLXhxHY4DPoTClFJ3PGF+
+                    O3hiLO4OBgXTdyaMoxxvN7o/4iw9XHHz9z4ZA/77h9QMdS7+g0Paf8I7l1wwiirCrpQ+LKCAzIiy
+                    eMuI+R/wnwqCi8PNDRVEarbJdXA6OhzS7twia9dtHYCyFQMMLt9rvHvAVlIrjMvS2ml04UVD+KRd
+                    CU0ebWlUI7yeGl3IsKIJXZQlIAEYDiLoiNnM25RQQ23kA/nr/LgtV6P9BkwIwAL5SMMUl5KLlUiB
+                    FId6QLFJK3lwLpi19RwRwYtTHtgdDCZzfQTz2wnyITdLQnR/PgpbXxTRZDICtyEwnInRG4ipz2KO
+                    bpiJMHFxWNob4JyqStjB6vePYW3UEBvjka9MyXkYtOaJDJ3/7t39b9Dwck8pABwHcTtI+ySV/72k
+                    27RfnymEd/7OVSEKng+dzs2rxnBNoaxL5gWSBopuMiRx1cocG6gUaIUWbhZFsBo2OlOEIB3QqESZ
+                    DAeTOhpafnGS0mb2dTSrEIkGKfcsop5dOf/nR50pOeVL2aPoTKK1IyQuat7CssrI0vj9dcVO3l0Z
+                    RX+pCnSZQFT7wYaKYHtaDLD7QoIIPiwaVcDIkB4y0hUwnK6USI4rg3T+1cKSA+GXmmS52Kgl62od
+                    ivfvWr61t3im3jat4Ml6fmGKRq9gnSzDjBq4bAQPFtnsbxi1FSLRtwTgc/TXnlHPAiEmWUNk+GY7
+                    2MJSUlT1HMHI3B8N71rnfVcmtBxmgzKvXu0e0YrxVtq5LGvIbDEMZaSzI08ZX+cs4iAmMAnRGmpk
+                    cM4bJaPfLDYKmoec+Vnh3ouZtiR/EoGBjhIwIdaRl0TJ+YbIX0aBSBslkg4dgCUWaKS5ntFXhUns
+                    a9jbGFsA8gfMbByzqZ0E9uzju5GgPktT60f1AUyssrG4fiGTsVU+46MDAwrkdOWmiLBryiDaA+9h
+                    14pOjuHedacNFNe8ouZTMvm06KQQbuKQ/F0p/npajm3s0Y0AphVlZsZDkLcjT/HFd6w8BEU2OgJ+
+                    1jrPqgceKJJ1bn4aw/j6eTbs7TFQ+cFzpSVSdX0k/zIT/R1Ysz45kHuXIOjIBzISfpkXtGIwIBJ1
+                    zWLo3B2DDkV71+OL8tef9KZ5wfGRFsrl8WeFggXRby3x/o5GkSQ/hBoBOi+wR665aGQMLuPxaIwN
+                    aCPksCdwpkiWOA4ANpaA/PTfEAQRKMvJlCUHoejpcHFlAqo10uksV23r5gwYKqaI7qkiYvaKEBpQ
+                    f68UjA4tlEemZI+okKclrKQzktqL54xHI3ZdSf0TFinpAx6cvApEaUgSLj24ZfhOIh5e2+k2Isoo
+                    jNOOPTjkKThb4ilrSJ8nWC+VAqx61+N2NwcLDySS6ZFqHnMxF5v5RJhCUv0UIqyHDM0V8FcTrGsa
+                    THbo6XRoCeTylEAkZAbvi2V2Dc6skdz9IhaZn5WDvjOMUiG/MmO87olFNOqR/3oZeR23gh8348OH
+                    aPNUpjoJf0hzJPBNpQLpHgkMDTA+cEJjwsbhwSHRMYH3qMwNPj8o1AHZrwlXhw1gpY1tYMrt1rAm
+                    1ORBOMw00hiL5YhFeHd9wrJurP0/UShpMLC+6e4vMWedJAod/85jfXtInXpagMBfCaqajCe3pVYZ
+                    ki8W6AsLUjXHk6MJ5y+SyFZ3QijJTAYjA8Hls/7YzFqxsjDREdRsLr+SBQKkQJeD7GpJ1jUUrhlI
+                    TyS2WkLj6lsHcxLsW0cWWQ6imXsXhJxopviJdOwA+ZOQDgoRlkenVz8KKLkeHFew38MgLvXYzBcB
+                    m5b6tslilyc37GU58RjhE4franYADo4dcYeCELfH73u9+tm3KOilxFKXwNDAzUejTJmczsJwDnFz
+                    R70Yz5zg2D/HEUbwy50B/AGOxBLw18YiDHPREwAn0/FcgIhKB0zuruHvjRwMczBIp7WeB9A08MvH
+                    egRizoi4FAG0wkQ8o6oXr5KNT31M5KzxYzvNxzQ1CjhkBovAVl45EpEYESEgHzHj6JJnz5L2MAPJ
+                    y3lRSaN+J1ocXlcQkcHaAMPcDrUExphwWyoATPszqBoQQWhkelnHJh/RmQ9vrhVTuLqQ7wygzYOI
+                    zYwuOdkppjAjoihSNPKYG5a+vFHqNniOg7CjV/pzAMh5Mwn04l9Sy6cRDye6kJOUpBfELtwMBRsD
+                    F5ejw7PmWo5sYQP/KRj1SZMUhlTX7xTT4ci3TI+xTG7Zsj5fpwTPZbFJl8GIF3JCAPHdwzRDJExx
+                    ytFz7wD4wRc6ZjdInCHhzYDRzGSL11nBLYdNDN/l6CPCJQOkR/pwUm5KI8OgruzhA0sJq3Bn4gsB
+                    N00AZgcCLIenSTIUrVGwu9IXLk+Huwm9QxiljDkU1ShkmC5YU9WwyLq4wyELgPy3gswqaA2lk4C0
+                    GoBKmM8inj+YC2ctb4o8BVwXg3iwkom3N9dEUGXpgi+QNjaFEcoJ5Xt1mnwOpA1qPJCCgsPvDPIJ
+                    LHRYsWjW5A3/jGN9bvp5wM6W8OnASeeVn00fFSUPqEL0eplI3hpIFXBuKHcR2TOpr0izP6e0fh0w
+                    UGbZPMYWjD0RjDWAPhLERjf0dKWkcpO43AGkHKS8EZt6iAlvmZK0fEgDMSk5Xvv8wJUHrryPile+
+                    jZLynjPDyDdCrxXHUnZNNUcE0sBn10tPerQPWjehb3TVBOb7XNfp31yunjnlUp40YHA8AcPA0gn6
+                    Nqq2FMH94uoBULmgZVCZkvRSA4AuIZeOEUEiWlYDablJhCCP1ycgtIkMr0V8YAKBdlYVCf/exn64
+                    JZYN7WQlkw39egLYflsdQxNFHB4lEc/EhLUtHxKnWwIaakFFxZLjZ+eGPGS7F5PnXp8fD1r//6r7
+                    UPQ5YGUSBAyWxeRQv5NMUR1SgbRZb22YiKEslP7dj+gQ+8a/u2t72tpkPSSXwah5MQ+RgDr02B3e
+                    NPzg4oZLe9AeUkK79XQU6iF7mQtdSL3NOg04m8/OUvr3NgdIyU0Vkr7RmhdCijPr7TsFOWqRfB1o
+                    gXqhyO/qBbdHN2oPqJDCENII1iJHxHpzZk+fI0BOUGgCrB5ruzkfKJfiZTYwwhOtTnMIj1EeaFAg
+                    rhD89WQUkrLDDBUUhKtiS8OQPgnZ2T8+CURchXbyEImeFQNspN2BYfncWLF1cPNjg4WBVJCoCWtA
+                    htuTw6cnInIejoq54huaeAlJJRWExloKmMjBf/flHIF7OMTZnFxh+Fs9AUyjgMl2Mwd3OwwbdXMA
+                    dGRGkdGPC8qSAMiwIbP5WlMtL4oS2FdASaqRc6AwMDNcrZC3Eqxqe80j/pje+55PGU3bo0wTzJFL
+                    ++PTIvxkLW5EGJyYssGZIxzFMf/HBQZGntbOAZvn5QO/TNK+eJPog5poI39bPJ2s3x4GTStTM1yn
+                    YmQ4cd/zsQOiiwc48gVfph4G/GGwiRsVKJgq0E1rpbINpp0co2hrD6Q/n8bwSTrfQpAA9D4QiFEv
+                    PIvJ9yi2AjRnjeSDrloAxSHW0J2uJSOorC2zrL9umCBbZw6HhP4bfG9OW9KTdlpJzKGIqrBUKP57
+                    IwxrVQaXAxjzGgDg+OJO1h5N+USuRppgxomiMPja55UHD8koF7SqXelWKhjSf0AH7R6AaUmAw4j0
+                    9+8pP1wzpzMg+8mxc6lJMBoiPVBOhSyk5DaI6jLqNzGiQeRWp8qjNnYBxjkC2D5lAgOWkn1cWPyM
+                    RxcFCAjIIWBxmfWGxaGwb7w+CT8qYnN3nKe1XgFYGpX3E7ITw7an8UmC96Naaflwe+MB9cEygn4l
+                    s7QPYbc41Jfi0Ea4NCMmls/ldAT5wq7EKoUd9LCXgnC0iYPIdFoSg8I4X1osevMMp7GYQFdNxoMb
+                    SHPJH2PLwvGh0lih7opHJjUB/jiDqAIVFCHt3C8KAW18YcoI03aUpuZGtF/EjFMRfKJXVwKsTInd
+                    mn0qq34BRDukY5eH6GzHMfc8wxlQ9Hj/pQDOg0h8dF2zwA2uY4HqhD2+fQjkodXQ4MDNQTN85Fyi
+                    ll0+Zzn/tcPd8fjIhJgfHZDcgPDTIgG3yRlRMgeytyUc7hkC9eKbxncyU/+wjt8cc5UHxtyEQ9ub
+                    unD0HL6aJPLG6M1PCZkbqu6sZXpIH90bc7040OIcPeiLrnBe0jY62dgB4etDfE+p0V9/8eeENgfY
+                    8Q1wq8thSGAr8uUAMGscXBok2C/v2hrE6efN0Gx4CJB1S6jIBQLRKPLbUgLAtO2W0OKUf+Tq9f2r
+                    GYUgChneCd9DgnZwi+kxHu880qpdff4mhrk2dT6JlBqXe1uO4pHbBIQDTgqY0lN5bLZ37bqTjoUB
+                    jHovoxNosrb8YDOuhTbi+uTjrppPpL/QyWB2X0FMrY5JL3+PLGHTA+CDrHr4XxA337DJt9kQUflN
+                    /+BV3jSNd8qs4B4KmTVtPIzcsczJ8n15aCM2QG65miA2unLQeTRqtOOxHYHsg6kI97/OjPGSnP+b
+                    mGsrbCCEYIV+pjf0izx5ZM/BTGTojV+3e0FG3qZ9hZXgvi4SGxcJ+PdGIPSopRIUtIIxSWTngmTC
+                    C8XAouCXkOEMbSiEYNKugpq+XZj6LIlQHF4Inl3PlLI8YiNGlSAqPBj19ckQIQLK9DyISvbmSokR
+                    7uGVcTKJ1IY2yKx8DMT1qGDoMxR16REngmh/b8mqRqmXlQAuf52UakQItC87z5Ows+y5ay5HMSYz
+                    yM1VzMHz++gkUj5UXJ8NINtFFvjdIpeEnG29qsMmbOyNqaCyPEN9BXuTlQajyTGyRPG3apl/RNuo
+                    n/nGfyYsPOKfH6ruZsPdtpTx1POoWXpO8QIiHobQoeemM9bgy5vyLmYR/QH7Q2kQGnRR9i7Vp4Ss
+                    C3dceT+XdC0KrpVcy1N8a9MA5KGIaGdS+cipr9alSIRZoRHuCCIH5A4LrwupmjteIs2L9cqmHdoL
+                    wvQRFIXKvCx732nbRzjK5XCmdxLZJFpKQUEJgwj2GBlBFg5wd6FEfI17/Ny2bjWHigPukQHrrKjE
+                    +gvDcFUY6e+Ulv8KjdRKAer1BfdNClbMooJLqLYzMPvNcwP4uHJ30oj3QvgaLgAaLFKci9x+NFOX
+                    o5F1EAGJ/hq6PUgKFSeqA9w2P0nAtFxptx8c+w8GjNbZApJJlbD2NqIyLhkVzdi0bSIXQBQ89oTg
+                    7GzjGSRpS1wmB7OCRRTbn9o5d15MX54rETjCXK4bEbpFyCv3+JQ5e3xD5tclyrR+lU1moIcdS2E6
+                    uJiQ3EK/nh+MsS/iFdtWJvMHlhv2hvw+d82+Kl5+zGwNaUYdJCAAIlHKA8IdswFJHDaYtxLZRQ7f
+                    MFPHlu9sv+rury6j7bZnmzrjZs/0jDaZaNd580zQMm7eRfxHC0SxH80S/KaL7qs48reaRxqKNgop
+                    bUR0pIsScC46JB8d2jBe1N/KEBBr9o0aLRT9WlKF56USanc/YFlCt5EMUoLt79Yo91cPzMMWqT/B
+                    srUZl783EPc676ZLl785GC2Xd4BxK/XrpJCudZJOLsvMfxghCfOSb69EDK59QsHV4X2fizo1L318
+                    T83tE0hM1jSPSONKNXLuwkxG9AWawEx40MgRI6lcEEQ5BadEJOPIWS9cqBcpPJ+pwYDwMIqRMsjO
+                    9lXv/619fFyHp9/SKM36DiNdLLdfKQY+dY+uf4SauzT5a7jleXdLXJObk2x3EvRQC8qrkkqAOUBD
+                    YBbQtNOX0KYT2kjqIm5ckxzKPJHxpkmfLMeVIYxieiAzTUSR0dTvg1UgpH2f3hBNGJI/RuggH6bM
+                    M7EZFJKiT1YRQAL2g17/M5ect19Zy8ac9opbgODuhZGGwv45fO+XBPiscwjO2NeSfQC7zRS9Eox8
+                    t5R/vNFapNpGtF/K5si1B4C58626w5EVEmzAGKZjBC5BHkbyZicOBe6LTwrs3JW1RKwFNZTPfZz7
+                    0+Ugj1WV6JNn7wpup4AGmGUPyEJzyhLqLFYpgEkDwI880FwYNxYDPv18Zc8OWafBsaP0lPXZOe8d
+                    BES1/P+NPG2OZjLHIBnAf5ATSb9Gph4wc66eU4IOkNQ5Jn4wmQG9quxjdmJ+AJH8D4MMF6+gjPEb
+                    XIYJyEJfHexYtMNEVeIH2DIGVmfs15mFfKNuegLAE/uQYpL+05AuvJCBLwJIItiM2/UyYHH/ZXUu
+                    RMkzLdI4fxeGrT68yERo82c7x6lZthxEkD8LbylFNOqefwrA2YGCVhGDZPgCBTQXkI5+oJPpO2aB
+                    iUGgDhLXN94Y5R5bdE6uWpFs4i6dcEtOSdg4ODtdgvpvi9BV4DqMcjQ0mwCeWxjENo5gjkufYAxo
+                    DSvwQKZ55oZZ6adXgGBC9FAPJfp2CA19VPZE2QugHjpFF47wGSXtOrKjd+RgmemcHhyycV0iTyIT
+                    efqDdlbr764UGfJh/Gbxo5zyx/530p2sDAQI0CFBBYW4ab85SqQOuqnDdO0JaMyZFcZReAQTFeex
+                    7rk7TUeaZb+EjeXIE5cnJSI4bj6PekOHVLEL2M4VCB7qJhzs11JAtlsBt0jQjZkHXzGpTdovIKuX
+                    iYZLFydZ/vfv7zn68eg3JZSBbuCE8Id7Ug2nux4q/ZMS7CdvTpr9bxLgxkaGiovhDz19Hkw45Q06
+                    skX64mZCH9RTlKISQK1foAm1SKKxemaD5Ak1oQuMX2i/E+LyA8YZgy4duC+k7GWTzDyrfL5MBgTg
+                    mHYE5CNN7IQRvzsV8S1n1u7a9pyMUppvcg+vgozmICvFMgf2wXfx/+8IcrnZxXbdT+QamswTHxzs
+                    EmGVBAgGd9vDshJ+kL3s3X+MZhBGSLP3Xvec97at+mUrhPxXM6R+F81JgbbU6LfL2EM5ZfjPLy0M
+                    ZVXu9I2Dz8YQDOEM/kSIHxrq/swjrhh/PkvOgOdERuLNEs+Up+pLzG800UujIQDs97Jcfpg+EMba
+                    R9gUC+dMmYPofJ+fqchg6m/lYBTPCjGsbHPvYxiewVsTjBU2tjCJcZteKLz1ZEiXofe4dWeItWHG
+                    dpUyGEXeu0jbCVxfUaHqsVobXWhydoRS7YionXOm31CYMY0yc8Uys27q3IQ+s1PEkrBFDbxu8cty
+                    IitMIQWrGZaoUStGJBWqF4tT4WshVKPYZeKH6tiz/KW/tmZYTWWo6HEGYW1yu+lRsjcuUxdfHuY7
+                    SfueA3PiWobWIBal3sp8b00Qa9MMpWGGrlORuEodS6WOBWRI6K5hyGWstDAVuhUNLWVnjXVnjwVk
+                    SBVkTOVmxsW7HYdU2SXhhj7RfG0NI3jKZWhces15wbmYZhtcIj1/bxJ3RqfShffQ5Fa4VytSIFrc
+                    /GBvHepj6HR67P+SMUsBUOpxWG3gpHU9uYs3aRKbQiSrTig8JRfvQLB9qKzz1q20WLFrXCkbXCgd
+                    ZncgYRTVoRbao+4AnN2Cs6Rm3FHqI+Z3m8FK198kc4IvUbyDJk+5q4d7AyetrQNSJEjt0jxPNsvJ
+                    YdvD87wrrSSpXLR6UBThOEOZtU36QAHkB/f5dIGiLs+fPqQLh1LCbn84EW7+XLRL91JgflJUUJEc
+                    OXmjwUb9cEfMQk6yt+R3m8rpc26cF4c5FCpOKJvC32OwNo41e0sym0CZNvAvfSQYcB+DFffPvq1B
+                    jOsH2G7K848Gjo5UGCOeHXfko9Wr7j8XZXVOAZfe4sGgHeideVuolqTmhsVKU+IpnIBcwzZS68i3
+                    Sii3N888I7D8jTSUlEQH8rSNrIkwL9eFxeUp0vU8mu6R2NkRHeHHl6p0eA57U/4FUBT2/tkkeRCv
+                    /4ETHcZ4oiYiW4l7boJ3MgC2svQllfX9o2gYwAXdAWv5nOJu+ilrl+/OMfrx8WhrHW6OojQ6kjuU
+                    sbrblMRHooBdwSVMOIBd0l0qArojEvPeI+QnKiQITIankxSPWqLFS7+P8BPqEYteJQwlquDrL4OH
+                    ar97H4LV4plG20TYTH6iGzvasII+K4j/y5hWZGhPRCcbZdow+vEKlK9aLah4GORoekGYtXvZKxeJ
+                    wsj41hvefVI8SOlqtHk3dxH2ngaF0YVCsUZ9QT4QPNUNDRNqKTMXOc5jUWtnr1LOO9Iz1rhcLW9p
+                    Fi1bmYs6ioXbz487a1rgFvK4Iqj3SgRlhyTXqRpoyOHYpbHWP8XsdoPa+ekZhMRR5jZVQI51WjFX
+                    rhTOraOkQJB1lpxDdMrYwoInO8JKvloTv+JVgrFK/qh77Jk+hAHqFbrfh8YrRcPX5FdPd0SbYRad
+                    RoG5E1Trv8tcQavURMvCgjE/3ihKteReWcW46NdhiJ3bcsYrOIMOJ2orYJkYNhpOa7cmmeUH7G+8
+                    nRWBmr5kGcAjjFkCfKo3k5YFOUHlGeyuOIICBzXrkhi+bheBAbbDmuaCGiGIMnioWq9JI2GulpfK
+                    os5+QV5cD2AfgTHWKxR+k5KuRh5JT+lIv81v6Ex+ZlbDSNK8I5nnMkaA76oAVEAfzhh0fiVUUWgF
+                    d7BXzzkJmvytOB6IFHMsjIal8C0E/+co7khT5PKcr5PQNRQB4uHxYZ0mOTLxClE3j0LDc3fPG+eB
+                    eFkn62dzVeeloeWIQxFzJ25Go/JbqgrV3Sj3Sv7rP8/sQ73/nOesjRpNt5T1YiShhezTRsqK0Lno
+                    wlanSCNcYfsAcR4UVqhykyD4Avx732EHTWSac9Y8o294/d6Hc1BEQNStFtkKUnlFXY8yt+QF0Kwq
+                    YxvFItzzJG4I9jaUfBMd9kIBVZWAOMg0AIEw31+lAuvBBeCkJ7dejanHq5RwAECXzbgoaQLkTmol
+                    MqymKzJ4xLSSgqI0cbDzahTquaPDg2Bjb9/hqEcc1L++aclAGpjZMRi2dxgHH10wcYL2VFyfK+OU
+                    f3eKY01oFMKCOQgnEegCKCVGL3+qaMKQYaINON+tDxQ5+sd2jgvwR5L8NBSHeAQxBr1uSTXBwWkK
+                    v0mCPKk6KOIepakBPldKrjZZl3qEYAABAySURBVBknapOcxpvr2Oybc0k5qWOkZGf9jetTb8ZLDp
+                    4ZGlqpS+mUmnTzflxD0AARXj69tpdrdvoiA2+WgxjYYJ5TMRbFOwifADsSdPzFkCjveEBpLK48jn
+                    dAh/JTKoJXn4uUvBnTGE5o8HjiiSeWU+JUBz/QL6QzXicthK/Md0UUnWfLl4X6259QUh/uxWFBPQ
+                    bVhyISoHzb/oKndFIm16YA6hPMP3nLsqbCKMuFzLad7ZrlzXveHy2yZ8BkKZLg45Px2bW2nWNlf/
+                    PurMtxm1ftrStn4H2Cl5Z+JbbpdZOmfqmcop+Xb+Tow0h7If88vtlWe89Qnu4UiBFoyxGJzk7vGO
+                    xEvFoj3p5jsI72pnRU5kBXAL3xEadjVc61ufYMJZ1Tbdz+Ma4hYJgyCufCNYu12VLGw6QQmsT04f
+                    lMTMogFAvJ3j5S4lSCZp/0kBk1KKfwaEEoucVeEC9RxgMRwebWhpwHgDa2hEkANssWlrcgZGff5q
+                    IfxZYmUXL9pIP6ESBlZzSUKI/i1NkEA3IwJ3PuBMbhpZ4FyrRKSmROeNpasKDkz/NzDryxP5JFju
+                    SPNxEvDWE8utIoqR6YyBmpNyfpLnl6o+ywgNzMB40m/zl3jsZLLUes0knGQz6d0OzLQWY01o6syJ
+                    fs0HUPO4EcpYYyh0wz8UUWUnQ6k2vjuDrXUdShV9JLY3VC11MjjRBjZU4x5GCsjQVbHErVzctgnC
+                    Apmv4ZTnlzC9AURDKCHiDIgYGBmnpYABPCuPG7QQrKeIDnN46UjIcSei0isKgWU7rCqJvRJfNlfB
+                    iTQQCnMYTHcABZEGCeSuVbU8oNkh/3FgiYP5mh4fd9neWnA2m2r43bP5QncBJ4d5ok3WO0oh5v6z
+                    TOnOT/oNkv++fVelEWfUU8kHxkm+Y1FVz0A+RAqaxPrmGTf8qb62DtOMF0KpxmgvVM2vSh6Zlzb8
+                    Tbo2U9Uo7Zv3kVEZbEHpBjYnwyDmtmfhyX1AjkOpKTPYJ5d3PIXQ0hNpI9CMixhTCL6A/v+q0vXp
+                    Jh8E4mldZrUANQMptBEyH4RZEiiQzKc2LaJTOUy1GtD7lEExOTb/oFGy+8hD8egOCai5009Bfu9C
+                    EYx2TARlyealMlxC+OYzWpjM2071Tk2kNDQ5U/wjFffRixeyma8fUBjnClCL718TsHDI4zyE8Gkp
+                    /auP1DasaALJKxRC5HgYDcUgbN51QUZegD6+AePXJxLOgFnPlKOxM66aElmjoOJTtHzDaY5j4QSp
+                    1GnP1d9aHs1jf3RvZp5GwN04Dwk/zZGzAUm9M4zalOCC3fDVFY9VIt0SsjBZq8NTmSsU08nXF4YX
+                    4yBPs4x+sgx+MYtGFUZC/N8nVCnBKN/v61dRSl7HOsF+NwvMpIza8pp0o8foy443xqX2PCo26Jpf
+                    JIgAfyBhGw2hRkCoSwTMa5uY2QM/nBwcH6+S4FzE8InNKkZ0HDRptHV+/PgDj9AYyO1+ANLYBJJB
+                    AoGsozvSJsG3RvfaVnQrUNlQUA+YkBpTCm9whAP7kmlIvbIDIugG9RiaFZGHXQHM0XfWAeaajmJ9
+                    +ldOhwIDmWfRBI/utD/Eh5pqKZayoNZ0CpRC9GwaHw8oxTxLG/MWZ6ZTTd448hcDLW0OZXNJFuSZ
+                    eyffKdvBjXnDk0ByHG6gSyzzW05qIvpMA+gQDG9ecopTGiiojIcKWqFJOX5iQ5QE6HrtjzUGR7Bg
+                    cTZO5tNbnkePaDjJKxSnUSyAhN73HIhVPMCO9dAhqMIGWc/VxHXM7tJTStFco3Nbz0CyIv3DXyuI
+                    3SolCIVhyNtbxtDEuu5/thnfWNZoTC+nYvBNYK66xvDyNq1HNxbZyNO+sNZaln7do55w0B1DPnmG
+                    ArFqwVuW4r0pNWpDUt/cMbtMJztOLUwpk9LnssXnhmb1g3oYFWTKwVHqAVL+P8e6H6BtiZvrP5aN
+                    +KU5WWTzaCD/+9R0TbFN5hk3cE3lrGYrW8S3AuHS936jsPfITnbEVO3gqjaUWkaIViOE/3gqbHpt
+                    W7itjIVzphtPVNdihCnVMoUyvy+la82KtvZdV7sx0eqhXRrb4ziWjVSwkibXG+vsl7DG+Hw9NxRP
+                    Vdi7k7K3fOHmmD3+et/HkpFPPq0Seum7zH8CadLNEL+bTIPuZZZeNMHm/mFR64FcrWCkOq6xGOrP
+                    7nojA+43oDVucQBlLrram1CodTZe1dCTrKQze8Q+i1F4z0dtg7C18keINLV8IA6juOcE6tcHZVX3
+                    xV4L0AHs3N+yVrbXwytYbxCXadpzX1PgmYn/HokbUnT6gtfYnI24q0qM4/DKzKItLTSj9e5nr/Mh
+                    xz7Yu1+WHI8qehM5PiWt/43e5iY/YBUqVNYVW7RIffR+63hzxRvgds2uzCeQye2maHF+e9WJlQyp
+                    PIxXjIDK2UL+ZRwxcL5R3kdbxlWqd6Fm6vQKiA55ASGc8Y2gRYpB7HZrwreuqaPEi1bC7RlholRG
+                    SwkOj0JG/qfEeVfIguIkOCaKIuxqweVmgO8JKLZ+2xMdc/lLHyxwMnLTx10uOxeHTvJBh1hHiT6m
+                    FgUjL1cu72XOu8RCWKb6+RXpxno9ihKD2imP2IjbnoCXJ9yEdbXptHBtrgi1wHIkVyDah84DlBP2
+                    kH7yozyHXQxi/pyP/JOZxBK55rR/pBTxg4r+1LARGIXKSd5Ecf1Fk/+TwYjGggfQUOMsjQ2ll/Oi
+                    Y7kAqSNf3RtxPQF3HwDW3wE/QjO+sYzuKNIdOTgo+JfzEnQtysmMg3g8j+wfCtwUz1GM2UhmChCS
+                    eYHM8N1eWeQLgkPPWMqlvfJo3cfKEdwo+uPRtDMDvHRPbSLp5vCVrXxKT6QoGqdbTL6xjGZ4gmHc
+                    bVE+MNR7tdY+w9KFg83xi5+/K4TrK45tVUPAaJR3V4sCiMJ5RnOMadFfT3NqdosyLmeE0ogl8trF
+                    Og0E3IeVM8C9Ge06aY4/SgPz/a98SirYnnpSHnahBpSEmHMgC08REwHG18Zz0/+m0IulfGNS7DPX
+                    gG5m7MXB985LySx6C1KeqnRr99o0tvtLk15nR13I9agz5kSaaUKwGv0X84+k+LfvuFXDYGD1dG24
+                    3mlO2seZRXGZtX8uSefpgb+tbAWMrd41+9+ZC1dtbEPRqeY/wcpl71zbk154t3coh6/3th1+j3po
+                    goJ4fx9YXxVYGNMjyGYghiYGBgSlh8rzDGGgHrb74oifA44XNaZO7gPbvXDzRp1YL4oS7H0zaiw+
+                    TwnitDoH8TAvusdiGkj8bkXhyRZ1Z4gJGVbxPopB2eoy9SrVWxiC+KJh/RLAT69qD1uridFXPa2M
+                    lH8tCcb0Sgvti0e/v3+MCvU4oQ6idDiZ4bkW2GdC7KWp20ou2YOUV4rnRi0Y+KxTkjaEwOPC32HY
+                    8O+fSHt+4JxRmzws05JR9hyA8LpTgtFvWKSFUeEEfUN0TdlCivoT7HbfLTnFfIc3Lk4KsjFTw80s
+                    gzov2M4GNxpDSPjHRhcijaJrSaY6OZkHKNNO6ocDA/CSXj2g+LlPHaSNemRfpaj/OaY+LFc/LUrQ
+                    79rKcvuQadfORz8pPX7Ou5k76yWPee4Hl9GoCyvxZIY31iMExB4Pu2g/nnNfq/ZTv6Z5eHN+h8LA
+                    u343rv6OPs1Xy+vR39j273vSyum/8WztYTHIimDBwfpwVuKzi/1ffawJHva7aVwl9A+9tj3ebMqN
+                    tRtDmdvDnpGnqdWFHyicboCU9X+0cU6AuPVVOs8Lx1k9+mPWH/8Cg1Z4n+qxv96+8Vtuu2xEOln/
+                    Po4EMdMJeJ+BitSzoR3kfnE3wlHbyY22j7jnvy6I8yUU0kIY+eyI1TxhP1bdJ0rLtHpB7zgs5djN
+                    +mNTMi1T4RLRaGRx/5wGocXhrzGOUjPG3ysdXy6Jhfk8d6bxxzhu0xN2uzJRpd6tO5RtWfBqrCto
+                    fy61zOYe/ZGLpZ3ygec0uo4IRAngeOnOFufuoVVWMg6c+L0m8FZv/vxf3I13JbppEEk5Y5JJ2Pty
+                    stztZC0vHmzlEYWt9pdN7SIqU8HtzuKyKkJ94aPrLN+9v9b45rPSmKK35ubJdLHUHyO/J0+88sPz
+                    yKzOG6wKbx3N5y++7SKXT2xv+WZNTZZ4vPKdQtNtyOBgQlTzwkkMLcLxAQ2g8DFwVeE2hio3lt3G
+                    8LTCSQHN8LgR8H+tU1/IBHBJ4fSJn+GJht43ZcmGiscTv9CSq2l69Mp3Zp82hd6EMq88jr8TtB6b
+                    ZCJuaEH+u1MJDTsEYXBo78bZod05sgMxbSO4wt3fGnVKy9gxSlZwSUPRX+YXHPC/pNbhN2LCKsjo
+                    dRNa5nUtcJBEmI6H06kBE4zsEXdH9A4MmBIPkaefrr+kl+2wN5yGCfAlL5Now8jv4R6G2hn0bpur
+                    1IJ3PMN8U9xf9i4KmBFweKZMCa5Xi1YEd+3FmGkDy9Om72DFwbiOmcpDNXm8XnBpo0xbQA3VBfcM
+                    vIZat+UnbwoECpGKOouXVcQeayDPKgQDxkn7j9q4LtVYbs19SBXCMCyPptEUY6FFcy3R7M8V4ZN0
+                    OBnCR6EE8vDXx3INgeHkd6dvy8M1IjzGUKkukQxUumCT6V8jlxzyNNDSS0bkBBVwfev1GZbfPaqK
+                    q3OdZe7QrtskxR3uOLofI6WRa3Ww258FvdoaMhOVmDHaGTsu4gvdWPZNOUY/N+q4m0aWTfvG5L/2
+                    xLFrMDX9MuoB/puDhK9y8PPDnwkkD6saMyqIsQdO4UoFhNb9McRDnmeesPNyu2cJ+CSEMaT3lzIe
+                    xBuoF6faUHjv1A9hl5Gv9nM3Iw4G2F5JkMeDswbeSyTT+Tj8z1t6lzNM75uuY9GnmfV2XdIOeRSi
+                    r9PC3QGuW6N2lo7zmvcVuh+ezemti3MAbtc63jthoBvTF3usMQ9NlhuDMiAuYJgmWfF+hUgXBy4e
+                    K2TjYF6HlrIfvc2O7QFHSTRnqIM6PwosBDA6VY2R8/lO8HgRkNtuSVc6xV0WdJoFOnpYHbCkkHPx
+                    bS5nRJ4NZC9l8THRg6Gsl71m0NrTS+pqLpl0qcRjqeouVYt0YfaHN9ZOAdCeY13vi5x7lDxhtvkB
+                    0lTukp4wGBjMGfV/Oc4xH2HwJfFphGkoKNoq6gXn/COTdwZft5vH7Jw2HRjqfisZpwaTwcG3hVYL
+                    Zt1o93r20qEd7XjddwC+VkgI45WVT7pm2B5IM8GNV4cuikaTxtpa0HBxo3lT9uq3xFul8GOqXJ9n
+                    HbFdSjMytQGrMjkLJgVF8N3DOQfNNYydu9srsFXhm4LWsXzf/0gEFwRCCvTPiJP437BYE7AoS2JU
+                    ge5kfD9wWeHXhW4EmBuwaCbDPy9P+Pn1sjO5LY2nZ3htQWBdHUF8YO8/m1cQ/+atYuGWXFDwt8Vu
+                    CDAxOUS8+2FbdlgZKHHLN5naiu2a7zngeF28JHJw3PO0pnR3gwd6nieIj21gJa27qGW2pv7OcGSv
+                    /SAJwcviowYUfln3R2eCFHCU1wQ0jSok4Yr7yz3R3xbCyQfHgmXF7m/+AvUwKU3BrtHGhjzDDt55
+                    YHgqwfedrBn/8POR8GFitWDkIAAAAASUVORK5CYII=">
+                </a>
+            </igx-navbar-action>
+            <igx-toast #toast displayTime="3000"></igx-toast>
+        </igx-navbar>
+        <app-loader></app-loader>
+        <router-outlet></router-outlet>
+        <footer>
+            <!-- <div class="app-badges">
+                <a href="https://apps.apple.com/us/app/sravz/id1571623438?itsct=apps_box_badge&amp;itscg=30200"><img
+                        src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1623715200&h=f1749681305635fc4c80a3352129754f"
+                        alt="Download on the App Store"></a>
+                <a
+                    href='https://play.google.com/store/apps/details?id=com.app.sravz333&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+                        alt='Get it on Google Play'
+                        src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
+                        style="height: 60px;width: 140px;" /></a>
+            </div> -->
+            <div class="pull-right">
+                <a class="dropdown-item waves-light footer-company-name" routerLink="/about">Sravz LLC ©
+                    {{today | date:'yyyy'}}</a>
+            </div>
+        </footer>
+    </main>
+</div>
+

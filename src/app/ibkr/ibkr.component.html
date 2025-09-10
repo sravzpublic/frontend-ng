@@ -1,0 +1,30 @@
+<h5>IBKR</h5>
+<igx-tabs style="height: 800px;">
+    <igx-tab-item>
+        <igx-tab-header>
+            <igx-icon igxTabHeaderIcon>info</igx-icon>
+            <span igxTabHeaderLabel>IBKR-API</span>
+        </igx-tab-header>
+        <igx-tab-content style="height: 800px;">
+            <iframe [src]="IBKR_URL | safeHtml" style="width: 100%; height: 100%;"></iframe>
+        </igx-tab-content>
+    </igx-tab-item>
+    <!-- <igx-tab-item>
+        <igx-tab-header>
+            <igx-icon igxTabHeaderIcon>info</igx-icon>
+            <span igxTabHeaderLabel>Traefik Dashboard</span>
+        </igx-tab-header>
+        <igx-tab-content style="height: 800px;">
+            <iframe [src]="TRAEFIK_DASHBOARD_URL | safeHtml" style="width: 100%; height: 100%;"></iframe>
+        </igx-tab-content>
+    </igx-tab-item>
+    <igx-tab-item>
+        <igx-tab-header>
+            <igx-icon igxTabHeaderIcon>info</igx-icon>
+            <span igxTabHeaderLabel>NSQ Admin</span>
+        </igx-tab-header>
+        <igx-tab-content style="height: 800px;">
+            <iframe [src]="NSQ_ADMIN_URL | safeHtml" style="width: 100%; height: 100%;"></iframe>
+        </igx-tab-content>
+    </igx-tab-item> -->
+</igx-tabs>

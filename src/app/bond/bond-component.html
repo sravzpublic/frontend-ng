@@ -1,0 +1,14 @@
+<h5 class="sample-title">Bond - {{sravzId}}
+  <a href="#" (click)="back()" class="link back-link pull-right" aria-label="Back">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+  </a>
+</h5>
+
+<h5 class="sample-title">Select a bond</h5>
+<div class="layout-box" igxLayout igxLayoutDir="column" style="margin-bottom:5px">
+  <grid-bond-tickers [bondTickers]="bondTickers" (bondTickerSelected)="onBondTickerSelected($event)"></grid-bond-tickers>
+</div>
+
+<div class="layout-sample" *ngIf="bond">
+    <grid-bond [bond]="bond"></grid-bond>
+</div>

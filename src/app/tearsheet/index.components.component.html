@@ -1,0 +1,52 @@
+<igx-grid #grid1 [data]="assets"  [rowSelection]="'single'"
+  (rowSelectionChanging)="handleRowSelectionChange($event)" [allowFiltering]="true">
+  <igx-paginator [perPage]="10">
+  </igx-paginator>
+  <igx-column field="SravzId" header="Sravz ID">
+    <ng-template igxCell let-val>
+      <div class="cell__inner">
+        {{ val }}
+      </div>
+    </ng-template>
+  </igx-column>
+
+  <igx-column field="Code" header="Code">
+    <ng-template igxCell let-val>
+      <div class="cell__inner">
+        {{ val }}
+      </div>
+    </ng-template>
+  </igx-column>
+
+  <igx-column field="Exchange" header="Exchange">
+    <ng-template igxCell let-val>
+      <div class="cell__inner">
+        {{ val }}
+      </div>
+    </ng-template>
+  </igx-column>
+
+  <igx-column field="Name" header="Name">
+    <ng-template igxCell let-val>
+      <div class="cell__inner">
+        {{ val }}
+      </div>
+    </ng-template>
+  </igx-column>
+
+  <igx-column field="Sector" header="Sector">
+    <ng-template igxCell let-val>
+      <div class="cell__inner">
+        {{ val }}
+      </div>
+    </ng-template>
+  </igx-column>
+
+  <igx-column field="Industry" header="Industry">
+    <ng-template igxCell let-val>
+      <div class="cell__inner">
+        {{ val }}
+      </div>
+    </ng-template>
+  </igx-column>
+</igx-grid>

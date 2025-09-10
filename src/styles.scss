@@ -1,0 +1,379 @@
+@use '@infragistics/igniteui-angular/theming' as *;
+@use 'variables' as *;
+@use 'app-layout';
+
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import "include-media";
+@import "minireset.css/minireset";
+
+@import './variables';
+@import './app-layout';
+
+@include core();
+@include typography();
+
+$green-palette: palette($primary: #09f,
+    $secondary: #72da67,
+    $surface: #333,
+    $info: #1377d5,
+    $success: #4eb862,
+    $warn: #fbb13c,
+    $error: #ff134a,
+    $gray: #626161,
+  );
+@include theme($green-palette, $schema: $schema);
+
+:root {
+  @include palette($palette);
+}
+
+
+.app-light-theme {
+  @include light-theme($palette);
+}
+
+.app-dark-theme {
+  background: #333;
+  color: #fff;
+  @include dark-theme($palette: $green-palette);
+
+  .grid-chart-contextmenu-wrapper {
+    @include fluent-dark-theme($fluent-excel-palette);
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+
+  height: 100%
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.navbar {
+  width: 100%;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.text-muted {
+  margin: 20px 0;
+}
+
+.form-login {
+  max-width: 330px;
+  padding: 0px 15px 5px 15px;
+  margin: 0 auto;
+}
+
+.form-login .form-login-heading {
+  margin-bottom: 10px;
+}
+
+.form-login .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-login .form-control:focus {
+  z-index: 2;
+}
+
+.form-login input[type="password"] {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.fill {
+  min-height: 100%;
+  height: 100%;
+}
+
+#fullscreen {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.appuigrid {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.padded_div {
+  padding: 20px;
+}
+
+.sravzgrid_height {
+  height: 700px;
+  width: 100%;
+}
+
+.sravzxsgrid_height {
+  height: 200px
+}
+
+.sravzvalue_label {
+  font-weight: normal
+}
+
+
+/* show the collapse when navbar toggle is checked */
+#navbar-toggle-cbox:checked~.collapse {
+  display: block;
+}
+
+/* the checkbox used only internally; don't display it */
+#navbar-toggle-cbox {
+  display: none
+}
+
+.sravzbtn_marginright {
+  margin-right: 5px;
+}
+
+.sravzbtn_marginleft {
+  margin-left: 5px;
+}
+
+.hoverwell:hover {
+  background-color: #485563;
+  cursor: pointer;
+}
+
+.pointable {
+  cursor: pointer;
+}
+
+button {
+  color: #555;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.toast-success {
+  background-color: #51a351;
+}
+
+.toast-error {
+  background-color: #bd362f;
+}
+
+.toast-info {
+  background-color: #2f96b4;
+}
+
+.toast-warning {
+  background-color: #f89406;
+}
+
+/* Grid does not scroll */
+.ag-layout-normal.ag-root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.sravzimg {
+  width: 100%;
+}
+
+.sravztext_center {
+  text-align: center;
+}
+
+@import "@infragistics/igniteui-angular/lib/core/styles/themes/index";
+@include core();
+@include theme($default-palette);
+
+$grid-sample-theme: grid-theme($row-selected-background: #333,
+    $row-selected-text-color: #ddd,
+    $row-hover-background: #f8f8f8,
+    $row-border-color: #f8f8f8,
+    $cell-selected-background: color($default-palette, gray, 800),
+    $cell-selected-text-color: #fff);
+
+$progressBar-sample-theme: progress-linear-theme($track-color: rgba(181, 181, 181, .5), $fill-color-default: orange);
+
+::ng-deep .default-theme {
+  .grid__wrapper {
+    @include grid($grid-sample-theme);
+    @include progress-linear($progressBar-sample-theme);
+  }
+}
+
+:host {
+  ::ng-deep {
+    .igx-paginator>* {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.grid__wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .grid__wrapper {
+    width: 98% !important;
+    margin: 0 auto;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+
+@media (max-width: 720px) {
+  .grid__wrapper {
+    width: 720px !important;
+    margin: 0 3px;
+    padding-right: 5px;
+  }
+}
+
+.sample-column {
+  margin: 0 !important;
+}
+
+.switch-sample__title {
+  margin: 0 rem(20px) 0 0;
+}
+
+.sample__header {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: rem(20px);
+}
+
+.switch-sample {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  height: rem(50px);
+}
+
+.switch-sample__label {
+  margin: 0 rem(8) 0 0;
+}
+
+.athlete_name {
+  width: rem(100px);
+  margin: 0 rem(30px);
+}
+
+.athlete_name,
+.title {
+  @include ellipsis();
+}
+
+.badge_wrap,
+.cell__inner,
+.cell__inner_2 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.cell__inner,
+.badge_wrap {
+  position: relative;
+  justify-content: space-between;
+}
+
+.gridSample__filter {
+  width: rem(200px);
+}
+
+.flag {
+  width: rem(24px);
+}
+
+.cup {
+  padding-left: 20px;
+}
+
+.rowIndex {
+  margin-left: rem(57px);
+}
+
+@media (max-width: rem(960px)) {
+  .grid__wrapper {
+    width: rem(960px);
+  }
+}
+
+.linear-bar-container {
+  width: 100%;
+}
+
+.igx-tabs {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.igx-tabs__header {
+  background: var(--item-background);
+  box-shadow: var(--tab-area-shadow);
+  min-height: 2.625rem;
+  z-index: 1;
+  width: 100%;
+}
+
+.light-theme {
+  @include light-theme($palette);
+}
+
+.dark-theme {
+  background: #333;
+  color: #fff;
+  @include dark-theme($palette: $green-palette );
+
+  .grid-chart-contextmenu-wrapper {
+    @include fluent-dark-theme($fluent-excel-palette);
+  }
+}
+
+.fin-dark-theme {
+  @include dark-theme($green-palette);
+  background: #333;
+
+  ::-moz-placeholder {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,51 @@
+<div>
+    <igx-grid #grid1 [data]="mfTickers" 
+        primaryKey="SravzId"    
+        [rowSelection]="rowSelection" 
+        (rowSelectionChanging)="handleRowSelectionChange($event)" 
+        (onSelection)="cellSelection($event)"
+        [allowFiltering]="true">
+        <igx-paginator [perPage]="10">
+        </igx-paginator>
+        <igx-column field="Code" header="Code">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Name" header="Name">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Country" header="Country">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Exchange" header="Exchange">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="SravzId" header="SravzId">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+    </igx-grid>
+</div>

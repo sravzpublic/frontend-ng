@@ -1,0 +1,87 @@
+<div>
+    <div>
+        <article class="sample-column">
+            <igx-buttongroup [values]="displayTimes"
+                             (selected)="selectDensity($event)">
+            </igx-buttongroup>
+        </article>
+    </div>
+    <div>
+
+        <igx-input-group>
+            <input class="gridSample__filter" igxInput type="text" placeholder="Filter by event"
+                (input)="filter($event.target.value, 'type', null)">
+        </igx-input-group>
+
+
+    <igx-grid #grid1 [data]="calenderEvents?.events"  height="600px" [allowFiltering]="true">
+        <igx-paginator [perPage]="10">
+        </igx-paginator>
+
+
+        <igx-column field="title" header="Title" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="time" header="Time" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="date" header="Date" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | date:'long'}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="type" header="Type" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="description" header="Description" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="link" header="Link" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="live" header="Live" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="location" header="Location" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+    </igx-grid>
+</div>

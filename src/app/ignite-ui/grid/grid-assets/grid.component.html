@@ -1,0 +1,58 @@
+<div igxLayout igxLayoutDir="column" class="layout-box">
+    <div igxLayout igxLayoutJustify="flex-end" class="layout-box__el">
+        <div>
+            <igx-input-group>
+                <input class="gridSample__filter" igxInput type="text" placeholder="Filter by name"
+                    (input)="filter($event.target.value, 'name')">
+            </igx-input-group>
+        </div>
+        <div>
+            <igx-input-group>
+                <input class="gridSample__filter" igxInput type="text" placeholder="Filter by country"
+                    (input)="filter($event.target.value, 'country')">
+            </igx-input-group>
+        </div>
+        <div>
+            <button style="margin: 5px;" class="pull-right" igxButton="contained" (click)="reset()" igxRipple>Reset</button>
+        </div>
+    </div>
+    <div class="layout-box__el" style="padding-top: 10px;">
+        <igx-grid #grid1 [data]="localData"  height="600px"
+            [rowSelection]="rowSelectionMode" (rowSelectionChanging)="handleRowSelectionChange($event)"
+            (onSelection)="cellSelection($event)" [allowFiltering]="true">
+            <igx-paginator [perPage]="10">
+            </igx-paginator>
+            <igx-column field="SravzId" header="Sravz ID">
+                <ng-template igxCell let-val>
+                    <div class="cell__inner">
+                        {{ val }}
+                    </div>
+                </ng-template>
+            </igx-column>
+
+            <igx-column field="Name" header="Name">
+                <ng-template igxCell let-val>
+                    <div class="cell__inner">
+                        {{ val }}
+                    </div>
+                </ng-template>
+            </igx-column>
+
+            <igx-column field="Country" header="Country">
+                <ng-template igxCell let-val>
+                    <div class="cell__inner">
+                        {{ val }}
+                    </div>
+                </ng-template>
+            </igx-column>
+
+            <igx-column field="Type" header="Type">
+                <ng-template igxCell let-val>
+                    <div class="cell__inner">
+                        {{ val }}
+                    </div>
+                </ng-template>
+            </igx-column>
+        </igx-grid>
+    </div>
+</div>

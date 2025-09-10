@@ -1,0 +1,15 @@
+<h5 class="sample-title">Option - {{sravzId}}
+  <a href="#" (click)="back()" class="link back-link pull-right" aria-label="Back">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+  </a>
+</h5>
+
+<h5 class="sample-title">Select an option</h5>
+<div class="layout-box" igxLayout igxLayoutDir="column" style="margin-bottom:5px">
+  <grid-stock-tickers [stockTickers]="optionTickers" (stockTickerSelected)="onOptionTickerSelected($event)">
+  </grid-stock-tickers>
+</div>
+
+<div class="layout-sample" *ngIf="optionAsset">
+    <grid-option [option]="optionAsset"></grid-option>
+</div>

@@ -1,0 +1,79 @@
+<div>
+    <igx-grid #grid1 [data]="portfolioAssetsEvents"  height="600px"
+        [allowFiltering]="true">
+        <igx-paginator [perPage]="10">
+        </igx-paginator>
+        <igx-column field="SravzId" header="SravzId" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="purchaseprice" dataType="number"  header="Purchase Price" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | number}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="currentprice" dataType="number"  header="Current Price" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | number}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="purchasevalue" dataType="number"  header="Purchase Value" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | number}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+
+        <igx-column field="currentvalue" dataType="number"  header="Current Value" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | number}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="pnl" dataType="number"  header="Pnl" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | number}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="pnlpercent" dataType="percent" header="Pnl%" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | number}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="quantity" dataType="number"  header="Quantity" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | number}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="weight" dataType="percent" header="Weight" [cellClasses]="backgroundCell">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val | number}}
+                </div>
+            </ng-template>
+        </igx-column>
+    </igx-grid>
+</div>

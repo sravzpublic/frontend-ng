@@ -1,0 +1,9 @@
+export interface FeedInfo {
+    sravzid: string;
+    title: string;
+    link: string;
+    author: string;
+    description: string;
+    image: string;
+    updated: Date;
+  }

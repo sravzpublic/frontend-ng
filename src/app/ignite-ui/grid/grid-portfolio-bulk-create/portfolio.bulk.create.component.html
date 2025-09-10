@@ -1,0 +1,22 @@
+<div class="container">
+    <article class="sample-column">
+        <form class="input-group-form" [formGroup]="portfolioCreateForm" (ngSubmit)="onSubmit()">
+            <label>Enter Asset SravzID's (One Asset per line) - Assets will be equally weighed in the portfolio</label>
+            <div class="container">
+                <igx-input-group>
+                    <label igxLabel for="name">Name</label>
+                    <input formControlName="name" igxInput name="name" />
+                </igx-input-group>
+                <igx-input-group>
+                    <label igxLabel for="description">Description</label>
+                    <input formControlName="description" igxInput name="description" />
+                </igx-input-group>
+                <igx-input-group>
+                    <label igxLabel for="sravzids">Sravz IDs</label>
+                    <textarea formControlName="sravzids" igxInput name="sravzids" type="text"></textarea>
+                </igx-input-group>
+                <button igxButton="contained" igxRipple type="submit" [disabled]="!portfolioCreateForm.valid">Submit</button>
+            </div>
+        </form>
+    </article>
+</div>

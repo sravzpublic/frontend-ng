@@ -1,0 +1,42 @@
+<h5 class="sample-title">Spread analysis
+</h5>
+<div>
+  <div class="layout-box__el" igxFlex igxFlexGrow="0">
+    <grid-assets [rowSelectionMode]="'multiple'" [assets]="assets" (assetsSelected)="onAssetsSelected($event)">
+    </grid-assets>
+  </div>
+  <div *ngIf="selectedAssets" class="layout-box__el" style="padding-top: 10px;">
+    <igx-grid #grid2 [data]="selectedAssets">
+      <igx-column field="left" header="Left">
+        <ng-template igxCell let-val>
+          <div class="cell__inner">
+            {{ val }}
+          </div>
+        </ng-template>
+      </igx-column>
+      <igx-column field="right" header="Right">
+        <ng-template igxCell let-val>
+          <div class="cell__inner">
+            {{ val }}
+          </div>
+        </ng-template>
+      </igx-column>
+    </igx-grid>
+    <div class="pull-right">
+      <button style="margin: 5px;" class="pull-left" igxButton="contained" (click)="swap()" igxRipple>Swap</button>
+      <button style="margin: 5px;" class="pull-right" igxButton="contained" (click)="onSubmit()"
+        igxRipple>Submit</button>
+    </div>
+  </div>
+  <igx-tabs #tabs>
+    <igx-tab-item *ngIf="spreadAnalysisURL">
+      <igx-tab-header>
+        <span igxTabHeaderLabel>Spread Analysis</span>
+      </igx-tab-header>
+      <igx-tab-content>
+        <h5 class="sravztext_center">{{sravzIds}} Spread Analysis</h5>
+        <img *ngIf="spreadAnalysisURL" [src]="spreadAnalysisURL" class="sravzimg">
+      </igx-tab-content>
+    </igx-tab-item>
+  </igx-tabs>
+</div>

@@ -1,0 +1,25 @@
+<h5 class="sample-title">Earnings - Details - <a href="/fundamentals/fundamentals?code={{sravzID}}">{{sravzID}}</a>
+  <!-- <button (click)="refreshEarnings()" igxButton="fab" class="pull-right">
+    <igx-icon fontSet="material">refresh</igx-icon>
+  </button> -->
+  <a href="#" (click)="back()" class="link back-link pull-right" aria-label="Back">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+  </a>
+</h5>
+<!-- <form>
+  <igx-date-range-picker name="datesRange" #dateRangePicker="ngModel" required [(ngModel)]="range" [minValue]="fromDate" [maxValue]="toDate"
+    [placeholder]="'From - To'">
+    <label igxLabel>Earnings Dates</label>
+    <igx-hint *ngIf="dateRangePicker.invalid && (dateRangePicker.dirty || dateRangePicker.touched)">
+      Please choose start and end date!
+    </igx-hint>
+  </igx-date-range-picker>
+</form> -->
+
+<div class="layout-sample">
+  <div class="layout-box" igxLayout igxLayoutDir="column">
+    <div class="layout-box__el" igxFlex igxFlexGrow="0">
+      <grid-earnings-details [earningsDetails]="earningsDetails"></grid-earnings-details>
+    </div>
+  </div>
+</div>

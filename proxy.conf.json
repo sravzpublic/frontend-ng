@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "http://portfolio.vagrant.sravz.com:8808",
+    "secure": false
+  }
+}

@@ -1,0 +1,22 @@
+<h5 class="sample-title"> Index Assets
+    <a href="https://youtu.be/ZYxYKesM55Y" target="_blank" class="pull-right" style="margin-left:5px">
+        <span class="fa fa-youtube"></span>
+    </a>
+    <a href="https://docs.sravz.com/docs/finance/index-assets/" target="_blank" class="pull-right">
+        <span class="fa fa-book"></span>
+    </a>
+</h5>
+<div class="layout-sample">
+    <div class="layout-box" igxLayout igxLayoutDir="column">
+        <div class="layout-box__el" igxFlex igxFlexGrow="0">
+            <asset-component [showDetails]="showDetails" [assets]="assets"></asset-component>
+            
+        </div>
+        <div class="layout-box__el" igxFlex igxFlexGrow="0">
+            <grid-world-indices [indexQuotes]="indexQuotes"></grid-world-indices>
+        </div>
+        <div class="layout-box__el" igxFlex igxFlexGrow="0">
+            <app-map-type-scatter-bubble-series></app-map-type-scatter-bubble-series>
+        </div>
+    </div>
+</div>

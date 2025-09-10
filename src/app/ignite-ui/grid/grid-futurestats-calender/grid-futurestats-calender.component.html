@@ -1,0 +1,152 @@
+<div>
+    <!-- <div>
+        <article class="sample-column">
+            <igx-buttongroup [values]="displayTimes"
+                             (selected)="selectDensity($event)">
+            </igx-buttongroup>
+        </article>
+    </div> -->
+    <div>
+
+        <igx-input-group>
+            <input class="gridSample__filter" igxInput type="text" placeholder="Filter by Name"
+                (input)="filter($event.target.value, 'Name', null)">
+        </igx-input-group>
+
+
+    <igx-grid #grid1 [data]="calenderEvents"  height="600px" [allowFiltering]="true">
+        <igx-paginator [perPage]="10">
+        </igx-paginator>
+
+        <igx-column field="SravzId" header="SravzId" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="Name" header="Name" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="FromDate" header="FromDate" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="ToDate" header="ToDate" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val}}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="AdjustedClose" header="AdjustedClose" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="mean" header="Mean" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="std" header="Std" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="min" header="Min" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="25%" header="25%" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="50%" header="50%" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="75%" header="75%" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+
+        <igx-column field="max" header="Max" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+
+        <igx-column field="AdjustedCloseVsMaxPercent" header="AdjustedCloseVsMaxPercent" [cellClasses]="backgroundCell"  [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="AdjustedCloseVsMeanPercent" header="AdjustedCloseVsMeanPercent" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val  }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="AdjustedCloseVsMinPercent" header="AdjustedCloseVsMinPercent" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val  }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+        <igx-column field="count" header="Count" [cellClasses]="backgroundCell" [sortable]="true">
+            <ng-template igxCell let-val>
+                <div class="cell__inner">
+                    {{ val }}
+                </div>
+            </ng-template>
+        </igx-column>
+
+    </igx-grid>
+</div>

@@ -1,0 +1,84 @@
+<igx-tabs>
+    <igx-tab-item>
+        <igx-tab-header>
+            <span igxTabHeaderLabel>Details</span>
+        </igx-tab-header>
+        <igx-tab-content>
+            <div>
+                <h6>General Information</h6>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Header</th>
+                            <th scope="col">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let key of bond?.data | objectKeys">
+                            <td *ngIf="!isObject(bond.data[key])">{{key}}</td>
+                            <td *ngIf="!isObject(bond.data[key])">{{bond.data[key]}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <h6>Classification Data</h6>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Header</th>
+                            <th scope="col">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let key of bond?.data?.ClassificationData | objectKeys">
+                            <td *ngIf="!isArray(bond.data.ClassificationData[key])">{{key}}</td>
+                            <td *ngIf="!isArray(bond.data.ClassificationData[key])">{{bond.data.ClassificationData[key]}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <h6>Issue Data</h6>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Header</th>
+                            <th scope="col">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let key of bond?.data?.IssueData | objectKeys">
+                            <td *ngIf="!isArray(bond.data.IssueData[key])">{{key}}</td>
+                            <td *ngIf="!isArray(bond.data.IssueData[key])">{{bond.data.IssueData[key]}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <h6>Rating</h6>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Header</th>
+                            <th scope="col">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let key of bond?.data?.Rating | objectKeys">
+                            <td *ngIf="!isArray(bond.data.Rating[key])">{{key}}</td>
+                            <td *ngIf="!isArray(bond.data.Rating[key])">{{bond.data.Rating[key]}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+               
+            </div> 
+        </igx-tab-content>
+    </igx-tab-item>
+    <!-- <igx-tab-item>
+        <igx-tab-header>
+            <span igxTabHeaderLabel>Raw Data</span>
+        </igx-tab-header>
+        <igx-tab-content>
+            <pre>{{bond | json}}</pre>
+        </igx-tab-content>
+    </igx-tab-item> -->
+</igx-tabs>

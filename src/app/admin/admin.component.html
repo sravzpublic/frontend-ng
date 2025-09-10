@@ -1,0 +1,108 @@
+<h5>Admin</h5>
+<igx-tabs style="height: 800px;">
+    <igx-tab-item>
+        <igx-tab-header>
+            <igx-icon igxTabHeaderIcon>info</igx-icon>
+            <span igxTabHeaderLabel>
+                Portainer
+                <igx-icon style="cursor:pointer; margin-left:8px;" (click)="openUrl(PORTAINER_URL)"
+                    title="Open in new tab">open_in_new</igx-icon>
+            </span>
+        </igx-tab-header>
+        <igx-tab-content style="height: 800px;">
+            <iframe [src]="PORTAINER_URL | safeHtml" style="width: 100%; height: 100%;"></iframe>
+        </igx-tab-content>
+    </igx-tab-item>
+    <igx-tab-item>
+        <igx-tab-header>
+            <igx-icon igxTabHeaderIcon>info</igx-icon>
+            <span igxTabHeaderLabel>
+                Traefik Dashboard
+                <igx-icon style="cursor:pointer; margin-left:8px;" (click)="openUrl(TRAEFIK_DASHBOARD_URL)"
+                    title="Open in new tab">open_in_new</igx-icon>
+            </span>
+        </igx-tab-header>
+        <igx-tab-content style="height: 800px;">
+            <iframe [src]="TRAEFIK_DASHBOARD_URL | safeHtml" style="width: 100%; height: 100%;"></iframe>
+        </igx-tab-content>
+    </igx-tab-item>
+    <igx-tab-item>
+        <igx-tab-header>
+            <igx-icon igxTabHeaderIcon>info</igx-icon>
+            <span igxTabHeaderLabel>
+                NSQ Admin
+                <igx-icon style="cursor:pointer; margin-left:8px;" (click)="openUrl(NSQ_ADMIN_URL)"
+                    title="Open in new tab">open_in_new</igx-icon>
+            </span>
+        </igx-tab-header>
+        <igx-tab-content style="height: 800px;">
+            <iframe [src]="NSQ_ADMIN_URL | safeHtml" style="width: 100%; height: 100%;"></iframe>
+        </igx-tab-content>
+    </igx-tab-item>
+    <igx-tab-item>
+        <igx-tab-header>
+            <igx-icon igxTabHeaderIcon>info</igx-icon>
+            <span igxTabHeaderLabel>
+                Airflow
+                <igx-icon style="cursor:pointer; margin-left:8px;" (click)="openUrl(AIRFLOW1_ADMIN_URL)"
+                    title="Open in new tab">open_in_new</igx-icon>
+            </span>
+        </igx-tab-header>
+        <igx-tab-content style="height: 800px;">
+            <iframe [src]="AIRFLOW1_ADMIN_URL | safeHtml" style="width: 100%; height: 100%;"></iframe>
+        </igx-tab-content>
+    </igx-tab-item>
+
+    <igx-tab-item>
+        <igx-tab-header>
+            <igx-icon igxTabHeaderIcon>info</igx-icon>
+            <span igxTabHeaderLabel>
+                Portainer
+                <igx-icon style="cursor:pointer; margin-left:8px;" (click)="openUrl(PORTAINER2_URL)"
+                    title="Open in new tab">open_in_new</igx-icon>
+            </span>
+        </igx-tab-header>
+        <igx-tab-content style="height: 800px;">
+            <iframe [src]="PORTAINER2_URL | safeHtml" style="width: 100%; height: 100%;"></iframe>
+        </igx-tab-content>
+    </igx-tab-item>
+    <igx-tab-item>
+        <igx-tab-header>
+            <igx-icon igxTabHeaderIcon>info</igx-icon>
+            <span igxTabHeaderLabel>
+                Traefik Dashboard
+                <igx-icon style="cursor:pointer; margin-left:8px;" (click)="openUrl(TRAEFIK2_DASHBOARD_URL)"
+                    title="Open in new tab">open_in_new</igx-icon>
+            </span>
+        </igx-tab-header>
+        <igx-tab-content style="height: 800px;">
+            <iframe [src]="TRAEFIK2_DASHBOARD_URL | safeHtml" style="width: 100%; height: 100%;"></iframe>
+        </igx-tab-content>
+    </igx-tab-item>
+    <igx-tab-item>
+        <igx-tab-header>
+            <igx-icon igxTabHeaderIcon>info</igx-icon>
+            <span igxTabHeaderLabel>
+                NSQ Admin
+                <igx-icon style="cursor:pointer; margin-left:8px;" (click)="openUrl(NSQ2_ADMIN_URL)"
+                    title="Open in new tab">open_in_new</igx-icon>
+            </span>
+        </igx-tab-header>
+        <igx-tab-content style="height: 800px;">
+            <iframe [src]="NSQ2_ADMIN_URL | safeHtml" style="width: 100%; height: 100%;"></iframe>
+        </igx-tab-content>
+    </igx-tab-item>
+    <igx-tab-item>
+        <igx-tab-header>
+            <igx-icon igxTabHeaderIcon>info</igx-icon>
+            <span igxTabHeaderLabel>
+                Airflow
+                <igx-icon style="cursor:pointer; margin-left:8px;" (click)="openUrl(AIRFLOW2_ADMIN_URL)"
+                    title="Open in new tab">open_in_new</igx-icon>
+            </span>
+        </igx-tab-header>
+        <igx-tab-content style="height: 800px;">
+            <iframe [src]="AIRFLOW2_ADMIN_URL | safeHtml" style="width: 100%; height: 100%;"></iframe>
+        </igx-tab-content>
+    </igx-tab-item>
+</igx-tabs>

@@ -1,0 +1,16 @@
+<h5>Upload Asset</h5>
+
+<form [formGroup]="assetUploadForm" (ngSubmit)="onSubmit()">
+
+    <label>
+      Name:
+      <input type="text" formControlName="name">
+    </label>
+
+    <label>
+      File:
+      <input type="text" formControlName="file">
+    </label>
+
+    <button type="submit" [disabled]="!assetUploadForm.valid">Submit</button>
+  </form>

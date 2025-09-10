@@ -1,0 +1,30 @@
+<!-- <div class="layout-sample">
+  <form [formGroup]="assetSelectorForm" (ngSubmit)="onSubmit()">
+    <mat-form-field style="width:100%" class="layout-sample">
+      <mat-label>Select Sravz Asset</mat-label>
+      <mat-select formControlName="SravzAsset">
+        <mat-option>-- None --</mat-option>
+        <mat-optgroup *ngFor="let group of assetgroups" [label]="group._id" [disabled]="group.disabled">
+          <mat-option (onSelectionChange)="onSravzAssetChanged($event)" *ngFor="let asset of group.assets" [value]="asset.SravzId">
+            {{asset.SravzId}} - {{asset.Name}}
+          </mat-option>
+        </mat-optgroup>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field style="width:100%" class="layout-sample">
+      <mat-label>Select User Asset</mat-label>
+      <mat-select formControlName="UserAsset">
+        <mat-option>-- None --</mat-option>
+        <mat-option (onSelectionChange)="onUserAssetChanged($event)" *ngFor="let userAsset of userassets"  [value]="userAsset.USER_ASSET_NAME.S">
+          {{userAsset.USER_ASSET_NAME.S}} - {{userAsset.USER_ASSET_TYPE.S}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="layout-sample">
+        <button [disabled]="!this.assetSelectorForm.value.UserAsset && !this.assetSelectorForm.value.SravzAsset" mdbBtn type="submit" style="margin-top: 5px;" color="primary" class="pull-right waves-light"
+          >Submit</button>
+      </div>
+  </form>
+</div> -->

@@ -1,0 +1,76 @@
+.main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    padding: 0.5rem 0.5rem;
+    width: 100%;
+}
+
+main.mini-padding {
+    padding: 0.5rem 0.5rem;
+    width: 100%;
+}
+
+/* Sample styling */
+.setting-title {
+    margin-bottom: 0;
+    color: rgba(228, 28, 119, 0.8) /*#e41c77cc*/ ;
+}
+
+.setting-note {
+    font-size: 14px;
+    color: #484848;
+    margin: 4px 0;
+}
+
+.igx-nav-drawer__aside::-webkit-scrollbar {
+    width: 3px;
+    background: #e4e4e4;
+}
+
+.igx-nav-drawer__aside::-webkit-scrollbar-thumb {
+    background: #0375be;
+    border-radius: 0;
+}
+
+.app__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1px;
+    padding: 1rem 2rem;
+}
+
+.app__footer-item {
+line-height: normal;
+font-size: 12px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+text-align: left;
+}
+
+.footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.parent_item {
+    font-weight: bolder;
+}
+
+
+.sub_item {
+    margin-left: 5px;
+    font-weight: lighter;
+    font-style: italic;
+}
