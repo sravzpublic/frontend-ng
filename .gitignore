@@ -43,6 +43,7 @@ coverage/
 
 # Optional npm cache directory
 .npm
+.npmrc
 
 # Optional eslint cache
 .eslintcache
@@ -59,4 +60,4 @@ coverage/
 # Yarn Integrity file
 yarn.lock
 
-# End of file
+.npmrc
