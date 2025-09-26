@@ -53,7 +53,11 @@ export class AssetsComponent implements OnInit {
       }) => {
         if (message) {
           switch (message.id) {
-            case 9.1: {
+            // Same function is called for both pc and mobile
+            // Based on device type, dataframe/image is sent
+            // For pc, dataframe is sent that matches ignite UI requirement
+            // For mobile image url is sent
+            case this.analyticsService.MESSAGE_IDS['CHARTS_ENGINE.get_combined_chart_image']: {
               if (message.kwargs.device === 'mobile' && message.data) {
                 this.combinedChartImgUrl = message.data.combined_chart;
                 const combinedChartDataURL: IIgniteUIMessage = {

@@ -182,7 +182,7 @@ export class AnalyticsService {
 
         this.socketService.on(this.TOPIC_RUST, (data) => {
             this.loaderService.isLoading.next(false);
-            if (data && data.e === '' && data['d_o'] && (Object.prototype.hasOwnProperty.call(data, 'd_o.signed_url') || data.d_o)) {
+            if (data && data.e === '' && data['d_o'] && (data.d_o.signed_url || data.d_o)) {
                 let finalData = null;
                 let finalMessage = '';
                 switch (data.id) {
@@ -204,37 +204,8 @@ export class AnalyticsService {
                     }
                     default: {
                         // Data uploaded to AWS
-                        if (Object.prototype.hasOwnProperty.call(data, 'd_o.signed_url')) {
-                            this.awsService.getData(data.d_o.signed_url, true).subscribe(awsS3Data => {
-                                switch (data.id) {
-                                    case this.MESSAGE_IDS['RUST_BACKEND_LEVERAGED_FUNDS']:
-                                    case this.MESSAGE_IDS['RUST_BACKEND_EARNINGS']: {
-                                        finalData = awsS3Data;
-                                        finalMessage = `Received: data from backend ${data.p_i.args}`;
-                                        break;
-                                    }
-                                    default: {
-                                        break;
-                                    }
-                                }
-                                // Put data in cache
-                                if (finalData) {
-                                    if (this.persistanceService.get('notification') != null && this.persistanceService.get('notification')) {
-                                        this.toastrService.success(finalMessage, null, {
-                                            positionClass: 'toast-bottom-center'
-                                        });
-                                    }
-                                    this.PutInCache({
-                                        id: data.id, topic: this.TOPIC_RUST, args: data.p_i.args, kwargs: data.p_i.kwargs,
-                                        message: finalMessage, data: finalData
-                                    });
-                                } else {
-                                    this.toastrService.error(`Data error: ${this.ID_MESSAGE_MAPPING[data.id]} - ${data.p_i.args}`, null, {
-                                        positionClass: 'toast-bottom-center'
-                                    });
-                                }
-
-                            });
+                        if (data.d_o && data.d_o.signed_url) {
+                            this.call_aws_save_to_cache_notify_subscribers(JSON.parse(JSON.stringify(data)));
                             // }
                             // Dataframe received
                         } else if (data.d_o) {
@@ -264,7 +235,7 @@ export class AnalyticsService {
 
         this.socketService.on(this.TOPIC_PCA, (data) => {
             this.loaderService.isLoading.next(false);
-            if (data && data.e === '' && data['d_o'] && (Object.prototype.hasOwnProperty.call(data, 'd_o.signed_url') || data.d_o)) {
+            if (data && data.e === '' && data['d_o'] && (data.d_o.signed_url || data.d_o)) {
                 let finalData = null;
                 let finalMessage = '';
                 switch (data.id) {
@@ -305,19 +276,18 @@ export class AnalyticsService {
                         break;
                     }
                     case this.MESSAGE_IDS['PORTFOLIO_ENGINE.get_correlation_analysis_tear_sheet_user_asset']: {
-                        if (Object.prototype.hasOwnProperty.call(data, 'd_o.signed_url')) {
+                        if (data.d_o && data.d_o.signed_url) {
                             this.awsService.getInnerHTML(data.d_o.signed_url).subscribe(innerHtml => {
-                                finalData = innerHtml;
-                                //finalData = this.sanitizer.bypassSecurityTrustHtml(awsS3Data);
-                                finalMessage = `Received: Covariance matrix for user asset ${data.p_i.args}`;
+                                const htmlData = innerHtml;
+                                const message = `Received: Covariance matrix for user asset ${data.p_i.args}`;
                                 if (this.persistanceService.get('notification') != null && this.persistanceService.get('notification')) {
-                                    this.toastrService.success(finalMessage, null, {
+                                    this.toastrService.success(message, null, {
                                         positionClass: 'toast-bottom-center'
                                     });
                                 }
                                 this.PutInCache({
                                     id: data.id, topic: this.TOPIC_PCA, args: data.p_i.args, kwargs: data.p_i.kwargs,
-                                    message: finalMessage, data: finalData
+                                    message: message, data: htmlData
                                 });
                             })
                         }
@@ -325,73 +295,8 @@ export class AnalyticsService {
                     }
                     default: {
                         // Data uploaded to AWS
-                        if (Object.prototype.hasOwnProperty.call(data, 'd_o.signed_url')) {
-                            this.awsService.getData(data.d_o.signed_url, true).subscribe(awsS3Data => {
-                                switch (data.id) {
-                                    case 5: {
-                                        finalData = awsS3Data.scatter_plot;
-                                        finalMessage = `Received: scatter plot for ${data.p_i.args}`;
-                                        break;
-                                    }
-                                    case 6: {
-                                        finalData = awsS3Data.explained_variance_fig;
-                                        finalMessage = `Received: explained variance for ${data.p_i.args}`;
-                                        break;
-                                    }
-                                    case 6.1: {
-                                        finalData = awsS3Data.pc_returns_vs_index_returns_fig;
-                                        finalMessage = `Received: PC1 vs Index returns for ${data.p_i.args}`;
-                                        break;
-                                    }
-                                    case this.MESSAGE_IDS['CHARTS_ENGINE.get_combined_chart_image']: {
-                                        finalData = awsS3Data;
-                                        finalMessage = `Received: combined chart for ${data.p_i.args}`;
-                                        break;
-                                    }
-                                    case 7: {
-                                        finalData = this.sanitizer.bypassSecurityTrustHtml(awsS3Data.covarince_matrix_html);
-                                        finalMessage = `Received: Covariance matrix for ${data.p_i.args}`;
-                                        break;
-                                    }
-                                    case 13: {
-                                        awsS3Data = JSON.parse(awsS3Data);
-                                        finalData = [];
-                                        for (let _i = 0; _i < awsS3Data.data.length; _i++) {
-                                            let stat = null;
-                                            stat = {
-                                                Stat: awsS3Data.index[_i]
-                                            };
-                                            for (let _q = 0; _q < awsS3Data.columns.length; _q++) {
-                                                stat[awsS3Data.columns[_q]] = awsS3Data.data[_i][_q];
-                                            }
-                                            finalData.push(stat);
-
-                                        }
-                                        finalMessage = `Received: Asset details for ${data.p_i.args}`;
-                                        break;
-                                    }
-                                    default: {
-                                        break;
-                                    }
-                                }
-                                // Put data in cache
-                                if (finalData) {
-                                    if (this.persistanceService.get('notification') != null && this.persistanceService.get('notification')) {
-                                        this.toastrService.success(finalMessage, null, {
-                                            positionClass: 'toast-bottom-center'
-                                        });
-                                    }
-                                    this.PutInCache({
-                                        id: data.id, topic: this.TOPIC_PCA, args: data.p_i.args, kwargs: data.p_i.kwargs,
-                                        message: finalMessage, data: finalData
-                                    });
-                                } else {
-                                    this.toastrService.error(`Data error: ${this.ID_MESSAGE_MAPPING[data.id]} - ${data.p_i.args}`, null, {
-                                        positionClass: 'toast-bottom-center'
-                                    });
-                                }
-
-                            });
+                        if (data.d_o && data.d_o.signed_url) {                            
+                            this.call_aws_and_save_to_cache_and_notify_subscriber(JSON.parse(JSON.stringify(data)));
                             // }
                             // Dataframe received
                         } else if (data.d_o) {
@@ -421,29 +326,138 @@ export class AnalyticsService {
 
         this.socketService.on(this.TOPIC_GET_RETURNS_TEAR_SHEET, (data) => {
             this.loaderService.isLoading.next(false);
-            if (data && data.e === '' && data['d_o'] && Object.prototype.hasOwnProperty.call(data, 'd_o.signed_url')) {
-                this.awsService.getData(data.d_o.signed_url, false).subscribe(awsS3Data => {
-                    if (!awsS3Data.returns_tear_sheet) {
-                        if (this.persistanceService.get('notification') != null && this.persistanceService.get('notification'))
-                            this.toastrService.info('Returns tear sheet not found', null, {
-                                positionClass: 'toast-bottom-center'
-                            });
-                    }
-                    if (this.persistanceService.get('notification') != null && this.persistanceService.get('notification')) {
-                        this.toastrService.success(`Received: Asset returns tear sheet for ${data.p_i.args}`, null, {
-                            positionClass: 'toast-bottom-center'
-                        });
-                    }
-                    this.PutInCache({
-                        id: data.id, topic: this.TOPIC_GET_RETURNS_TEAR_SHEET, args: data.p_i.args, kwargs: {},
-                        message: `Asset returns tear sheet for ${data.p_i.args}`, data: awsS3Data.returns_tear_sheet
-                    });
-                });
+            if (data && data.e === '' && data['d_o'] && data.d_o.signed_url) {
+                this.call_aws_save_to_cache_notify_subscribers_tear_sheet(JSON.parse(JSON.stringify(data)));
             } else {
                 this.toastrService.error('Requested returns tear sheet not found', null, {
                     positionClass: 'toast-bottom-center'
                 });
             }
+        });
+    }
+
+    private call_aws_save_to_cache_notify_subscribers_tear_sheet(data: any) {
+        this.awsService.getData(data.d_o.signed_url, false).subscribe(awsS3Data => {
+            if (!awsS3Data.returns_tear_sheet) {
+                if (this.persistanceService.get('notification') != null && this.persistanceService.get('notification'))
+                    this.toastrService.info('Returns tear sheet not found', null, {
+                        positionClass: 'toast-bottom-center'
+                    });
+            }
+            if (this.persistanceService.get('notification') != null && this.persistanceService.get('notification')) {
+                this.toastrService.success(`Received: Asset returns tear sheet for ${data.p_i.args}`, null, {
+                    positionClass: 'toast-bottom-center'
+                });
+            }
+            this.PutInCache({
+                id: data.id, topic: this.TOPIC_GET_RETURNS_TEAR_SHEET, args: data.p_i.args, kwargs: {},
+                message: `Asset returns tear sheet for ${data.p_i.args}`, data: awsS3Data.returns_tear_sheet
+            });
+        });
+    }
+
+    private call_aws_save_to_cache_notify_subscribers(data: any) {
+        this.awsService.getData(data.d_o.signed_url, true).subscribe(awsS3Data => {
+            let chartData = null;
+            let message = '';
+            switch (data.id) {
+                case this.MESSAGE_IDS['RUST_BACKEND_LEVERAGED_FUNDS']:
+                case this.MESSAGE_IDS['RUST_BACKEND_EARNINGS']: {
+                    chartData = awsS3Data;
+                    message = `Received: data from backend ${data.p_i.args}`;
+                    break;
+                }
+                default: {
+                    break;
+                }
+            }
+            // Put data in cache
+            if (chartData) {
+                if (this.persistanceService.get('notification') != null && this.persistanceService.get('notification')) {
+                    this.toastrService.success(message, null, {
+                        positionClass: 'toast-bottom-center'
+                    });
+                }
+                this.PutInCache({
+                    id: data.id, topic: this.TOPIC_RUST, args: data.p_i.args, kwargs: data.p_i.kwargs,
+                    message: message, data: chartData
+                });
+            } else {
+                this.toastrService.error(`Data error: ${this.ID_MESSAGE_MAPPING[data.id]} - ${data.p_i.args}`, null, {
+                    positionClass: 'toast-bottom-center'
+                });
+            }
+
+        });
+    }
+
+    private call_aws_and_save_to_cache_and_notify_subscriber(data: any) {
+        this.awsService.getData(data.d_o.signed_url, true).subscribe(awsS3Data => {
+            let processedData = null;
+            let message = '';
+            switch (data.id) {
+                case 5: {
+                    processedData = awsS3Data.scatter_plot;
+                    message = `Received: scatter plot for ${data.p_i.args}`;
+                    break;
+                }
+                case 6: {
+                    processedData = awsS3Data.explained_variance_fig;
+                    message = `Received: explained variance for ${data.p_i.args}`;
+                    break;
+                }
+                case 6.1: {
+                    processedData = awsS3Data.pc_returns_vs_index_returns_fig;
+                    message = `Received: PC1 vs Index returns for ${data.p_i.args}`;
+                    break;
+                }
+                case this.MESSAGE_IDS['CHARTS_ENGINE.get_combined_chart_image']:
+                case this.MESSAGE_IDS['CHARTS_ENGINE.get_combined_chart']: {
+                    processedData = awsS3Data;
+                    message = `Received: combined chart for ${data.p_i.args}`;
+                    break;
+                }
+                case 7: {
+                    processedData = this.sanitizer.bypassSecurityTrustHtml(awsS3Data.covarince_matrix_html);
+                    message = `Received: Covariance matrix for ${data.p_i.args}`;
+                    break;
+                }
+                case 13: {
+                    const parsedData = JSON.parse(awsS3Data);
+                    processedData = [];
+                    for (let _i = 0; _i < parsedData.data.length; _i++) {
+                        let stat = {
+                            Stat: parsedData.index[_i]
+                        };
+                        for (let _q = 0; _q < parsedData.columns.length; _q++) {
+                            stat[parsedData.columns[_q]] = parsedData.data[_i][_q];
+                        }
+                        processedData.push(stat);
+                    }
+                    message = `Received: Asset details for ${data.p_i.args}`;
+                    break;
+                }
+                default: {
+                    break;
+                }
+            }
+            // Put data in cache
+            if (processedData) {
+                if (this.persistanceService.get('notification') != null && this.persistanceService.get('notification')) {
+                    this.toastrService.success(message, null, {
+                        positionClass: 'toast-bottom-center'
+                    });
+                }
+                this.PutInCache({
+                    id: data.id, topic: this.TOPIC_PCA, args: data.p_i.args, kwargs: data.p_i.kwargs,
+                    message: message, data: processedData
+                });
+            } else {
+                this.toastrService.error(`Data error: ${this.ID_MESSAGE_MAPPING[data.id]} - ${data.p_i.args}`, null, {
+                    positionClass: 'toast-bottom-center'
+                });
+            }
+
         });
     }
 
@@ -644,14 +658,19 @@ export class AnalyticsService {
 
     getCombinedChart(sravzids) {
         const requestMessages: IAnalyticsCacheItem[] = [
+            // Call chart image for both
+            // Same function will send dataframe/image based on device type
+            // For PC result will be sent that will match ignite UI requirement.
+
             {
-                id: 9.1, topic: this.TOPIC_PCA, args: [sravzids], kwargs: { 'device': 'mobile', 'upload_to_aws': true },
+                id: this.MESSAGE_IDS['CHARTS_ENGINE.get_combined_chart_image'], topic: this.TOPIC_PCA, args: [sravzids], kwargs: { 'device': 'mobile', 'upload_to_aws': true },
                 message: `Combined chart for ${sravzids}`, data: null
             },
             {
-                id: 9.1, topic: this.TOPIC_PCA, args: [sravzids], kwargs: { 'device': 'pc', 'upload_to_aws': true },
+                id: this.MESSAGE_IDS['CHARTS_ENGINE.get_combined_chart_image'], topic: this.TOPIC_PCA, args: [sravzids], kwargs: { 'device': 'pc', 'upload_to_aws': true },
                 message: `Combined chart for ${sravzids}`, data: null
             },
+
         ];
         this.sendMessage(requestMessages);
     }
